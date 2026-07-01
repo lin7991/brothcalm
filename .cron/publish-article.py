@@ -113,6 +113,21 @@ if __name__ == "__main__":
             print("Usage: publish-article.py publish <filepath>")
             sys.exit(1)
         publish_article(sys.argv[2])
+    elif cmd == "stage":
+        # Just advance queue index without writing any file
+        q = load_queue()
+        q["index"] += 1
+        save_queue(q)
+        remaining = len(q["articles"]) - q["index"]
+        print(f"✅ Queue advanced. Remaining: {remaining}")
+    elif cmd == "pending":
+        # List staged files
+        import glob
+        pending = Path(__file__).parent / "pending"
+        files = list(pending.glob("*.html"))
+        for f in files:
+            print(f.name)
+        print(f"Total: {len(files)}")
     else:
         print(f"Unknown command: {cmd}")
         sys.exit(1)

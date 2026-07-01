@@ -1,12 +1,17 @@
 #!/bin/bash
 # BrothCalm auto-publisher — fired by launchd every 3 hours
-# 
-# 02:00-07:00 Beijing time:
-#   - Generate article HTML, store in .cron/pending/ (no git, no deploy)
-#   - Auto-refill queue when < 5
-# Every 3 hours:
-#   - Take 1 article from .cron/pending/ → deploy (git add + commit + push)
-#   - Advance queue index
+#
+# Content creation (AI writing):  02:00-07:00 Beijing time only
+# Publishing (deploy to web):     Every 3 hours, from .cron/pending/ buffer
+#
+# How it works:
+#   02:00 tick → generate article A → store in .cron/pending/ → publish A
+#   05:00 tick → generate article B → store in .cron/pending/ → publish B
+#   08:00 tick → (no generation) → publish C from pending (if any)
+#   11:00 tick → (no generation) → publish D from pending (if any)
+#
+# The pending buffer ensures articles trickle out every 3 hours
+# even though they were all written during 02-07.
 
 export HERMES_HOME="$HOME/.hermes"
 export PATH="/usr/local/bin:/opt/homebrew/bin:$HOME/.local/bin:$PATH"
@@ -20,79 +25,74 @@ mkdir -p "$PENDING"
 HOUR=$(TZ=Asia/Shanghai date '+%H')
 HOUR=${HOUR#0}
 
-echo "$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S'): Tick started (hour=$HOUR)" >> "$LOG"
+log() { echo "$(TZ=Asia/Shanghai date '+%H:%M'): $*" >> "$LOG"; }
 
-# ────────────────────────────────────────────
-# STEP 1: Content generation (02:00-07:00 only)
-# ────────────────────────────────────────────
+log "Tick started (hour=$HOUR)"
+
+# ─── Content creation: only 02:00-07:00 ───
+IN_WINDOW=false
 if [ "$HOUR" -ge 2 ] && [ "$HOUR" -lt 7 ]; then
+  IN_WINDOW=true
   REMAINING=$(python3 .cron/publish-article.py remaining 2>/dev/null)
-  echo "$(TZ=Asia/Shanghai date '+%H:%M'): Content window, queue=$REMAINING" >> "$LOG"
+  log "Content window, queue=$REMAINING"
+  
+  # Generate articles until pending is well-stocked
+  PENDING_COUNT=$(ls "$PENDING"/*.html 2>/dev/null | wc -l | tr -d ' ')
+  TARGET=$((8 - PENDING_COUNT))  # stock 8 articles for ~24h of publishing
+  [ "$TARGET" -lt 0 ] && TARGET=0
+  [ "$REMAINING" -lt "$TARGET" ] && TARGET=$REMAINING
 
-  if [ "$REMAINING" -le 0 ]; then
-    echo "$(TZ=Asia/Shanghai date '+%H:%M'): Queue empty, nothing to generate" >> "$LOG"
-  else
-    # Generate article via Hermes — capture HTML output
+  if [ "$TARGET" -gt 0 ]; then
+    log "Building buffer: need $TARGET more (pending=$PENDING_COUNT, queue=$REMAINING)"
+  fi
+
+  while [ "$TARGET" -gt 0 ] && [ "$REMAINING" -gt 0 ]; do
+    # Generate article — save to pending, no deploy yet
     hermes chat --profile brothcalm -Q -q "
 You are in ~/.hermes/profiles/brothcalm/workspace.
 
-IMPORTANT: Do NOT use publish-article.py. Do NOT run git commands. Do NOT commit anything.
-
 STEP 1: Check queue with 'python3 .cron/publish-article.py remaining'.
-If remaining < 5, refill: generate 15 new article ideas (title/path/type/read_time/keywords), echo as JSON to stdout and pipe to 'python3 .cron/publish-article.py add'.
+If remaining < 5, refill: generate 15 new article ideas (title/path/type/read_time/keywords), echo as JSON and pipe to 'python3 .cron/publish-article.py add'.
 
 STEP 2: Read next item with 'python3 .cron/publish-article.py next'.
-Extract the path, type label, read time.
-
-STEP 3: Generate the COMPLETE article HTML using article-template.html as template.
+Generate complete HTML using article-template.html as template.
 Replace ALL placeholders.
-IMPORTANT: Write the file to DISK using write_file or terminal: cat > /tmp/brothcalm-built.html << 'HEREDOC_EOF'
-...full html...
-HEREDOC_EOF
 
-After writing, verify: 'head -3 /tmp/brothcalm-built.html' shows the doctype.
-Then print: FILE_WRITTEN
+Write the file to /tmp/brothcalm-article.html using the terminal or write_file tool.
+Then run: python3 .cron/publish-article.py stage
+Then print FILE_READY.
 " --skills brothcalm-content-production 2>&1 >> "$LOG"
 
-    # Check if article was written to tmp
-    if [ -f /tmp/brothcalm-built.html ]; then
-      # Get slug from queue
+    if [ -f /tmp/brothcalm-article.html ]; then
       SLUG=$(python3 -c "
 import json
 q = json.load(open('.content-queue.json'))
 a = q['articles'][q['index']]
 print(a['path'].strip('/').replace('/', '-'))
 " 2>/dev/null)
-      
-      # Copy to pending (raw HTML, no git yet)
-      cp /tmp/brothcalm-built.html "$PENDING/${SLUG}.html"
-      echo "$(TZ=Asia/Shanghai date '+%H:%M'): Staged: $SLUG" >> "$LOG"
-      rm -f /tmp/brothcalm-built.html
+      cp /tmp/brothcalm-article.html "$PENDING/${SLUG}.html"
+      rm -f /tmp/brothcalm-article.html
+      log "Staged: $SLUG (will publish on next available tick)"
+      REMAINING=$((REMAINING - 1))
+      TARGET=$((TARGET - 1))
     else
-      echo "$(TZ=Asia/Shanghai date '+%H:%M'): WARNING: No article file generated" >> "$LOG"
+      log "WARNING: /tmp/brothcalm-article.html not found after hermes chat"
     fi
+  done
+fi
+
+# ─── Publish 1 from pending (every tick, skip if just generated) ───
+FIRST=$(ls -t "$PENDING"/*.html 2>/dev/null | head -1)
+if [ -n "$FIRST" ] && [ "$IN_WINDOW" = false ]; then
+  log "Publishing: $(basename "$FIRST")"
+  BROTHCALM_STAGE_ONLY=1 python3 .cron/publish-article.py publish "$FIRST" 2>&1 >> "$LOG"
+  rm -f "$FIRST"
+  git push 2>&1 >> "$LOG"
+  log "Published + pushed"
+else
+  if [ -z "$FIRST" ]; then
+    log "No pending articles to deploy"
   fi
 fi
 
-# ────────────────────────────────────────────
-# STEP 2: Publish 1 article from staging
-# ────────────────────────────────────────────
-FIRST=$(ls -t "$PENDING"/*.html 2>/dev/null | head -1)
-
-if [ -n "$FIRST" ]; then
-  echo "$(TZ=Asia/Shanghai date '+%H:%M'): Deploying $(basename "$FIRST")" >> "$LOG"
-  
-  # Publish using pipeline (now skips push with BROTHCALM_STAGE_ONLY=1)
-  BROTHCALM_STAGE_ONLY=1 python3 .cron/publish-article.py publish "$FIRST" 2>&1 >> "$LOG"
-  
-  # Remove from pending
-  rm -f "$FIRST"
-  
-  # Push the single commit
-  git push 2>&1 >> "$LOG"
-  echo "$(TZ=Asia/Shanghai date '+%H:%M'): Deployed + pushed" >> "$LOG"
-else
-  echo "$(TZ=Asia/Shanghai date '+%H:%M'): No pending articles to deploy" >> "$LOG"
-fi
-
-echo "$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S'): Tick finished" >> "$LOG"
+log "Tick finished"
