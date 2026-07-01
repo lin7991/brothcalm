@@ -251,19 +251,6 @@
       ]
     },
     {
-      "title": "Goji and Jujube Tea \u2014 Sweet Vitality",
-      "path": "/teas/goji-jujube-tea/",
-      "type": "tea",
-      "read_time": 5,
-      "keywords": [
-        "goji jujube tea",
-        "blood tonic",
-        "qi tonic",
-        "energy tea",
-        "TCM"
-      ]
-    },
-    {
       "title": "Golden Milk (Turmeric Latte) \u2014 Anti-Inflammatory Comfort",
       "path": "/teas/turmeric-latte/",
       "type": "tea",
@@ -289,49 +276,6 @@
         "blood cleanser",
         "TCM",
         "skin health"
-      ]
-    },
-    {
-      "title": "Congee (\u7ca5) \u2014 The Ultimate Healing Porridge",
-      "path": "/recipes/congee/",
-      "type": "recipe",
-      "read_time": 8,
-      "keywords": [
-        "congee",
-        "jook",
-        "rice porridge",
-        "healing food",
-        "TCM",
-        "digestion",
-        "spleen"
-      ]
-    },
-    {
-      "title": "Herbal Chicken Soup (\u836f\u81b3\u9e21\u6c64) \u2014 Nourish Your Qi",
-      "path": "/recipes/chicken-soup/",
-      "type": "recipe",
-      "read_time": 8,
-      "keywords": [
-        "chicken soup",
-        "herbal chicken",
-        "qi tonic",
-        "TCM",
-        "immune support",
-        "recovery"
-      ]
-    },
-    {
-      "title": "Bone Broth \u2014 The Collagen-Rich Restorative",
-      "path": "/recipes/bone-broth/",
-      "type": "recipe",
-      "read_time": 7,
-      "keywords": [
-        "bone broth",
-        "collagen",
-        "kidney tonic",
-        "TCM",
-        "joint health",
-        "gut healing"
       ]
     },
     {
@@ -389,52 +333,7 @@
         "aging",
         "sexual vitality"
       ]
-    },
-    {
-      "title": "Foods for Anxiety \u2014 Calm Your Shen Through Diet",
-      "path": "/food-therapy/anxiety-food/",
-      "type": "food-therapy",
-      "read_time": 8,
-      "keywords": [
-        "anxiety foods",
-        "calming diet",
-        "shen",
-        "TCM",
-        "stress",
-        "heart yin"
-      ]
-    },
-    {
-      "title": "The Five Flavors (\u4e94\u5473) \u2014 A Complete Guide",
-      "path": "/five-flavors/",
-      "type": "theory",
-      "read_time": 10,
-      "keywords": [
-        "five flavors",
-        "five tastes",
-        "wu wei",
-        "TCM theory",
-        "sour",
-        "bitter",
-        "sweet",
-        "pungent",
-        "salty"
-      ]
-    },
-    {
-      "title": "Spring Detox \u2014 Seasonal Eating in TCM",
-      "path": "/spring-detox/",
-      "type": "food-therapy",
-      "read_time": 7,
-      "keywords": [
-        "spring detox",
-        "seasonal eating",
-        "liver",
-        "TCM",
-        "spring cleanse",
-        "detox diet"
-      ]
     }
   ],
-  "index": 16
+  "index": 17
 }
