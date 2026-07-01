@@ -9,3 +9,8 @@ node_modules/
 .env
 *.pyc
 __pycache__/
+
+# Publish logs
+.cron/publish.log
+.cron/launchd.*.log
+.cron/reports/
