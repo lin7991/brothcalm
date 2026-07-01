@@ -338,13 +338,15 @@ body {
   font-size: 1rem;
 }
 
-.article-body .disclaimer-banner {
-  background: var(--brown-50);
-  border: 1px solid var(--brown-200);
-  border-radius: var(--radius-sm);
-  padding: 1rem;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+.article-body .disclaimer-banner,
+.article-header .disclaimer-banner {
+  background: #FFF8E1;
+  border: 1px solid #FFF3CD;
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  font-size: 0.8rem;
+  color: #856404;
+  margin-bottom: 1.5rem;
   line-height: 1.5;
 }
 
