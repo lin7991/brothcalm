@@ -86,7 +86,11 @@ def publish_article(filepath):
     print(f"   → {target_file}")
 
     # Git operations
-    os.system(f"cd {SITE_ROOT} && git add -A && git diff --cached --quiet || (git commit -m 'Publish: {target_path}' && git push)")
+    git_add = f"cd {SITE_ROOT} && git add -A && git diff --cached --quiet || git commit -m 'Publish: {target_path}'"
+    os.system(git_add)
+    # Push separately unless BROTHCALM_STAGE_ONLY=1
+    if not os.environ.get("BROTHCALM_STAGE_ONLY"):
+        os.system(f"cd {SITE_ROOT} && git push")
 
     remaining = len(q["articles"]) - q["index"]
     print(f"   Queue remaining: {remaining}")
