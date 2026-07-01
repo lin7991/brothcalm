@@ -333,7 +333,233 @@
         "aging",
         "sexual vitality"
       ]
+    },
+    {
+      "title": "Traditional Congee (Jook) \u2014 The Ultimate Healing Porridge",
+      "path": "/recipes/congee/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "congee",
+        "jook",
+        "healing porridge",
+        "TCM",
+        "digestion",
+        "rice porridge",
+        "comfort food"
+      ]
+    },
+    {
+      "title": "Herbal Chicken Soup \u2014 Nourishing Qi and Blood the TCM Way",
+      "path": "/recipes/herbal-chicken-soup/",
+      "type": "recipe",
+      "read_time": 9,
+      "keywords": [
+        "chicken soup",
+        "herbal soup",
+        "qi tonic",
+        "blood nourishing",
+        "TCM",
+        "astragalus",
+        "winter"
+      ]
+    },
+    {
+      "title": "Slow-Cooked Bone Broth \u2014 Collagen-Rich Healing Elixir",
+      "path": "/recipes/bone-broth/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "bone broth",
+        "collagen",
+        "warming",
+        "TCM",
+        "kidney tonic",
+        "joint health",
+        "gut health"
+      ]
+    },
+    {
+      "title": "Steamed Eggs with Goji Berries \u2014 A Simple Nourishing Dish",
+      "path": "/recipes/goji-steamed-eggs/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "steamed eggs",
+        "goji berries",
+        "easy recipe",
+        "TCM",
+        "nourishing",
+        "breakfast"
+      ]
+    },
+    {
+      "title": "Red Date and Goji Berry Tea \u2014 Daily Qi Support",
+      "path": "/teas/goji-jujube-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "red date tea",
+        "goji berry tea",
+        "qi tonic",
+        "TCM",
+        "daily tea",
+        "energy",
+        "blood nourishing"
+      ]
+    },
+    {
+      "title": "Licorice and Ginger Tea \u2014 Soothe the Stomach Naturally",
+      "path": "/teas/licorice-ginger-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "licorice tea",
+        "ginger tea",
+        "stomach soothing",
+        "TCM",
+        "digestion",
+        "herbal tea",
+        "nausea"
+      ]
+    },
+    {
+      "title": "Rose Petal Tea \u2014 Moving Stagnant Liver Qi",
+      "path": "/teas/rose-petal-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "rose tea",
+        "liver qi stagnation",
+        "mood",
+        "TCM",
+        "hormonal balance",
+        "calming tea"
+      ]
+    },
+    {
+      "title": "Cardamom (\u7802\u4ec1) \u2014 The Digestive Spice in Chinese Medicine",
+      "path": "/ingredients/cardamom/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "cardamom",
+        "sha ren",
+        "digestion",
+        "dampness",
+        "TCM",
+        "warming spice",
+        "spleen"
+      ]
+    },
+    {
+      "title": "Angelica Sinensis (Dang Gui) \u2014 The Female Ginseng",
+      "path": "/ingredients/dang-gui/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "dang gui",
+        "angelica sinensis",
+        "female tonic",
+        "blood tonic",
+        "TCM",
+        "menstruation",
+        "gynecological"
+      ]
+    },
+    {
+      "title": "Poria (Fu Ling) \u2014 The Dampness-Draining Mushroom",
+      "path": "/ingredients/poria/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "poria",
+        "fu ling",
+        "dampness",
+        "spleen",
+        "TCM",
+        "digestion",
+        "urinary health"
+      ]
+    },
+    {
+      "title": "Hawthorn Berry (Shan Zha) \u2014 The Digestion Helper",
+      "path": "/ingredients/hawthorn/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "hawthorn berry",
+        "shan zha",
+        "digestion",
+        "blood circulation",
+        "TCM",
+        "heart health",
+        "food stagnation"
+      ]
+    },
+    {
+      "title": "Foods for Calming Anxiety \u2014 Nourishing the Shen",
+      "path": "/food-therapy/anxiety/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "anxiety",
+        "calming foods",
+        "shen",
+        "TCM",
+        "stress relief",
+        "nutrition",
+        "sleep"
+      ]
+    },
+    {
+      "title": "Spring Detox Foods \u2014 Cleansing with the Season",
+      "path": "/foods/spring-detox/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "spring detox",
+        "seasonal eating",
+        "liver cleanse",
+        "TCM",
+        "detox foods",
+        "spring diet"
+      ]
+    },
+    {
+      "title": "The Five Flavors (\u4e94\u5473) in Chinese Food Therapy",
+      "path": "/theory/five-flavors/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "five flavors",
+        "wu wei",
+        "TCM",
+        "food therapy",
+        "sour",
+        "bitter",
+        "sweet",
+        "pungent",
+        "salty"
+      ]
+    },
+    {
+      "title": "Seasonal Eating (5-Element) \u2014 Aligning Your Diet with Nature",
+      "path": "/theory/seasonal-eating/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "seasonal eating",
+        "five elements",
+        "TCM",
+        "diet",
+        "spring",
+        "summer",
+        "autumn",
+        "winter",
+        "balance"
+      ]
     }
   ],
-  "index": 19
+  "index": 20
 }
