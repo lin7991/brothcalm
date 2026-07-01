@@ -1,21 +1,30 @@
 #!/bin/bash
 # BrothCalm auto-publisher — fired by launchd every 3 hours
-# Uses hermes chat in one-shot mode to generate and publish content
+# Content creation restricted to Beijing time 02:00-07:00
+# Queue refill (< 5) also only during content window
 
 export HERMES_HOME="$HOME/.hermes"
 export PATH="/usr/local/bin:/opt/homebrew/bin:$HOME/.local/bin:$PATH"
 
 cd "$HOME/.hermes/profiles/brothcalm/workspace" || exit 1
 
-# Log start
-echo "$(date): Auto-publish tick started" >> "$HOME/.hermes/profiles/brothcalm/workspace/.cron/publish.log"
+LOG="$HOME/.hermes/profiles/brothcalm/workspace/.cron/publish.log"
+echo "$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S'): Tick started" >> "$LOG"
 
-# Check remaining — if 0, still run Hermes to refill
-REMAINING=$(python3 .cron/publish-article.py remaining 2>/dev/null)
-echo "$(date): Queue has $REMAINING items" >> "$HOME/.hermes/profiles/brothcalm/workspace/.cron/publish.log"
+# Check current hour (Beijing time)
+HOUR=$(TZ=Asia/Shanghai date '+%H')
+HOUR=${HOUR#0}  # strip leading zero, so 08 → 8
 
-# Run Hermes in one-shot to refill if needed, then publish
-hermes chat --profile brothcalm -Q -q "
+# Content window: 02:00 - 06:59 Beijing time
+if [ "$HOUR" -ge 2 ] && [ "$HOUR" -lt 7 ]; then
+  echo "$(TZ=Asia/Shanghai date '+%H:%M'): In content window (02:00-07:00 Beijing)" >> "$LOG"
+
+  # Check queue
+  REMAINING=$(python3 .cron/publish-article.py remaining 2>/dev/null)
+  echo "$(TZ=Asia/Shanghai date '+%H:%M'): Queue has $REMAINING items" >> "$LOG"
+
+  # Run Hermes to refill (< 5) and publish
+  hermes chat --profile brothcalm -Q -q "
 You are in ~/.hermes/profiles/brothcalm/workspace.
 
 STEP 1: Check queue with 'python3 .cron/publish-article.py remaining'.
@@ -30,6 +39,11 @@ Write to /tmp/brothcalm-article.html.
 IMPORTANT: Replace ALL template placeholders (<!--TITLE-->, <!--META_DESC-->, <!--CANONICAL_PATH-->, <!--OG_TITLE-->, <!--OG_DESC-->, <!--H1-->, <!--TYPE_LABEL-->, <!--READ_TIME-->, <!--CONTENT-->, <!--FAQ_SCHEMA-->).
 Run 'python3 .cron/publish-article.py publish /tmp/brothcalm-article.html'.
 Verify the page was committed with 'git log --oneline -1'.
-" --skills brothcalm-content-production 2>&1 >> "$HOME/.hermes/profiles/brothcalm/workspace/.cron/publish.log"
+" --skills brothcalm-content-production 2>&1 >> "$LOG"
 
-echo "$(date): Auto-publish run complete" >> "$HOME/.hermes/profiles/brothcalm/workspace/.cron/publish.log"
+  echo "$(TZ=Asia/Shanghai date '+%H:%M'): Content window run complete" >> "$LOG"
+else
+  echo "$(TZ=Asia/Shanghai date '+%H:%M'): Outside content window — sleeping. Next window: 02:00-07:00 Beijing" >> "$LOG"
+fi
+
+echo "$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S'): Tick finished" >> "$LOG"
