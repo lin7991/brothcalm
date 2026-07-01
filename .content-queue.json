@@ -1,0 +1,440 @@
+{
+  "articles": [
+    {
+      "title": "Goji Berries (\u67b8\u675e) \u2014 The Fruit of Longevity",
+      "path": "/ingredients/goji-berries/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "goji berries",
+        "gou qi zi",
+        "wolfberry",
+        "TCM",
+        "liver tonic",
+        "eye health",
+        "longevity"
+      ]
+    },
+    {
+      "title": "Jujube Dates (\u7ea2\u67a3) \u2014 The Sweetest Qi Tonic",
+      "path": "/ingredients/jujube-dates/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "jujube",
+        "hong zao",
+        "red dates",
+        "TCM",
+        "qi tonic",
+        "blood nourishing",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Ginger (\u59dc) \u2014 The Warming Healer",
+      "path": "/ingredients/ginger/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "ginger",
+        "sheng jiang",
+        "warming",
+        "digestion",
+        "TCM",
+        "cold pattern",
+        "nausea"
+      ]
+    },
+    {
+      "title": "Astragalus (\u9ec4\u82aa) \u2014 The Energy Root",
+      "path": "/ingredients/astragalus/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "astragalus",
+        "huang qi",
+        "wei qi",
+        "immune support",
+        "energy",
+        "TCM",
+        "qi deficiency"
+      ]
+    },
+    {
+      "title": "Cinnamon (\u8089\u6842) \u2014 Warmth for the Kidneys",
+      "path": "/ingredients/cinnamon/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "cinnamon",
+        "rou gui",
+        "warming spice",
+        "kidney yang",
+        "TCM",
+        "circulation",
+        "blood sugar"
+      ]
+    },
+    {
+      "title": "Rehmannia (\u5730\u9ec4) \u2014 The Yin Nourisher",
+      "path": "/ingredients/rehmannia/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "rehmannia",
+        "di huang",
+        "yin tonic",
+        "blood tonic",
+        "TCM",
+        "kidney yin",
+        "adrenal"
+      ]
+    },
+    {
+      "title": "Chrysanthemum (\u83ca\u82b1) \u2014 The Cooling Flower",
+      "path": "/ingredients/chrysanthemum/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "chrysanthemum",
+        "ju hua",
+        "cooling",
+        "liver fire",
+        "eye health",
+        "TCM",
+        "headache"
+      ]
+    },
+    {
+      "title": "Medicinal Mushrooms \u2014 The Immune Harmonizers",
+      "path": "/ingredients/mushrooms/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "medicinal mushrooms",
+        "reishi",
+        "lingzhi",
+        "shiitake",
+        "TCM",
+        "immune",
+        "qi tonic"
+      ]
+    },
+    {
+      "title": "Licorice (\u7518\u8349) \u2014 The Great Harmonizer",
+      "path": "/ingredients/licorice/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "licorice",
+        "gan cao",
+        "spleen qi",
+        "TCM",
+        "digestion",
+        "adrenal",
+        "harmonizing"
+      ]
+    },
+    {
+      "title": "Schisandra (\u4e94\u5473\u5b50) \u2014 The Five-Flavor Berry",
+      "path": "/ingredients/schisandra/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "schisandra",
+        "wu wei zi",
+        "five flavor",
+        "adaptogen",
+        "liver",
+        "TCM",
+        "energy"
+      ]
+    },
+    {
+      "title": "Calming Tea \u2014 Soothe Your Spirit the TCM Way",
+      "path": "/teas/calming-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "calming tea",
+        "anxiety tea",
+        "TCM",
+        "shen calming",
+        "sleep",
+        "herbal tea",
+        "jujube"
+      ]
+    },
+    {
+      "title": "Jasmine Tea \u2014 The Gentle Mood Lifter",
+      "path": "/teas/jasmine-teas/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "jasmine tea",
+        "mood",
+        "liver qi",
+        "stagnation",
+        "TCM",
+        "aromatherapy",
+        "green tea"
+      ]
+    },
+    {
+      "title": "Pu-erh Tea \u2014 Digestion and Detox",
+      "path": "/teas/pu-erh/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "pu-erh",
+        "pu'er tea",
+        "digestion",
+        "detox",
+        "TCM",
+        "dampness",
+        "weight management"
+      ]
+    },
+    {
+      "title": "Chrysanthemum Tea \u2014 The Cooling Cup",
+      "path": "/teas/chrysanthemum-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "chrysanthemum tea",
+        "cooling herbal tea",
+        "liver heat",
+        "eye strain",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Ginger Tea \u2014 Warmth in a Cup",
+      "path": "/teas/ginger-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "ginger tea",
+        "warming tea",
+        "digestion",
+        "cold pattern",
+        "nausea",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Lemon and Honey \u2014 Simple Immune Support",
+      "path": "/teas/lemon-honey/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "lemon honey",
+        "immune tea",
+        "cooling",
+        "TCM",
+        "sore throat",
+        "vitamin C"
+      ]
+    },
+    {
+      "title": "Peppermint Tea \u2014 The Cool Refresher",
+      "path": "/teas/peppermint/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "peppermint tea",
+        "cooling",
+        "digestion",
+        "headache relief",
+        "TCM",
+        "liver qi"
+      ]
+    },
+    {
+      "title": "Goji and Jujube Tea \u2014 Sweet Vitality",
+      "path": "/teas/goji-jujube-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "goji jujube tea",
+        "blood tonic",
+        "qi tonic",
+        "energy tea",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Golden Milk (Turmeric Latte) \u2014 Anti-Inflammatory Comfort",
+      "path": "/teas/turmeric-latte/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "golden milk",
+        "turmeric latte",
+        "anti-inflammatory",
+        "TCM",
+        "warming",
+        "blood circulation"
+      ]
+    },
+    {
+      "title": "Burdock Root Tea \u2014 The Gentle Cleanser",
+      "path": "/teas/burdock-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "burdock root tea",
+        "niu bang",
+        "detox",
+        "blood cleanser",
+        "TCM",
+        "skin health"
+      ]
+    },
+    {
+      "title": "Congee (\u7ca5) \u2014 The Ultimate Healing Porridge",
+      "path": "/recipes/congee/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "congee",
+        "jook",
+        "rice porridge",
+        "healing food",
+        "TCM",
+        "digestion",
+        "spleen"
+      ]
+    },
+    {
+      "title": "Herbal Chicken Soup (\u836f\u81b3\u9e21\u6c64) \u2014 Nourish Your Qi",
+      "path": "/recipes/chicken-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "chicken soup",
+        "herbal chicken",
+        "qi tonic",
+        "TCM",
+        "immune support",
+        "recovery"
+      ]
+    },
+    {
+      "title": "Bone Broth \u2014 The Collagen-Rich Restorative",
+      "path": "/recipes/bone-broth/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "bone broth",
+        "collagen",
+        "kidney tonic",
+        "TCM",
+        "joint health",
+        "gut healing"
+      ]
+    },
+    {
+      "title": "Iron-Rich Foods for Blood Deficiency (\u8d2b\u8840)",
+      "path": "/food-therapy/anemia/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "anemia",
+        "blood deficiency",
+        "iron rich foods",
+        "TCM",
+        "nourishing blood",
+        "pale complexion"
+      ]
+    },
+    {
+      "title": "Cooling Foods for Internal Heat (\u6e05\u70ed)",
+      "path": "/foods/clear-heat/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "cooling foods",
+        "clear heat",
+        "internal heat",
+        "TCM",
+        "acne",
+        "inflammation"
+      ]
+    },
+    {
+      "title": "Warming Foods for Cold Patterns (\u6e29\u8865)",
+      "path": "/foods/warm-nourishing/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "warming foods",
+        "yang tonic",
+        "cold hands feet",
+        "TCM",
+        "winter diet",
+        "circulation"
+      ]
+    },
+    {
+      "title": "Kidney Tonic Foods (\u8865\u80be) in Chinese Medicine",
+      "path": "/foods/kidney-tonic/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "kidney tonic",
+        "shen",
+        "TCM",
+        "back pain",
+        "aging",
+        "sexual vitality"
+      ]
+    },
+    {
+      "title": "Foods for Anxiety \u2014 Calm Your Shen Through Diet",
+      "path": "/food-therapy/anxiety-food/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "anxiety foods",
+        "calming diet",
+        "shen",
+        "TCM",
+        "stress",
+        "heart yin"
+      ]
+    },
+    {
+      "title": "The Five Flavors (\u4e94\u5473) \u2014 A Complete Guide",
+      "path": "/five-flavors/",
+      "type": "theory",
+      "read_time": 10,
+      "keywords": [
+        "five flavors",
+        "five tastes",
+        "wu wei",
+        "TCM theory",
+        "sour",
+        "bitter",
+        "sweet",
+        "pungent",
+        "salty"
+      ]
+    },
+    {
+      "title": "Spring Detox \u2014 Seasonal Eating in TCM",
+      "path": "/spring-detox/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "spring detox",
+        "seasonal eating",
+        "liver",
+        "TCM",
+        "spring cleanse",
+        "detox diet"
+      ]
+    }
+  ],
+  "index": 1
+}
