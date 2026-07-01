@@ -340,14 +340,17 @@ body {
 
 .article-body .disclaimer-banner,
 .article-header .disclaimer-banner {
-  background: #FFF8E1;
-  border: 1px solid #FFF3CD;
-  border-radius: var(--radius);
-  padding: 1rem 1.25rem;
-  font-size: 0.8rem;
-  color: #856404;
+  background: #FFF3E0;
+  border-left: 4px solid #E65100;
+  border-top: 1px solid #FFE0B2;
+  border-right: 1px solid #FFE0B2;
+  border-bottom: 1px solid #FFE0B2;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 0.8rem 1.25rem;
+  font-size: 0.75rem;
+  color: #BF360C;
   margin-bottom: 1.5rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* ─── Affiliate / CTA Box ─── */
