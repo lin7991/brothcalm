@@ -559,7 +559,231 @@
         "winter",
         "balance"
       ]
+    },
+    {
+      "title": "Goji Berry and Chrysanthemum Tea \u2014 The Classic Liver Cooling Brew",
+      "path": "/teas/goji-chrysanthemum-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "goji berry",
+        "chrysanthemum",
+        "liver cooling",
+        "eye health",
+        "TCM",
+        "herbal tea",
+        "computer strain"
+      ]
+    },
+    {
+      "title": "Codonopsis (Dang Shen) \u2014 The Gentle Qi Tonic Alternative",
+      "path": "/ingredients/codonopsis/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "codonopsis",
+        "dang shen",
+        "qi tonic",
+        "adaptogen",
+        "TCM",
+        "energy",
+        "gentle tonic"
+      ]
+    },
+    {
+      "title": "Lotus Seed (Lian Zi) \u2014 Calming the Shen and Strengthening the Spleen",
+      "path": "/ingredients/lotus-seed/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "lotus seed",
+        "lian zi",
+        "spleen tonic",
+        "calming",
+        "TCM",
+        "shen",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Fo-Ti (He Shou Wu) \u2014 The Longevity Herb for Hair and Vitality",
+      "path": "/ingredients/fo-ti/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "fo-ti",
+        "he shou wu",
+        "longevity",
+        "hair health",
+        "TCM",
+        "kidney tonic",
+        "anti-aging"
+      ]
+    },
+    {
+      "title": "Red Date and Ginger Tea \u2014 Warming Qi for Cold Days",
+      "path": "/teas/red-date-ginger-tea/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "red date tea",
+        "ginger tea",
+        "warming",
+        "qi tonic",
+        "TCM",
+        "cold pattern",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Barley Tea (Da Mai Cha) \u2014 Cooling and Drying for Damp Heat",
+      "path": "/teas/barley-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "barley tea",
+        "da mai cha",
+        "cooling",
+        "damp heat",
+        "TCM",
+        "digestion",
+        "summer drink"
+      ]
+    },
+    {
+      "title": "Suan Mei Tang (Sour Plum Drink) \u2014 The Classic Summer Qi Tonic",
+      "path": "/teas/suan-mei-tang/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "suan mei tang",
+        "sour plum drink",
+        "qi tonic",
+        "summer",
+        "TCM",
+        "cooling",
+        "thirst"
+      ]
+    },
+    {
+      "title": "Chicken with Astragalus and Goji \u2014 The Ultimate Qi-Building Bowl",
+      "path": "/recipes/astragalus-chicken/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "astragalus chicken",
+        "qi tonic soup",
+        "TCM recipe",
+        "immune boost",
+        "winter soup"
+      ]
+    },
+    {
+      "title": "Sweet Potato and Ginger Congee \u2014 Warming the Spleen and Stomach",
+      "path": "/recipes/sweet-potato-congee/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "sweet potato congee",
+        "spleen tonic",
+        "warming",
+        "TCM",
+        "breakfast",
+        "comfort food"
+      ]
+    },
+    {
+      "title": "Pear and Rock Sugar Stew with Fritillaria \u2014 Soothing Dry Coughs",
+      "path": "/recipes/pear-stew/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "pear stew",
+        "rock sugar",
+        "fritillaria",
+        "dry cough",
+        "TCM",
+        "lung tonic",
+        "autumn"
+      ]
+    },
+    {
+      "title": "Black Sesame Porridge \u2014 Nourishing Blood and Hair",
+      "path": "/recipes/black-sesame-porridge/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "black sesame",
+        "blood tonic",
+        "hair health",
+        "TCM",
+        "porridge",
+        "kidney tonic"
+      ]
+    },
+    {
+      "title": "Foods for Dry Skin \u2014 Internal Moisture from Your Kitchen",
+      "path": "/food-therapy/dry-skin/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "dry skin",
+        "yin deficiency",
+        "moisture",
+        "TCM",
+        "skin health",
+        "lung tonic",
+        "food therapy"
+      ]
+    },
+    {
+      "title": "Foods for Better Sleep \u2014 Eating Your Way to Restful Nights",
+      "path": "/food-therapy/sleep/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "sleep foods",
+        "insomnia",
+        "shen calming",
+        "TCM",
+        "melatonin",
+        "herbal tea",
+        "bedtime"
+      ]
+    },
+    {
+      "title": "Food Energetics \u2014 Understanding Hot and Cold in Chinese Medicine",
+      "path": "/theory/food-energetics/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "food energetics",
+        "hot cold",
+        "yin yang",
+        "TCM",
+        "thermal nature",
+        "constitution",
+        "diet"
+      ]
+    },
+    {
+      "title": "The Six Tastes in TCM \u2014 Beyond the Five Flavors",
+      "path": "/theory/six-tastes/",
+      "type": "theory",
+      "read_time": 7,
+      "keywords": [
+        "six tastes",
+        "TCM flavors",
+        "food therapy",
+        "five flavors",
+        "sweet",
+        "sour",
+        "bitter",
+        "pungent",
+        "salty",
+        "bland"
+      ]
     }
   ],
-  "index": 20
+  "index": 42
 }
