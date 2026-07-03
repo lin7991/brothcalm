@@ -783,7 +783,229 @@
         "salty",
         "bland"
       ]
+    },
+    {
+      "title": "Tangerine Peel (Chen Pi) \u2014 The Aged Citrus for Digestion",
+      "path": "/ingredients/chen-pi/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "tangerine peel",
+        "chen pi",
+        "digestion",
+        "dampness",
+        "TCM",
+        "spleen",
+        "qi stagnation"
+      ]
+    },
+    {
+      "title": "Chinese Yam (Shan Yao) \u2014 The Gentle Spleen and Lung Tonic",
+      "path": "/ingredients/chinese-yam/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "chinese yam",
+        "shan yao",
+        "spleen tonic",
+        "lung tonic",
+        "TCM",
+        "digestion",
+        "adaptogen"
+      ]
+    },
+    {
+      "title": "Polygonatum (Yu Zhu) \u2014 The Moistening Yin Tonic",
+      "path": "/ingredients/yu-zhu/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "polygonatum",
+        "yu zhu",
+        "yin tonic",
+        "lung",
+        "TCM",
+        "skin health",
+        "dryness"
+      ]
+    },
+    {
+      "title": "Honeysuckle (Jin Yin Hua) \u2014 The Cooling Detox Flower",
+      "path": "/ingredients/honeysuckle/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "honeysuckle",
+        "jin yin hua",
+        "cooling",
+        "detox",
+        "TCM",
+        "heat",
+        "sore throat"
+      ]
+    },
+    {
+      "title": "Honeysuckle Tea \u2014 Cooling Relief for Summer Heat",
+      "path": "/teas/honeysuckle-tea/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "honeysuckle tea",
+        "cooling tea",
+        "summer heat",
+        "detox",
+        "TCM",
+        "herbal tea"
+      ]
+    },
+    {
+      "title": "Lotus Leaf Tea \u2014 The Summer Detox Brew",
+      "path": "/teas/lotus-leaf-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "lotus leaf tea",
+        "he ye",
+        "summer drink",
+        "cooling",
+        "TCM",
+        "damp heat",
+        "detox"
+      ]
+    },
+    {
+      "title": "Ginseng Tea \u2014 Restoring Qi the Traditional Way",
+      "path": "/teas/ginseng-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "ginseng tea",
+        "ren shen",
+        "qi tonic",
+        "energy",
+        "TCM",
+        "adaptogen"
+      ]
+    },
+    {
+      "title": "Mung Bean Soup (Lu Dou Tang) \u2014 The Ultimate Cooling Detox",
+      "path": "/recipes/mung-bean-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "mung bean soup",
+        "lu dou tang",
+        "cooling",
+        "detox",
+        "TCM",
+        "summer",
+        "heat stroke"
+      ]
+    },
+    {
+      "title": "Tofu and Vegetable Nourishing Soup \u2014 Simple Spleen Support",
+      "path": "/recipes/tofu-vegetable-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "tofu soup",
+        "vegetable soup",
+        "spleen tonic",
+        "TCM",
+        "light meal",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Pork Trotter and Peanut Soup \u2014 Collagen for Joints and Skin",
+      "path": "/recipes/pork-trotter-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "pork trotter",
+        "peanut soup",
+        "collagen",
+        "joint health",
+        "TCM",
+        "kidney tonic",
+        "skin"
+      ]
+    },
+    {
+      "title": "Immune-Building Foods \u2014 Supporting Wei Qi Naturally",
+      "path": "/food-therapy/immune-support/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "immune support",
+        "wei qi",
+        "TCM",
+        "defensive qi",
+        "food therapy",
+        "lung tonic",
+        "cold season"
+      ]
+    },
+    {
+      "title": "Foods for Spleen Qi Deficiency \u2014 Restoring Your Digestive Fire",
+      "path": "/food-therapy/spleen-qi/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "spleen qi",
+        "digestive health",
+        "TCM",
+        "food therapy",
+        "bloating",
+        "fatigue",
+        "dampness"
+      ]
+    },
+    {
+      "title": "Postpartum Nourishment \u2014 Traditional Foods for Recovering Strength",
+      "path": "/food-therapy/postpartum/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "postpartum",
+        "confinement",
+        "TCM",
+        "blood building",
+        "nourishing",
+        "motherhood",
+        "recovery"
+      ]
+    },
+    {
+      "title": "The Spleen in Chinese Medicine \u2014 Why Digestion Is the Root of Health",
+      "path": "/theory/spleen-tcm/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "spleen",
+        "TCM theory",
+        "digestion",
+        "pi",
+        "food therapy",
+        "qi",
+        "dampness"
+      ]
+    },
+    {
+      "title": "Cordyceps (Dong Chong Xia Cao) \u2014 The Lung and Kidney Tonic",
+      "path": "/ingredients/cordyceps/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "cordyceps",
+        "dong chong xia cao",
+        "lung tonic",
+        "kidney tonic",
+        "TCM",
+        "energy",
+        "respiratory"
+      ]
     }
   ],
-  "index": 47
+  "index": 51
 }
