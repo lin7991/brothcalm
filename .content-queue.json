@@ -1005,7 +1005,202 @@
         "energy",
         "respiratory"
       ]
+    },
+    {
+      "title": "Astragalus (Huang Qi) \u2014 The Immune-Building Root in TCM",
+      "path": "/ingredients/astragalus/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "astragalus",
+        "huang qi",
+        "immune support",
+        "TCM herbs",
+        "qi tonic"
+      ]
+    },
+    {
+      "title": "Schisandra Berry (Wu Wei Zi) \u2014 The Five-Flavor Adaptogen",
+      "path": "/ingredients/schisandra/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "schisandra",
+        "wu wei zi",
+        "adaptogen",
+        "liver support",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Rehmannia (Shu Di Huang) \u2014 The Blood-Nourishing Herb",
+      "path": "/ingredients/rehmannia/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "rehmannia",
+        "shu di huang",
+        "blood nourishing",
+        "TCM",
+        "kidney tonic"
+      ]
+    },
+    {
+      "title": "Dang Gui (Angelica Sinensis) \u2014 The Women's Herb in Chinese Medicine",
+      "path": "/ingredients/dang-gui/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "dang gui",
+        "angelica sinensis",
+        "women's health",
+        "blood tonic",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Fennel Seeds (Xiao Hui Xiang) \u2014 Warming Digestive Aid in TCM",
+      "path": "/ingredients/fennel-seeds/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "fennel seeds",
+        "digestion",
+        "warming herb",
+        "TCM",
+        "xiao hui xiang"
+      ]
+    },
+    {
+      "title": "Turmeric Gold Milk (Haldi Doodh) \u2014 A Warming TCM-Inspired Nightcap",
+      "path": "/teas/turmeric-gold-milk/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "turmeric latte",
+        "golden milk",
+        "haldi doodh",
+        "anti-inflammatory",
+        "warming tea"
+      ]
+    },
+    {
+      "title": "Hibiscus Tea (Mei Gui Qie) \u2014 Cooling Sour Tea for Summer Heat",
+      "path": "/teas/hibiscus-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "hibiscus tea",
+        "cooling tea",
+        "summer drink",
+        "sour flavor",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Ginger Scallion Tea (Sheng Jiang Cong Cha) \u2014 The Classic Cold Remedy",
+      "path": "/teas/ginger-scallion-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "ginger scallion tea",
+        "cold remedy",
+        "warming tea",
+        "TCM",
+        "sheng jiang"
+      ]
+    },
+    {
+      "title": "Barley Tea (Da Mai Cha) \u2014 The Digestive Tonic",
+      "path": "/teas/barley-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "barley tea",
+        "digestive health",
+        "summer drink",
+        "TCM",
+        "da mai cha"
+      ]
+    },
+    {
+      "title": "Bone Broth for Joint Health \u2014 A TCM Perspective",
+      "path": "/recipes/bone-broth-joint-health/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "bone broth",
+        "joint health",
+        "collagen",
+        "TCM",
+        "nourishing soup"
+      ]
+    },
+    {
+      "title": "Mung Bean Porridge \u2014 Cooling Summer Congee for Heat Relief",
+      "path": "/recipes/mung-bean-congee/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "mung bean",
+        "congee",
+        "cooling food",
+        "summer heat",
+        "TCM recipe"
+      ]
+    },
+    {
+      "title": "Steamed Pear with Rock Sugar \u2014 A TCM Cough Remedy",
+      "path": "/recipes/steamed-pear-rock-sugar/",
+      "type": "recipe",
+      "read_time": 5,
+      "keywords": [
+        "steamed pear",
+        "rock sugar",
+        "cough remedy",
+        "lung health",
+        "TCM dessert"
+      ]
+    },
+    {
+      "title": "Foods for Blood Deficiency \u2014 Nourishing Your Blood the TCM Way",
+      "path": "/food-therapy/blood-deficiency/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "blood deficiency",
+        "anemia",
+        "nourishing foods",
+        "TCM",
+        "dang gui"
+      ]
+    },
+    {
+      "title": "Foods for Dampness \u2014 Clearing Phlegm and Heavyness with Diet",
+      "path": "/food-therapy/dampness-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "dampness",
+        "phlegm",
+        "digestive health",
+        "TCM diet",
+        "damp clearing"
+      ]
+    },
+    {
+      "title": "The Five Flavors in Chinese Medicine \u2014 Sour, Bitter, Sweet, Pungent, Salty",
+      "path": "/theory/five-flavors/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "five flavors",
+        "wu wei",
+        "TCM theory",
+        "food energetics",
+        "seasonal eating"
+      ]
     }
   ],
-  "index": 56
+  "index": 66
 }
