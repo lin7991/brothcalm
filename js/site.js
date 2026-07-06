@@ -4,18 +4,43 @@
   var path = window.location.pathname.replace(/\/$/, "");
   var isCN = path.indexOf("/zh") === 0;
   var btn = document.getElementById("lang-toggle");
+
   if (btn) {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
-      window.location.href = (isCN ? path.replace(/^\/zh/, "") || "/" : "/zh" + (path || "")) + "/";
+      var target = isCN
+        ? (path.replace(/^\/zh/, "") || "/") + "/"
+        : "/zh" + (path || "") + "/";
+
+      // For non-Chinese pages, check if zh version exists before navigating
+      if (!isCN) {
+        var checkUrl = target;
+        var xhr = new XMLHttpRequest();
+        xhr.open("HEAD", checkUrl, true);
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              window.location.href = checkUrl;
+            } else {
+              // Chinese version not found, redirect to zh homepage
+              window.location.href = "/zh/";
+            }
+          }
+        };
+        xhr.send();
+      } else {
+        window.location.href = target;
+      }
     });
   }
+
   var form = document.getElementById("newsletter-form");
   var msg = document.getElementById("newsletter-msg");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var email = form.querySelector('input[type="email"]').value.trim();
+      var emailInput = form.querySelector('input[type="email"]');
+      var email = emailInput.value.trim();
       var btn = form.querySelector("button");
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         if (msg) { msg.textContent = (isCN ? "请输入有效的邮箱地址" : "Please enter a valid email address."); msg.className = "newsletter-msg error"; }
