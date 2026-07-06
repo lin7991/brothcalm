@@ -4,19 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BrothCalm — 中医食疗 · 古法食养</title>
-  <meta name="description" content="探索中医食疗的智慧 — 枸杞、红枣、生姜等食材的养生用法，药膳汤方，花草茶饮。" />
+  <meta name="description" content="探索中医食疗的千年智慧。枸杞、红枣、黄芪、当归 — 每味食材都有独特的性味归经与养生功效。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles/style.css" />
   <link rel="stylesheet" href="/styles/brothcalm.css" />
   <link rel="canonical" href="https://brothcalm.com/zh/" />
+  <meta property="og:title" content="BrothCalm — 中医食疗 · 古法食养" />
+  <meta property="og:description" content="探索中医食疗的千年智慧 — 食材百科、药膳汤方、花草茶饮。" />
+  <meta property="og:url" content="https://brothcalm.com/zh/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://brothcalm.com/favicon.svg" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <style>
-    body { font-family: 'Inter', 'Noto Serif SC', serif; }
-    .zh-hero { padding: 5rem 1.5rem 4rem; background: linear-gradient(180deg, var(--orange-50), var(--cream)); text-align: center; }
-    .zh-hero h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1rem; }
-    .zh-hero p { max-width: 600px; margin: 0 auto 2rem; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8; }
+    body { font-family: 'Inter', 'Noto Serif SC', 'Georgia', serif; }
   </style>
 </head>
 <body>
@@ -30,34 +32,120 @@
   </div>
 </header>
 
-<section class="zh-hero">
+<section class="hero">
   <div class="container">
-    <h1>吃出健康 · 古法食养</h1>
-    <p>BrothCalm 为您介绍中医食疗（Food Therapy）的千年智慧。从枸杞、红枣到黄芪、当归，每一味食材都有其独特的性味归经。我们用心翻译和整理，让中文读者也能轻松了解。</p>
-    <p style="font-size:0.9rem;color:var(--text-muted);">中文内容持续更新中，敬请期待...</p>
+    <h1>吃什么，就是什么。<br>千年食疗智慧，走进你的厨房。</h1>
+    <p>BrothCalm 专注探索中医食疗（Food Therapy）的传统智慧。从枸杞、红枣到黄芪、当归——每一种食材都是大自然赐予的良药。我们用心整理食材的性味归经、传统用法与现代烹饪方法，让古老的食疗智慧走进日常餐桌。无论你是中医爱好者还是刚接触食疗的新手，这里都有你需要的实用知识。</p>
+    <div class="hero-symptoms">
+      <a href="/zh/ingredients/goji-berries/" class="card">
+        <div class="card-icon">🫐</div>
+        <h3>枸杞 — 长寿之果</h3>
+        <p>中医称它为"长寿果"，养肝明目、滋补肾精</p>
+        <span class="card-link">查看食材 →</span>
+      </a>
+      <a href="/zh/teas/ginger-tea/" class="card">
+        <div class="card-icon">🍵</div>
+        <h3>姜茶 — 驱寒暖身</h3>
+        <p>从内暖到外——经典的驱寒助消化饮品</p>
+        <span class="card-link">查看茶饮 →</span>
+      </a>
+      <a href="/zh/recipes/congee/" class="card">
+        <div class="card-icon">🥣</div>
+        <h3>粥 — 万能养生粥</h3>
+        <p>适合全家的养胃健脾药膳粥</p>
+        <span class="card-link">查看食谱 →</span>
+      </a>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
+    <div class="section-title">
+      <h2>分类浏览</h2>
+      <p>从单味食材到完整食谱——找到你的身体需要的</p>
+    </div>
+    <div class="grid-3">
+      <a href="/zh/ingredients/goji-berries/" class="card">
+        <div class="card-icon">🌿</div>
+        <span class="category-tag tag-ingredient">食材百科</span>
+        <h3>食材</h3>
+        <p>了解枸杞、黄芪、红枣、生姜等食材的性味归经、传统功效和日常用法。</p>
+        <span class="card-link">浏览食材 →</span>
+      </a>
+      <a href="/zh/teas/calming-tea/" class="card">
+        <div class="card-icon">🍵</div>
+        <span class="category-tag tag-tea">茶饮汤方</span>
+        <h3>茶饮</h3>
+        <p>安神菊花茶、暖身姜茶、滋补红枣茶——满足不同需求的养生茶配方。</p>
+        <span class="card-link">浏览茶饮 →</span>
+      </a>
+      <a href="/zh/recipes/congee/" class="card">
+        <div class="card-icon">🥘</div>
+        <span class="category-tag tag-recipe">药膳食谱</span>
+        <h3>食谱</h3>
+        <p>养生粥、药膳鸡汤、滋补骨汤——源自中医传统的完整食谱。</p>
+        <span class="card-link">浏览食谱 →</span>
+      </a>
+      <a href="/zh/food-therapy/" class="card">
+        <div class="card-icon">🧠</div>
+        <span class="category-tag tag-foods">对症食疗</span>
+        <h3>食疗指南</h3>
+        <p>焦虑吃什么、失眠怎么调、消化不好怎么吃——传统智慧搭配实用食谱。</p>
+        <span class="card-link">浏览指南 →</span>
+      </a>
+      <a href="/zh/five-flavors/" class="card">
+        <div class="card-icon">⚖️</div>
+        <span class="category-tag tag-foods">食疗理论</span>
+        <h3>五味调和</h3>
+        <p>了解酸苦甘辛咸五味与五脏的对应关系，学会用味道调养身体。</p>
+        <span class="card-link">了解详情 →</span>
+      </a>
+      <a href="/zh/spring-detox/" class="card">
+        <div class="card-icon">🌸</div>
+        <span class="category-tag tag-foods">应季饮食</span>
+        <h3>应季饮食</h3>
+        <p>春生夏长、秋收冬藏——按照四季节奏来安排饮食。</p>
+        <span class="card-link">探索应季 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Newsletter ═══ -->
+<section class="newsletter-section">
+  <div class="newsletter-box">
+    <h3>📬 保持联系</h3>
+    <p>留下您的邮箱，我们会不定期发送最新中医食疗内容给您——新文章、季节性食谱、养生小贴士。</p>
+    <form id="newsletter-form" class="newsletter-form">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit">订阅</button>
+    </form>
+    <div id="newsletter-msg" class="newsletter-msg"></div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--brown-50);">
+  <div class="container">
+    <div class="section-title">
+      <h2>为什么要关注食疗？</h2>
+      <p>在中医里，食物就是你的第一味药——也是最容易获得的药。</p>
+    </div>
     <div class="grid-3">
       <div class="card">
-        <div class="card-icon">🫐</div>
-        <h3>枸杞 — 长寿之果</h3>
-        <p>在中医里，枸杞性平味甘，归肝、肾经。常用于养肝明目、滋补肾精。</p>
-        <span class="card-link">English →</span>
+        <div class="card-icon">🌱</div>
+        <h3>温和持久</h3>
+        <p>与峻猛的药物不同，食疗通过日常饮食温和地调理身体。安全、可持续，适合全家人长期实践。</p>
       </div>
       <div class="card">
-        <div class="card-icon">🌿</div>
-        <h3>黄芪 — 补气之长</h3>
-        <p>黄芪性温味甘，归脾、肺经。是中医最常用的补气药之一，用于增强免疫力。</p>
-        <span class="card-link">English →</span>
+        <div class="card-icon">🧘</div>
+        <h3>整体调养</h3>
+        <p>食疗不只是针对症状——它调理的是失衡的根源。体寒用温热食物、体热用清凉食材、干燥则需要滋润。</p>
       </div>
       <div class="card">
-        <div class="card-icon">🍵</div>
-        <h3>姜茶 — 驱寒暖身</h3>
-        <p>生姜性温味辛，归肺、脾、胃经。姜茶是风寒感冒和消化不良的传统良方。</p>
-        <span class="card-link">English →</span>
+        <div class="card-icon">📜</div>
+        <h3>两千年传承</h3>
+        <p>从《黄帝内经》到现代厨房，食疗的原则经过数千年实践检验，是最接地气的中医智慧。</p>
       </div>
     </div>
   </div>
@@ -71,10 +159,14 @@
     </div>
     <div class="footer-links">
       <a href="/">English Site</a>
+      <a href="/about/">About</a>
+      <a href="/about/medical-disclaimer/">Disclaimer</a>
+      <a href="/about/privacy-policy/">Privacy</a>
     </div>
   </div>
   <div class="footer-bottom">
     <p>© 2026 BrothCalm. All rights reserved.</p>
+    <p style="margin-top:0.3rem;font-size:0.8rem;">Contact: <a href="mailto:contact@brothcalm.com">contact@brothcalm.com</a></p>
   </div>
 </footer>
 
