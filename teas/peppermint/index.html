@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/brothcalm.css" />
   <link rel="canonical" href="https://brothcalm.com/teas/peppermint/" />
   <meta property="og:title" content="Peppermint Tea — The Cool Refresher — BrothCalm" />
   <meta property="og:description" content="Discover the cooling power of peppermint tea through Traditional Chinese Medicine. Learn how this refreshing herb supports digestion, soothes headaches, and moves stuck Liver Qi." />
@@ -83,6 +84,7 @@
       <a href="/recipes/congee/">Recipes</a>
       <a href="/food-therapy/anxiety-food/">Food Therapy</a>
       <a href="/about/">About</a>
+      <button id="lang-toggle" class="lang-toggle">中文</button>
     </nav>
   </div>
 </header>
@@ -215,6 +217,19 @@
   </div>
 </article>
 
+<!-- ═══ Newsletter ═══ -->
+<section class="newsletter-section">
+  <div class="newsletter-box">
+    <h3>📬 Stay Connected</h3>
+    <p>Leave your email and we'll send you the latest Chinese food therapy wisdom — new articles, seasonal recipes, and ancient wellness tips.</p>
+    <form id="newsletter-form" class="newsletter-form">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <div id="newsletter-msg" class="newsletter-msg"></div>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div>
@@ -236,5 +251,6 @@
   </div>
 </footer>
 
+<script src="/js/site.js"></script>
 </body>
 </html>

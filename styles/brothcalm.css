@@ -1,0 +1,98 @@
+/* ═══════════════════════════════════════
+   BrothCalm — Language Toggle + Newsletter
+   ═══════════════════════════════════════ */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--orange-300);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--orange-600);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+.lang-toggle:hover {
+  background: var(--orange-100);
+  border-color: var(--orange-500);
+}
+.newsletter-section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 0;
+}
+.newsletter-box {
+  background: linear-gradient(135deg, var(--orange-50), var(--cream));
+  border: 1px solid var(--orange-200);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  margin: 0 0 2rem;
+}
+.newsletter-box h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.newsletter-box p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--orange-200);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: var(--white);
+  color: var(--text-primary);
+}
+.newsletter-form input[type="email"]:focus {
+  border-color: var(--orange-500);
+}
+.newsletter-form button {
+  padding: 0.65rem 1.5rem;
+  background: var(--orange-500);
+  color: var(--white);
+  border: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.newsletter-form button:hover {
+  background: var(--orange-600);
+}
+.newsletter-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.newsletter-msg {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  min-height: 1.3em;
+}
+.newsletter-msg.success { color: #166534; }
+.newsletter-msg.error { color: #dc2626; }
+@media (max-width: 500px) {
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form button { width: 100%; }
+}
