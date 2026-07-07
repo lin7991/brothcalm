@@ -1,7 +1,8 @@
 // BrothCalm Newsletter Worker — stores subscribers via CF API
+// CF API credentials are set via Worker secrets (CF_API_KEY, CF_ACCOUNT, CF_KV_ID)
 const CF_ACCOUNT = "1ab16cdc3d0d43621d7a6b5307b9c94b";
 const CF_KV_ID = "c660adf76b5e4f7fa080d6a42b97cb8f";
-const CF_API_KEY = "cfk_IxQmjwOsVOhCwVrMCAdxCJC5FR1mnxB8qKxcBAeS48b5059d";
+const CF_EMAIL = "5004378@qq.com";
 
 addEventListener("fetch", event => {
   const r = event.request;

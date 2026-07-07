@@ -13,7 +13,7 @@ echo "$(date): Newsletter tick started" >> "$LOG"
 echo "$(date): Fetching subscribers..." >> "$LOG"
 SUBSCRIBERS=$(curl -s "https://api.cloudflare.com/client/v4/accounts/1ab16cdc3d0d43621d7a6b5307b9c94b/storage/kv/namespaces/c660adf76b5e4f7fa080d6a42b97cb8f/keys" \
   -H "X-Auth-Email: 5004378@qq.com" \
-  -H "X-Auth-Key: cfk_IxQmjwOsVOhCwVrMCAdxCJC5FR1mnxB8qKxcBAeS48b5059d" \
+  -H "X-Auth-Key: ${CF_API_KEY:?Missing CF_API_KEY in env}" \
   | python3 -c "import json,sys; d=json.load(sys.stdin); [print(k['name']) for k in d.get('result',[])]" 2>/dev/null)
 
 SUB_COUNT=$(echo "$SUBSCRIBERS" | grep -c '@' || echo 0)
@@ -79,7 +79,7 @@ HTML_BODY="<!DOCTYPE html>
 echo "$(date): Generated newsletter ($(echo "$HTML_BODY" | wc -c) bytes)" >> "$LOG"
 
 # 4. Send via Resend API
-RESEND_KEY="re_5ifEDKmg_5gVfK9C4JytmLvwzV5T6cqRQ"
+RESEND_KEY="${RESEND_KEY:?Missing RESEND_KEY in env}"
 RECIPIENTS=$(echo "$SUBSCRIBERS" | paste -sd "," -)
 
 echo "$(date): Sending to $SUB_COUNT recipients via Resend..." >> "$LOG"
