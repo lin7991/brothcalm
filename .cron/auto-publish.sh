@@ -55,10 +55,18 @@ STEP 1: Check queue with 'python3 .cron/publish-article.py remaining'.
 If remaining < 5, refill: generate 15 new article ideas (title/path/type/read_time/keywords), echo as JSON and pipe to 'python3 .cron/publish-article.py add'.
 
 STEP 2: Read next item with 'python3 .cron/publish-article.py next'.
-Generate complete HTML using article-template.html as template.
-Replace ALL placeholders.
+Generate the ENGLISH article HTML using article-template.html as template.
+Replace ALL placeholders (especially <!--TITLE-->, <!--CONTENT-->, etc.).
+Write to /tmp/brothcalm-article.html.
 
-Write the file to /tmp/brothcalm-article.html using the terminal or write_file tool.
+Then generate the CHINESE version of the same article:
+- Path: /zh + the same path (e.g. /zh/ingredients/goji-berries/)
+- Use article-template-zh.html as template (read it first, create if not exists)
+- Title and content in Chinese
+- lang=\"zh-CN\"
+- The toggle button text should auto-switch (this is handled by JS)
+Write to /tmp/brothcalm-zh.html.
+
 Then run: python3 .cron/publish-article.py stage
 Then print FILE_READY.
 " --skills brothcalm-content-production 2>&1 >> "$LOG"
@@ -72,7 +80,14 @@ print(a['path'].strip('/').replace('/', '-'))
 " 2>/dev/null)
       cp /tmp/brothcalm-article.html "$PENDING/${SLUG}.html"
       rm -f /tmp/brothcalm-article.html
-      log "Staged: $SLUG (will publish on next available tick)"
+      log "Staged EN: $SLUG (will publish on next available tick)"
+      
+      # Also stage Chinese version if generated
+      if [ -f /tmp/brothcalm-zh.html ]; then
+        cp /tmp/brothcalm-zh.html "$PENDING/zh-${SLUG}.html"
+        rm -f /tmp/brothcalm-zh.html
+        log "Staged ZH: zh-$SLUG"
+      fi
       REMAINING=$((REMAINING - 1))
       TARGET=$((TARGET - 1))
     else

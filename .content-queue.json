@@ -1200,7 +1200,218 @@
         "food energetics",
         "seasonal eating"
       ]
+    },
+    {
+      "title": "Longan (Long Yan) \u2014 The Heart-Calming Sweet Berry",
+      "path": "/ingredients/longan/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "longan",
+        "long yan",
+        "calming heart",
+        "blood tonic",
+        "TCM",
+        "shen",
+        "sleep"
+      ]
+    },
+    {
+      "title": "Walnuts (Hu Tao Ren) \u2014 The Kidney Tonic Nut",
+      "path": "/ingredients/walnuts/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "walnuts",
+        "hu tao ren",
+        "kidney tonic",
+        "brain health",
+        "TCM",
+        "aging"
+      ]
+    },
+    {
+      "title": "Scallion (Cong Bai) \u2014 The Warming Diaphoretic",
+      "path": "/ingredients/scallion/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "scallion",
+        "cong bai",
+        "warming",
+        "cold remedy",
+        "TCM",
+        "diaphoretic"
+      ]
+    },
+    {
+      "title": "Mulberry (Sang Shen) \u2014 The Blood-Nourishing Fruit",
+      "path": "/ingredients/mulberry/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "mulberry",
+        "sang shen",
+        "blood tonic",
+        "yin nourishing",
+        "TCM",
+        "anti-aging"
+      ]
+    },
+    {
+      "title": "Atractylodes (Bai Zhu) \u2014 The Spleen Qi Transformer",
+      "path": "/ingredients/atractylodes/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "atractylodes",
+        "bai zhu",
+        "spleen qi",
+        "digestion",
+        "TCM",
+        "dampness",
+        "energy"
+      ]
+    },
+    {
+      "title": "Osmanthus Tea \u2014 Sweet Aromatic Lung Support",
+      "path": "/teas/osmanthus-tea/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "osmanthus tea",
+        "gui hua",
+        "lung health",
+        "aromatic tea",
+        "TCM",
+        "skin health"
+      ]
+    },
+    {
+      "title": "Goji and Longan Tea \u2014 Sweet Heart-Calming Brew",
+      "path": "/teas/goji-longan-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "goji longan tea",
+        "heart calming",
+        "blood tonic",
+        "TCM tea",
+        "sleep"
+      ]
+    },
+    {
+      "title": "Mint and Licorice Tea \u2014 Soothing Respiratory Blend",
+      "path": "/teas/mint-licorice-tea/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "mint tea",
+        "licorice tea",
+        "sore throat",
+        "respiratory",
+        "TCM",
+        "cooling"
+      ]
+    },
+    {
+      "title": "Astragalus Tea \u2014 Daily Qi Support in a Cup",
+      "path": "/teas/astragalus-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "astragalus tea",
+        "huang qi",
+        "qi tonic",
+        "immune",
+        "TCM",
+        "daily tea"
+      ]
+    },
+    {
+      "title": "Mulberry Leaf Tea (Sang Ye Cha) \u2014 Cooling Liver Tea",
+      "path": "/teas/mulberry-leaf-tea/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "mulberry leaf tea",
+        "sang ye",
+        "cooling",
+        "liver",
+        "TCM",
+        "eye health"
+      ]
+    },
+    {
+      "title": "Walnut and Black Sesame Porridge \u2014 Kidney Tonic Breakfast",
+      "path": "/recipes/walnut-sesame-porridge/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "walnut porridge",
+        "black sesame",
+        "kidney tonic",
+        "TCM",
+        "breakfast",
+        "hair health"
+      ]
+    },
+    {
+      "title": "Longan and Red Date Soup \u2014 Sweet Shen-Calming Dessert",
+      "path": "/recipes/longan-date-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "longan soup",
+        "red date",
+        "shen calming",
+        "TCM dessert",
+        "sleep",
+        "anxiety"
+      ]
+    },
+    {
+      "title": "Papaya and Snow Fungus Soup \u2014 The TCM Beauty Tonic",
+      "path": "/recipes/papaya-snow-fungus/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "papaya soup",
+        "snow fungus",
+        "yin tonic",
+        "beauty food",
+        "TCM",
+        "collagen"
+      ]
+    },
+    {
+      "title": "Foods for Menopause \u2014 TCM Wisdom for Hormonal Balance",
+      "path": "/food-therapy/menopause/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "menopause",
+        "hormonal balance",
+        "yin deficiency",
+        "TCM",
+        "food therapy",
+        "women's health"
+      ]
+    },
+    {
+      "title": "Foods for Liver Qi Stagnation \u2014 Supporting Emotional Balance",
+      "path": "/food-therapy/liver-qi-stagnation/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "liver qi stagnation",
+        "emotional health",
+        "stress relief",
+        "TCM",
+        "food therapy",
+        "mood"
+      ]
     }
   ],
-  "index": 73
+  "index": 82
 }
