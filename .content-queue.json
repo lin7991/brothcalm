@@ -1411,7 +1411,220 @@
         "food therapy",
         "mood"
       ]
+    },
+    {
+      "title": "Rehmannia (Di Huang) \u2014 The Yin Tonic Root in TCM Food Therapy",
+      "path": "/ingredients/rehmannia/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "rehmannia",
+        "di huang",
+        "yin tonic",
+        "TCM",
+        "kidney tonic",
+        "herbal root"
+      ]
+    },
+    {
+      "title": "Turmeric (Jiang Huang) \u2014 The Golden Spice of TCM",
+      "path": "/ingredients/turmeric/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "turmeric",
+        "jiang huang",
+        "curcumin",
+        "TCM",
+        "anti-inflammatory",
+        "golden spice"
+      ]
+    },
+    {
+      "title": "Peppermint (Bo He) \u2014 Cooling Herb for Digestion and Stress",
+      "path": "/ingredients/peppermint/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "peppermint",
+        "bo he",
+        "digestion",
+        "TCM",
+        "cooling herb",
+        "stress relief"
+      ]
+    },
+    {
+      "title": "Royal Jelly (Feng Wang Jiang) \u2014 Nourishing Essence in TCM",
+      "path": "/ingredients/royal-jelly/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "royal jelly",
+        "feng wang jiang",
+        "bee product",
+        "TCM",
+        "nourishing",
+        "longevity"
+      ]
+    },
+    {
+      "title": "Dong Quai (Dang Gui) \u2014 The Female Ginseng in TCM",
+      "path": "/ingredients/dong-quai/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "dong quai",
+        "dang gui",
+        "female ginseng",
+        "TCM",
+        "blood tonic",
+        "menstrual health"
+      ]
+    },
+    {
+      "title": "Honey Lemon Ginger Tea \u2014 A Soothing TCM Tonic",
+      "path": "/teas/honey-lemon-ginger-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "honey",
+        "lemon",
+        "ginger",
+        "tea",
+        "TCM",
+        "cold remedy",
+        "soothing tonic"
+      ]
+    },
+    {
+      "title": "Rose Tea (Mei Gui Hua Cha) \u2014 TCM Beauty and Mood Tonic",
+      "path": "/teas/rose-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "rose tea",
+        "mei gui hua",
+        "beauty tea",
+        "TCM",
+        "mood",
+        "qi stagnation"
+      ]
+    },
+    {
+      "title": "Honeysuckle Tea (Jin Yin Hua Cha) \u2014 Cooling Summer Tonic",
+      "path": "/teas/honeysuckle-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "honeysuckle",
+        "jin yin hua",
+        "cooling tea",
+        "TCM",
+        "summer",
+        "heat clearing"
+      ]
+    },
+    {
+      "title": "Licorice Root Tea (Gan Cao Cha) \u2014 The Harmonizing Herb",
+      "path": "/teas/licorice-root-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "licorice root",
+        "gan cao",
+        "harmonizing herb",
+        "TCM",
+        "spleen",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Barley Congee (Yi Mi Zhou) \u2014 A TCM Grain for Dampness",
+      "path": "/recipes/barley-congee/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "barley congee",
+        "yi mi zhou",
+        "dampness",
+        "TCM",
+        "digestion",
+        "grain"
+      ]
+    },
+    {
+      "title": "Lotus Root Soup (Ou Tang) \u2014 Cooling Nourishment for Autumn",
+      "path": "/recipes/lotus-root-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "lotus root",
+        "ou tang",
+        "autumn soup",
+        "TCM",
+        "cooling",
+        "nourishing"
+      ]
+    },
+    {
+      "title": "Digestive Health in TCM \u2014 Foods to Soothe Your Spleen",
+      "path": "/food-therapy/digestion-food/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "digestion",
+        "spleen qi",
+        "TCM",
+        "food therapy",
+        "bloating",
+        "digestive health"
+      ]
+    },
+    {
+      "title": "TCM Foods for Immunity \u2014 Strengthening Wei Qi Naturally",
+      "path": "/food-therapy/immunity-foods/",
+      "type": "food-therapy",
+      "read_time": 9,
+      "keywords": [
+        "immunity",
+        "wei qi",
+        "TCM",
+        "defensive qi",
+        "food therapy",
+        "seasonal change"
+      ]
+    },
+    {
+      "title": "Warming Winter Foods in TCM \u2014 Nourishing Yang for Cold Months",
+      "path": "/food-therapy/winter-warming-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "winter",
+        "warming foods",
+        "yang",
+        "TCM",
+        "seasonal eating",
+        "cold months"
+      ]
+    },
+    {
+      "title": "The Five Tastes in Chinese Food Therapy \u2014 Balancing Sour, Bitter, Sweet, Pungent, and Salty",
+      "path": "/tcm-theory/five-tastes/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "five tastes",
+        "wu wei",
+        "sour",
+        "bitter",
+        "sweet",
+        "pungent",
+        "salty",
+        "TCM theory"
+      ]
     }
   ],
-  "index": 93
+  "index": 99
 }
