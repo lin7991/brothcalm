@@ -1624,7 +1624,449 @@
         "salty",
         "TCM theory"
       ]
+    },
+    {
+      "title": "Mung Bean (Lu Dou) \u2014 The Ultimate Cooling Ingredient for Summer Heat",
+      "path": "/ingredients/mung-bean/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "mung bean",
+        "lu dou",
+        "cooling",
+        "summer heat",
+        "TCM",
+        "detox",
+        "damp heat"
+      ]
+    },
+    {
+      "title": "Mulberry (Sang Shen) \u2014 The Sweet Blood-Nourishing Berry",
+      "path": "/ingredients/mulberry/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "mulberry",
+        "sang shen",
+        "blood tonic",
+        "TCM",
+        "yin nourishing",
+        "antioxidant",
+        "liver"
+      ]
+    },
+    {
+      "title": "Ginseng (Ren Shen) \u2014 The Classic Qi Tonic Explained",
+      "path": "/ingredients/ginseng/",
+      "type": "ingredient",
+      "read_time": 9,
+      "keywords": [
+        "ginseng",
+        "ren shen",
+        "qi tonic",
+        "adaptogen",
+        "TCM",
+        "energy",
+        "vitality"
+      ]
+    },
+    {
+      "title": "Chinese Yam (Huai Shan Yao) \u2014 Spleen and Lung Nourisher",
+      "path": "/ingredients/chinese-yam/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "chinese yam",
+        "huai shan yao",
+        "spleen tonic",
+        "lung health",
+        "TCM",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Sichuan Peppercorn (Hua Jiao) \u2014 Warming Dampness-Drying Spice",
+      "path": "/ingredients/sichuan-peppercorn/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "sichuan peppercorn",
+        "hua jiao",
+        "warming spice",
+        "dampness",
+        "TCM",
+        "digestion",
+        "pain relief"
+      ]
+    },
+    {
+      "title": "Black Fungus (Mu Er) \u2014 The Blood-Cooling Vessel Protector",
+      "path": "/ingredients/black-fungus/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "black fungus",
+        "mu er",
+        "wood ear",
+        "blood cooling",
+        "TCM",
+        "circulation",
+        "heart health"
+      ]
+    },
+    {
+      "title": "Winter Melon (Dong Gua) \u2014 Cooling Summer Wellness Ingredient",
+      "path": "/ingredients/winter-melon/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "winter melon",
+        "dong gua",
+        "cooling",
+        "summer",
+        "TCM",
+        "damp heat",
+        "urinary"
+      ]
+    },
+    {
+      "title": "Honey (Feng Mi) \u2014 Sweet Moisture for Lungs and Digestion",
+      "path": "/ingredients/honey/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "honey",
+        "feng mi",
+        "lung tonic",
+        "digestion",
+        "TCM",
+        "moisture",
+        "cough"
+      ]
+    },
+    {
+      "title": "Dandelion Tea (Pu Gong Ying Cha) \u2014 Cooling Liver and Detox Brew",
+      "path": "/teas/dandelion-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "dandelion tea",
+        "pu gong ying",
+        "liver detox",
+        "cooling",
+        "TCM",
+        "breast health"
+      ]
+    },
+    {
+      "title": "Tofu (Dou Fu) \u2014 Cooling Protein in TCM Food Therapy",
+      "path": "/ingredients/tofu/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "tofu",
+        "dou fu",
+        "cooling protein",
+        "TCM",
+        "vegetarian",
+        "heat patterns"
+      ]
+    },
+    {
+      "title": "White Fungus (Yin Er) \u2014 The Beauty Mushroom for Lung Moisture",
+      "path": "/ingredients/white-fungus/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "white fungus",
+        "yin er",
+        "beauty mushroom",
+        "lung tonic",
+        "TCM",
+        "collagen",
+        "skin"
+      ]
+    },
+    {
+      "title": "Chinese Yam and Goji Berry Soup \u2014 Warming Nourishment for Autumn",
+      "path": "/recipes/yam-goji-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "yam soup",
+        "goji soup",
+        "spleen tonic",
+        "TCM recipe",
+        "autumn",
+        "nourishing"
+      ]
+    },
+    {
+      "title": "Foods for Healthy Skin in TCM \u2014 Nourishing Blood and Moisture",
+      "path": "/food-therapy/skin-health/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "skin health",
+        "TCM",
+        "blood nourishing",
+        "lung moisture",
+        "beauty foods",
+        "complexion"
+      ]
+    },
+    {
+      "title": "Seaweed (Hai Zao / Kun Bu) \u2014 Softening Phlegm and Cooling Heat",
+      "path": "/ingredients/seaweed/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "seaweed",
+        "kelp",
+        "hai zao",
+        "kun bu",
+        "phlegm",
+        "cooling",
+        "TCM",
+        "thyroid"
+      ]
+    },
+    {
+      "title": "Food Energetics 101 \u2014 Hot, Warm, Neutral, Cool, Cold in TCM",
+      "path": "/theory/food-energetics/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "food energetics",
+        "hot foods",
+        "cold foods",
+        "TCM theory",
+        "diet",
+        "balance",
+        "seasonal eating"
+      ]
+    },
+    {
+      "title": "Mung Bean (Lu Dou) \u2014 The Ultimate Cooling Ingredient for Summer Heat",
+      "path": "/ingredients/mung-bean/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "mung bean",
+        "lu dou",
+        "cooling",
+        "summer heat",
+        "TCM",
+        "detox",
+        "damp heat"
+      ]
+    },
+    {
+      "title": "Mulberry (Sang Shen) \u2014 The Sweet Blood-Nourishing Berry",
+      "path": "/ingredients/mulberry/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "mulberry",
+        "sang shen",
+        "blood tonic",
+        "TCM",
+        "yin nourishing",
+        "antioxidant",
+        "liver"
+      ]
+    },
+    {
+      "title": "Ginseng (Ren Shen) \u2014 The Classic Qi Tonic Explained",
+      "path": "/ingredients/ginseng/",
+      "type": "ingredient",
+      "read_time": 9,
+      "keywords": [
+        "ginseng",
+        "ren shen",
+        "qi tonic",
+        "adaptogen",
+        "TCM",
+        "energy",
+        "vitality"
+      ]
+    },
+    {
+      "title": "Chinese Yam (Huai Shan Yao) \u2014 Spleen and Lung Nourisher",
+      "path": "/ingredients/chinese-yam/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "chinese yam",
+        "huai shan yao",
+        "spleen tonic",
+        "lung health",
+        "TCM",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Sichuan Peppercorn (Hua Jiao) \u2014 Warming Dampness-Drying Spice",
+      "path": "/ingredients/sichuan-peppercorn/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "sichuan peppercorn",
+        "hua jiao",
+        "warming spice",
+        "dampness",
+        "TCM",
+        "digestion",
+        "pain relief"
+      ]
+    },
+    {
+      "title": "Black Fungus (Mu Er) \u2014 The Blood-Cooling Vessel Protector",
+      "path": "/ingredients/black-fungus/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "black fungus",
+        "mu er",
+        "wood ear",
+        "blood cooling",
+        "TCM",
+        "circulation",
+        "heart health"
+      ]
+    },
+    {
+      "title": "Winter Melon (Dong Gua) \u2014 Cooling Summer Wellness Ingredient",
+      "path": "/ingredients/winter-melon/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "winter melon",
+        "dong gua",
+        "cooling",
+        "summer",
+        "TCM",
+        "damp heat",
+        "urinary"
+      ]
+    },
+    {
+      "title": "Honey (Feng Mi) \u2014 Sweet Moisture for Lungs and Digestion",
+      "path": "/ingredients/honey/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "honey",
+        "feng mi",
+        "lung tonic",
+        "digestion",
+        "TCM",
+        "moisture",
+        "cough"
+      ]
+    },
+    {
+      "title": "Dandelion Tea (Pu Gong Ying Cha) \u2014 Cooling Liver and Detox Brew",
+      "path": "/teas/dandelion-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "dandelion tea",
+        "pu gong ying",
+        "liver detox",
+        "cooling",
+        "TCM",
+        "breast health"
+      ]
+    },
+    {
+      "title": "Tofu (Dou Fu) \u2014 Cooling Protein in TCM Food Therapy",
+      "path": "/ingredients/tofu/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "tofu",
+        "dou fu",
+        "cooling protein",
+        "TCM",
+        "vegetarian",
+        "heat patterns"
+      ]
+    },
+    {
+      "title": "White Fungus (Yin Er) \u2014 The Beauty Mushroom for Lung Moisture",
+      "path": "/ingredients/white-fungus/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "white fungus",
+        "yin er",
+        "beauty mushroom",
+        "lung tonic",
+        "TCM",
+        "collagen",
+        "skin"
+      ]
+    },
+    {
+      "title": "Chinese Yam and Goji Berry Soup \u2014 Warming Nourishment for Autumn",
+      "path": "/recipes/yam-goji-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "yam soup",
+        "goji soup",
+        "spleen tonic",
+        "TCM recipe",
+        "autumn",
+        "nourishing"
+      ]
+    },
+    {
+      "title": "Foods for Healthy Skin in TCM \u2014 Nourishing Blood and Moisture",
+      "path": "/food-therapy/skin-health/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "skin health",
+        "TCM",
+        "blood nourishing",
+        "lung moisture",
+        "beauty foods",
+        "complexion"
+      ]
+    },
+    {
+      "title": "Seaweed (Hai Zao / Kun Bu) \u2014 Softening Phlegm and Cooling Heat",
+      "path": "/ingredients/seaweed/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "seaweed",
+        "kelp",
+        "hai zao",
+        "kun bu",
+        "phlegm",
+        "cooling",
+        "TCM",
+        "thyroid"
+      ]
+    },
+    {
+      "title": "Food Energetics 101 \u2014 Hot, Warm, Neutral, Cool, Cold in TCM",
+      "path": "/theory/food-energetics/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "food energetics",
+        "hot foods",
+        "cold foods",
+        "TCM theory",
+        "diet",
+        "balance",
+        "seasonal eating"
+      ]
     }
   ],
-  "index": 112
+  "index": 116
 }
