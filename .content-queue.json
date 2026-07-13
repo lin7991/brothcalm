@@ -2066,7 +2066,228 @@
         "balance",
         "seasonal eating"
       ]
+    },
+    {
+      "title": "Pearl Barley (Yi Yi Ren) \u2014 The Dampness-Draining Grain",
+      "path": "/ingredients/pearl-barley/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "pearl barley",
+        "yi yi ren",
+        "coix seed",
+        "dampness",
+        "TCM",
+        "spleen",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Mulberry (Sang Shen) \u2014 The Blood-Building Fruit",
+      "path": "/ingredients/mulberry/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "mulberry",
+        "sang shen",
+        "blood tonic",
+        "yin nourishing",
+        "TCM",
+        "liver",
+        "kidney"
+      ]
+    },
+    {
+      "title": "Lotus Seed (Lian Zi) \u2014 Calming the Shen Naturally",
+      "path": "/ingredients/lotus-seed/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "lotus seed",
+        "lian zi",
+        "calming",
+        "spleen tonic",
+        "TCM",
+        "shen",
+        "insomnia"
+      ]
+    },
+    {
+      "title": "Chinese Red Dates with Ginger \u2014 A Simple Warming Tonic",
+      "path": "/ingredients/red-dates-ginger/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "red dates",
+        "ginger",
+        "warming tonic",
+        "qi tonic",
+        "TCM",
+        "digestion",
+        "cold pattern"
+      ]
+    },
+    {
+      "title": "Chinese Celery (Qin Cai) \u2014 The Cooling Green",
+      "path": "/ingredients/chinese-celery/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "chinese celery",
+        "qin cai",
+        "cooling",
+        "liver fire",
+        "TCM",
+        "blood pressure",
+        "detox"
+      ]
+    },
+    {
+      "title": "Osmanthus Oolong Tea \u2014 Sweet Fragrance for Digestion",
+      "path": "/teas/osmanthus-oolong/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "osmanthus",
+        "oolong tea",
+        "fragrant tea",
+        "digestion",
+        "TCM",
+        "warming",
+        "mood"
+      ]
+    },
+    {
+      "title": "Lemon Balm Tea \u2014 Gentle Stress Relief from the Garden",
+      "path": "/teas/lemon-balm-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "lemon balm",
+        "stress relief",
+        "calming tea",
+        "TCM",
+        "liver qi",
+        "sleep",
+        "herbal tea"
+      ]
+    },
+    {
+      "title": "Goji and Chrysanthemum Tea \u2014 Bright Eyes Formula",
+      "path": "/teas/goji-chrysanthemum-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "goji chrysanthemum tea",
+        "eye health",
+        "liver fire",
+        "TCM",
+        "cooling",
+        "screen strain"
+      ]
+    },
+    {
+      "title": "Honeysuckle Tea \u2014 Clearing Summer Heat the TCM Way",
+      "path": "/teas/honeysuckle-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "honeysuckle tea",
+        "jin yin hua",
+        "summer heat",
+        "cooling",
+        "TCM",
+        "sore throat",
+        "detox"
+      ]
+    },
+    {
+      "title": "Silken Tofu with Wolfberries \u2014 A Cooling, Nourishing Dish",
+      "path": "/recipes/tofu-wolfberries/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "silken tofu",
+        "wolfberries",
+        "cooling recipe",
+        "TCM",
+        "yin nourishing",
+        "light meal"
+      ]
+    },
+    {
+      "title": "Walnut and Black Sesame Porridge \u2014 Kidney-Strengthening Breakfast",
+      "path": "/recipes/walnut-sesame-porridge/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "walnut porridge",
+        "black sesame",
+        "kidney tonic",
+        "TCM",
+        "breakfast",
+        "aging",
+        "hair health"
+      ]
+    },
+    {
+      "title": "Pumpkin and Jujube Congee \u2014 A Sweet Spleen Tonic",
+      "path": "/recipes/pumpkin-jujube-congee/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "pumpkin congee",
+        "jujube porridge",
+        "spleen tonic",
+        "TCM",
+        "digestion",
+        "autumn"
+      ]
+    },
+    {
+      "title": "Foods for Dry Skin \u2014 Nourishing Yin in Chinese Medicine",
+      "path": "/food-therapy/dry-skin-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "dry skin foods",
+        "yin nourishing",
+        "TCM",
+        "skin health",
+        "moisture",
+        "lung yin"
+      ]
+    },
+    {
+      "title": "Autumn Lung-Nourishing Foods \u2014 Seasonal TCM Wisdom",
+      "path": "/food-therapy/autumn-lung-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "autumn diet",
+        "lung nourishing",
+        "seasonal eating",
+        "TCM",
+        "dryness",
+        "immune",
+        "pear"
+      ]
+    },
+    {
+      "title": "Understanding Dampness (Shi) \u2014 The Most Common TCM Imbalance",
+      "path": "/theory/dampness-explained/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "dampness",
+        "shi",
+        "TCM theory",
+        "phlegm",
+        "spleen deficiency",
+        "digestion",
+        "food therapy"
+      ]
     }
   ],
-  "index": 139
+  "index": 143
 }
