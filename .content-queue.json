@@ -2287,7 +2287,230 @@
         "digestion",
         "food therapy"
       ]
+    },
+    {
+      "title": "Bitter Melon (Ku Gua) \u2014 The Ultimate Cooling Vegetable for Summer Heat",
+      "path": "/ingredients/bitter-melon/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "bitter melon",
+        "ku gua",
+        "cooling food",
+        "summer heat",
+        "TCM",
+        "blood sugar",
+        "liver heat"
+      ]
+    },
+    {
+      "title": "Bok Choy (Xiao Bai Cai) \u2014 The Cooling Green for Stomach Heat",
+      "path": "/ingredients/bok-choy/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "bok choy",
+        "xiao bai cai",
+        "cooling vegetable",
+        "stomach heat",
+        "TCM",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Lily Bulb (Bai He) \u2014 Calming the Lungs and Nourishing the Shen",
+      "path": "/ingredients/lily-bulb/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "lily bulb",
+        "bai he",
+        "lung tonic",
+        "calming",
+        "TCM",
+        "anxiety",
+        "shen"
+      ]
+    },
+    {
+      "title": "Fermented Soybean (Dan Dou Chi) \u2014 The Cooling Detox Ingredient",
+      "path": "/ingredients/fermented-soybean/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "fermented soybean",
+        "dan dou chi",
+        "detox",
+        "cooling",
+        "TCM",
+        "digestion",
+        "cold"
+      ]
+    },
+    {
+      "title": "Apricot Kernel (Xing Ren) \u2014 Moistening the Lungs and Relieving Cough",
+      "path": "/ingredients/apricot-kernel/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "apricot kernel",
+        "xing ren",
+        "lung moisture",
+        "cough",
+        "TCM",
+        "respiratory"
+      ]
+    },
+    {
+      "title": "Suan Zao Ren (Sour Jujube Seed) \u2014 The Classic Sleep Aid in TCM",
+      "path": "/ingredients/suan-zao-ren/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "suan zao ren",
+        "sour jujube seed",
+        "sleep",
+        "insomnia",
+        "TCM",
+        "calming",
+        "shen"
+      ]
+    },
+    {
+      "title": "Codonopsis and Astragalus Tea \u2014 Daily Qi Boost Tonic",
+      "path": "/teas/codonopsis-astragalus-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "codonopsis",
+        "astragalus",
+        "qi tonic",
+        "herbal tea",
+        "TCM",
+        "energy",
+        "immunity"
+      ]
+    },
+    {
+      "title": "Pear and Lily Bulb Soup \u2014 Autumn Lung-Moistening Dessert",
+      "path": "/recipes/pear-lily-bulb-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "pear soup",
+        "lily bulb",
+        "lung moisture",
+        "autumn",
+        "TCM",
+        "dry cough",
+        "dessert"
+      ]
+    },
+    {
+      "title": "Silkie Chicken Soup (Wu Ji Tang) \u2014 The Ultimate Blood and Qi Tonic",
+      "path": "/recipes/silkie-chicken-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "silkie chicken",
+        "wu ji tang",
+        "blood tonic",
+        "qi tonic",
+        "TCM",
+        "postpartum",
+        "recovery"
+      ]
+    },
+    {
+      "title": "Chinese Yam and Lotus Seed Soup \u2014 Gentle Spleen-Nourishing Comfort",
+      "path": "/recipes/yam-lotus-seed-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "chinese yam",
+        "lotus seed",
+        "spleen tonic",
+        "soup",
+        "TCM",
+        "digestion",
+        "comfort food"
+      ]
+    },
+    {
+      "title": "Foods for Constipation in TCM \u2014 Moistening the Intestines Naturally",
+      "path": "/food-therapy/constipation-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "constipation",
+        "TCM",
+        "moistening",
+        "intestines",
+        "food therapy",
+        "digestive health",
+        "fiber"
+      ]
+    },
+    {
+      "title": "Foods for Allergies and Hay Fever \u2014 Strengthening Wei Qi Through Diet",
+      "path": "/food-therapy/allergy-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "allergies",
+        "hay fever",
+        "wei qi",
+        "immunity",
+        "TCM",
+        "food therapy",
+        "seasonal allergies"
+      ]
+    },
+    {
+      "title": "Post-Illness Recovery Foods \u2014 Restoring Qi and Blood After Sickness",
+      "path": "/food-therapy/post-illness-recovery/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "recovery",
+        "post-illness",
+        "qi restoration",
+        "blood nourishing",
+        "TCM",
+        "convalescence",
+        "soup"
+      ]
+    },
+    {
+      "title": "Foods for Cold Hands and Feet \u2014 Warming Yang for Circulation",
+      "path": "/food-therapy/cold-hands-feet-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "cold hands",
+        "cold feet",
+        "poor circulation",
+        "warming",
+        "yang deficiency",
+        "TCM",
+        "food therapy"
+      ]
+    },
+    {
+      "title": "The Organ Clock (Zang Fu) \u2014 Eating in Rhythm with Your Body's Natural Cycle",
+      "path": "/food-theory/organ-clock-eating/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "organ clock",
+        "zang fu",
+        "circadian rhythm",
+        "eating schedule",
+        "TCM",
+        "five elements",
+        "seasonal eating"
+      ]
     }
   ],
-  "index": 149
+  "index": 161
 }
