@@ -2510,7 +2510,232 @@
         "five elements",
         "seasonal eating"
       ]
+    },
+    {
+      "title": "Food Energetics 101 \u2014 Hot, Warm, Neutral, Cool, Cold in Chinese Medicine",
+      "path": "/theory/food-energetics/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "food energetics",
+        "hot cold foods",
+        "thermal nature",
+        "TCM",
+        "diet",
+        "balance",
+        "eating for your body type"
+      ]
+    },
+    {
+      "title": "Foods for Clear Skin \u2014 Cooling Internal Heat for a Radiant Complexion",
+      "path": "/food-therapy/skin-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "clear skin",
+        "acne diet",
+        "internal heat",
+        "cooling foods",
+        "TCM",
+        "skin health",
+        "face mapping"
+      ]
+    },
+    {
+      "title": "Foods for Healthy Sleep \u2014 The TCM Way to Deep Rest",
+      "path": "/food-therapy/sleep-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "sleep foods",
+        "insomnia",
+        "calming shen",
+        "TCM",
+        "diet",
+        "melatonin",
+        "bedtime routine"
+      ]
+    },
+    {
+      "title": "Boxthorn Leaf and Pork Liver Soup \u2014 Eyesight Nourishing Broth",
+      "path": "/recipes/gouqi-leaf-liver-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "boxthorn leaf",
+        "gou qi ye",
+        "pork liver",
+        "eye health",
+        "TCM",
+        "blood tonic",
+        "liver blood"
+      ]
+    },
+    {
+      "title": "Pear and Lily Bulb Dessert Soup \u2014 Autumn Lung Moisturizer",
+      "path": "/recipes/pear-lily-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "pear soup",
+        "lily bulb",
+        "lung tonic",
+        "dry cough",
+        "TCM",
+        "autumn",
+        "moisturizing"
+      ]
+    },
+    {
+      "title": "Five-Spice Braised Tofu \u2014 Warming Plant-Based Comfort",
+      "path": "/recipes/five-spice-braised-tofu/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "braised tofu",
+        "five spice",
+        "warming",
+        "plant-based",
+        "TCM",
+        "qi tonic",
+        "spleen"
+      ]
+    },
+    {
+      "title": "Dandelion Root Tea \u2014 Liver Coolant and Lymph Cleanser",
+      "path": "/teas/dandelion-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "dandelion tea",
+        "liver cleanse",
+        "cooling",
+        "lymph",
+        "TCM",
+        "heat clearing",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Hibiscus Tea \u2014 The Cooling Sour Brew in TCM Perspective",
+      "path": "/teas/hibiscus-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "hibiscus tea",
+        "cooling tea",
+        "sour flavor",
+        "liver",
+        "TCM",
+        "antioxidant",
+        "blood pressure"
+      ]
+    },
+    {
+      "title": "Mugwort Tea (Ai Ye Cha) \u2014 Warming the Womb and Digestion",
+      "path": "/teas/mugwort-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "mugwort tea",
+        "ai ye",
+        "warming tea",
+        "menstrual health",
+        "TCM",
+        "digestion",
+        "herbal tea"
+      ]
+    },
+    {
+      "title": "Honeysuckle (Jin Yin Hua) \u2014 The Natural Cooling Antibiotic",
+      "path": "/ingredients/honeysuckle/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "honeysuckle",
+        "jin yin hua",
+        "cooling",
+        "heat clearing",
+        "TCM",
+        "sore throat",
+        "anti-inflammatory"
+      ]
+    },
+    {
+      "title": "Eucommia Bark (Du Zhong) \u2014 The Lower Back Tonic",
+      "path": "/ingredients/eucommia/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "eucommia",
+        "du zhong",
+        "kidney tonic",
+        "back pain",
+        "TCM",
+        "bone health",
+        "liver"
+      ]
+    },
+    {
+      "title": "Sour Jujube Seed (Suan Zao Ren) \u2014 Nature's Sleep Aid",
+      "path": "/ingredients/suan-zao-ren/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "suan zao ren",
+        "sour jujube seed",
+        "sleep",
+        "insomnia",
+        "TCM",
+        "calming shen",
+        "anxiety"
+      ]
+    },
+    {
+      "title": "Mulberry (Sang Shen) \u2014 The Blood-Nourishing Berry",
+      "path": "/ingredients/mulberry/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "mulberry",
+        "sang shen",
+        "blood tonic",
+        "yin nourishing",
+        "TCM",
+        "aging",
+        "antioxidant"
+      ]
+    },
+    {
+      "title": "Job's Tears (Coix Seed / Yi Yi Ren) \u2014 Dampness Drainer and Skin Soother",
+      "path": "/ingredients/coix-seed/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "coix seed",
+        "yi yi ren",
+        "dampness",
+        "skin health",
+        "TCM",
+        "spleen",
+        "anti-inflammatory"
+      ]
+    },
+    {
+      "title": "Chinese Yam (Shan Yao) \u2014 The Spleen-Strengthening Root",
+      "path": "/ingredients/chinese-yam/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "chinese yam",
+        "shan yao",
+        "spleen qi",
+        "digestion",
+        "TCM",
+        "dampness",
+        "nourishing"
+      ]
     }
   ],
-  "index": 172
+  "index": 175
 }
