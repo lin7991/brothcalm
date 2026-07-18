@@ -2735,7 +2735,232 @@
         "dampness",
         "nourishing"
       ]
+    },
+    {
+      "title": "Snow Fungus (Yin Er) \u2014 The Collagen-Building Yin Tonic in TCM",
+      "path": "/ingredients/snow-fungus/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "snow fungus",
+        "yin er",
+        "collagen",
+        "yin tonic",
+        "TCM",
+        "beauty food",
+        "lung health"
+      ]
+    },
+    {
+      "title": "Bitter Melon (Ku Gua) \u2014 The Cooling Summer Bitter in Chinese Medicine",
+      "path": "/ingredients/bitter-melon/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "bitter melon",
+        "ku gua",
+        "cooling",
+        "summer heat",
+        "TCM",
+        "blood sugar",
+        "bitter flavor"
+      ]
+    },
+    {
+      "title": "Cilantro (Yan Sui) \u2014 The Detox Green in Chinese Food Therapy",
+      "path": "/ingredients/cilantro/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "cilantro",
+        "coriander",
+        "yan sui",
+        "detox",
+        "TCM",
+        "digestion",
+        "heavy metals"
+      ]
+    },
+    {
+      "title": "Water Chestnut (Bi Qi) \u2014 The Cooling Crunch in Chinese Medicine",
+      "path": "/ingredients/water-chestnut/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "water chestnut",
+        "bi qi",
+        "cooling",
+        "moistening",
+        "TCM",
+        "lung health",
+        "thirst"
+      ]
+    },
+    {
+      "title": "Pumpkin (Nan Gua) \u2014 The Sweet Spleen Warmer in TCM",
+      "path": "/ingredients/pumpkin/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "pumpkin",
+        "nan gua",
+        "spleen tonic",
+        "warming",
+        "TCM",
+        "digestion",
+        "autumn food"
+      ]
+    },
+    {
+      "title": "Daikon Radish (Luo Bo) \u2014 The Natural Digestive Aid in Chinese Medicine",
+      "path": "/ingredients/daikon/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "daikon",
+        "luo bo",
+        "radish",
+        "digestion",
+        "TCM",
+        "dampness",
+        "phlegm"
+      ]
+    },
+    {
+      "title": "Almond (Xing Ren) \u2014 Respiratory Support in Chinese Food Therapy",
+      "path": "/ingredients/almond/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "almond",
+        "xing ren",
+        "respiratory",
+        "lung health",
+        "TCM",
+        "cough",
+        "skin health"
+      ]
+    },
+    {
+      "title": "White Wood Ear (Bai Mu Er) \u2014 The Lung Yin Nourisher in TCM",
+      "path": "/ingredients/white-wood-ear/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "white wood ear",
+        "bai mu er",
+        "lung tonic",
+        "yin nourisher",
+        "TCM",
+        "dry cough",
+        "skin"
+      ]
+    },
+    {
+      "title": "Mulberry Leaf and Goji Berry Tea \u2014 Cooling Eye Support Brew",
+      "path": "/teas/mulberry-goji-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "mulberry leaf tea",
+        "sang ye",
+        "goji berry",
+        "eye health",
+        "cooling",
+        "TCM",
+        "liver heat"
+      ]
+    },
+    {
+      "title": "Stir-Fried Bitter Melon with Black Bean Sauce \u2014 Cooling Summer Dish",
+      "path": "/recipes/bitter-melon-stir-fry/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "bitter melon",
+        "stir fry",
+        "summer recipe",
+        "cooling",
+        "TCM",
+        "easy recipe",
+        "vegan"
+      ]
+    },
+    {
+      "title": "Pumpkin and Red Date Congee \u2014 Sweet Spleen-Warming Breakfast",
+      "path": "/recipes/pumpkin-date-congee/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "pumpkin congee",
+        "red date",
+        "spleen tonic",
+        "breakfast",
+        "TCM",
+        "warming",
+        "autumn"
+      ]
+    },
+    {
+      "title": "Snow Fungus and Goji Berry Dessert Soup \u2014 The TCM Beauty Tonic",
+      "path": "/recipes/snow-fungus-dessert/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "snow fungus",
+        "goji berry",
+        "beauty soup",
+        "yin tonic",
+        "TCM",
+        "dessert",
+        "collagen"
+      ]
+    },
+    {
+      "title": "Autumn Diet in TCM \u2014 Moistening the Lungs for Fall Wellness",
+      "path": "/food-therapy/autumn-diet/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "autumn diet",
+        "fall foods",
+        "moistening",
+        "lung health",
+        "TCM",
+        "seasonal eating",
+        "dryness"
+      ]
+    },
+    {
+      "title": "Summer Diet in TCM \u2014 Cooling Foods and Drinks for Heat Relief",
+      "path": "/food-therapy/summer-diet/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "summer diet",
+        "cooling foods",
+        "summer heat",
+        "TCM",
+        "hydration",
+        "seasonal eating",
+        "damp heat"
+      ]
+    },
+    {
+      "title": "Winter Diet in TCM \u2014 Warming and Nourishing for Cold Months",
+      "path": "/food-therapy/winter-diet/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "winter diet",
+        "warming foods",
+        "kidney tonic",
+        "TCM",
+        "cold season",
+        "nourishing",
+        "stew"
+      ]
     }
   ],
-  "index": 184
+  "index": 186
 }
