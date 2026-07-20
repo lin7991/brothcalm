@@ -2960,7 +2960,226 @@
         "nourishing",
         "stew"
       ]
+    },
+    {
+      "title": "Snow Fungus and Goji Berry Dessert Soup \u2014 The TCM Beauty Tonic",
+      "path": "/recipes/snow-fungus-dessert/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "snow fungus",
+        "goji berry",
+        "beauty soup",
+        "yin tonic",
+        "TCM",
+        "dessert",
+        "collagen"
+      ]
+    },
+    {
+      "title": "Pumpkin and Red Date Congee \u2014 Warming the Spleen in Autumn",
+      "path": "/recipes/pumpkin-date-congee/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "pumpkin",
+        "red date",
+        "congee",
+        "spleen tonic",
+        "warming",
+        "TCM",
+        "autumn"
+      ]
+    },
+    {
+      "title": "Five Flavors (\u4e94\u5473) \u2014 The TCM Guide to Balancing Taste and Health",
+      "path": "/five-flavors/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "five flavors",
+        "wu wei",
+        "sweet",
+        "sour",
+        "bitter",
+        "pungent",
+        "salty",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Seasonal Eating in TCM \u2014 A Complete Guide to Eating with the Seasons",
+      "path": "/seasonal-eating/",
+      "type": "theory",
+      "read_time": 10,
+      "keywords": [
+        "seasonal eating",
+        "five seasons",
+        "spring",
+        "summer",
+        "autumn",
+        "winter",
+        "TCM diet"
+      ]
+    },
+    {
+      "title": "Spring Detox \u2014 A Complete TCM Seasonal Cleanse",
+      "path": "/spring-detox/",
+      "type": "food-therapy",
+      "read_time": 9,
+      "keywords": [
+        "spring detox",
+        "liver cleanse",
+        "seasonal eating",
+        "TCM",
+        "detox diet",
+        "spring"
+      ]
+    },
+    {
+      "title": "Anxiety and Diet \u2014 TCM Foods to Calm the Shen",
+      "path": "/food-therapy/anxiety-food/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "anxiety",
+        "shen calming",
+        "nervous system",
+        "TCM",
+        "stress",
+        "calming foods"
+      ]
+    },
+    {
+      "title": "Pork Trotter Soup \u2014 Collagen-Rich Joint Support the TCM Way",
+      "path": "/recipes/pork-trotter-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "pork trotter",
+        "collagen",
+        "joint health",
+        "bone broth",
+        "TCM",
+        "kidney tonic"
+      ]
+    },
+    {
+      "title": "Goji and Jujube Tea \u2014 The Ultimate Daily Qi Tonic",
+      "path": "/teas/goji-jujube-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "goji tea",
+        "jujube tea",
+        "qi tonic",
+        "blood nourishment",
+        "daily tonic",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Calming Tea (\u5b89\u795e\u8336) \u2014 Herbal Blend for Peaceful Sleep",
+      "path": "/teas/calming-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "calming tea",
+        "sleep tea",
+        "an shen",
+        "jujube",
+        "chrysanthemum",
+        "TCM",
+        "insomnia"
+      ]
+    },
+    {
+      "title": "Food Energetics in TCM \u2014 Hot, Cold, Warm, and Cool",
+      "path": "/food-energetics/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "food energetics",
+        "hot cold foods",
+        "thermal nature",
+        "yang foods",
+        "yin foods",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Pearl Barley (Coix Seed) \u2014 The Dampness-Draining Super Grain",
+      "path": "/ingredients/pearl-barley/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "pearl barley",
+        "coix seed",
+        "yi yi ren",
+        "dampness",
+        "spleen",
+        "TCM",
+        "skin health"
+      ]
+    },
+    {
+      "title": "Fo-Ti (He Shou Wu) \u2014 The Longevity Root in Chinese Medicine",
+      "path": "/ingredients/fo-ti/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "fo-ti",
+        "he shou wu",
+        "longevity",
+        "kidney tonic",
+        "hair health",
+        "TCM",
+        "anti-aging"
+      ]
+    },
+    {
+      "title": "Codonopsis (Dang Shen) \u2014 The Gentle Qi Tonic Alternative to Ginseng",
+      "path": "/ingredients/codonopsis/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "codonopsis",
+        "dang shen",
+        "qi tonic",
+        "ginseng alternative",
+        "TCM",
+        "energy"
+      ]
+    },
+    {
+      "title": "Red Bean and Tangerine Peel Tea \u2014 Draining Dampness Naturally",
+      "path": "/teas/red-bean-tangerine-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "red bean tea",
+        "tangerine peel",
+        "chen pi",
+        "dampness",
+        "digestion",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Chinese Yam (Huai Shan) \u2014 The Spleen and Lung Tonic",
+      "path": "/ingredients/chinese-yam/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "chinese yam",
+        "huai shan",
+        "shan yao",
+        "spleen tonic",
+        "lung tonic",
+        "TCM",
+        "digestion"
+      ]
     }
   ],
-  "index": 197
+  "index": 206
 }
