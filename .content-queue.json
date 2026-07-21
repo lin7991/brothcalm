@@ -3179,7 +3179,232 @@
         "TCM",
         "digestion"
       ]
+    },
+    {
+      "title": "Longan (\u9f99\u773c\u8089) \u2014 The Heart-Calming Blood Tonic",
+      "path": "/ingredients/longan/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "longan",
+        "long yan rou",
+        "heart blood",
+        "calming",
+        "TCM",
+        "sleep",
+        "blood tonic"
+      ]
+    },
+    {
+      "title": "Mint (\u8584\u8377) \u2014 The Cooling Pungent Herb for Stagnation",
+      "path": "/ingredients/mint/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "mint",
+        "bo he",
+        "cooling",
+        "headache",
+        "sore throat",
+        "TCM",
+        "liver qi"
+      ]
+    },
+    {
+      "title": "Chinese Chives (\u97ed\u83dc) \u2014 Warming Yang for Kidney Strength",
+      "path": "/ingredients/chinese-chives/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "chinese chives",
+        "jiu cai",
+        "warming",
+        "kidney yang",
+        "TCM",
+        "circulation",
+        "libido"
+      ]
+    },
+    {
+      "title": "Sichuan Peppercorn (\u82b1\u6912) \u2014 The Warming Spice for Cold Patterns",
+      "path": "/ingredients/sichuan-peppercorn/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "sichuan peppercorn",
+        "hua jiao",
+        "warming",
+        "cold pattern",
+        "pain relief",
+        "TCM",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Corn Silk (\u7389\u7c73\u987b) \u2014 The Gentle Dampness Drainer",
+      "path": "/ingredients/corn-silk/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "corn silk",
+        "yu mi xu",
+        "dampness",
+        "urinary",
+        "TCM",
+        "kidney",
+        "detox"
+      ]
+    },
+    {
+      "title": "Fennel Seed (\u5c0f\u8334\u9999) \u2014 Warming Digestion from the Spleen",
+      "path": "/ingredients/fennel-seed/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "fennel seed",
+        "xiao hui xiang",
+        "warming",
+        "digestion",
+        "spleen",
+        "TCM",
+        "abdominal pain"
+      ]
+    },
+    {
+      "title": "Perilla Leaf Tea (\u7d2b\u82cf\u53f6\u8336) \u2014 Warming Relief for Cold and Stagnation",
+      "path": "/teas/perilla-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "perilla leaf",
+        "zi su ye",
+        "warming tea",
+        "cold relief",
+        "digestion",
+        "TCM",
+        "nausea"
+      ]
+    },
+    {
+      "title": "Yuan Zhi Tea (\u8fdc\u5fd7\u8336) \u2014 Calming the Shen for Restful Sleep",
+      "path": "/teas/yuan-zhi-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "yuan zhi",
+        "calming tea",
+        "shen",
+        "sleep",
+        "anxiety",
+        "TCM",
+        "herbal tea"
+      ]
+    },
+    {
+      "title": "Chinese Yam Congee (\u5c71\u836f\u7ca5) \u2014 Gentle Spleen Tonic for Daily Wellness",
+      "path": "/recipes/yam-congee/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "chinese yam congee",
+        "shan yao",
+        "spleen tonic",
+        "breakfast",
+        "TCM",
+        "digestion",
+        "gentle food"
+      ]
+    },
+    {
+      "title": "Bok Choy and Tofu Soup \u2014 Cooling Nourishment for Stomach Heat",
+      "path": "/recipes/bok-choy-tofu-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "bok choy soup",
+        "tofu soup",
+        "cooling",
+        "stomach heat",
+        "TCM",
+        "easy recipe",
+        "light meal"
+      ]
+    },
+    {
+      "title": "Longan and Jujube Tea \u2014 Sweet Blood-Building Comfort",
+      "path": "/teas/longan-jujube-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "longan tea",
+        "jujube tea",
+        "blood tonic",
+        "calming",
+        "TCM",
+        "anxiety",
+        "sleep"
+      ]
+    },
+    {
+      "title": "Shiitake Mushroom (\u9999\u83c7) \u2014 The Qi-Building Forest Secret",
+      "path": "/ingredients/shiitake/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "shiitake",
+        "xiang gu",
+        "qi tonic",
+        "immune",
+        "TCM",
+        "medicinal mushroom",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Foods for Headaches \u2014 TCM Diet for Tension and Liver Fire",
+      "path": "/food-therapy/headache-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "headache",
+        "tension headache",
+        "liver fire",
+        "TCM",
+        "food therapy",
+        "migraine",
+        "cooling"
+      ]
+    },
+    {
+      "title": "Foods for Menstrual Health \u2014 Nourishing Blood and Moving Qi",
+      "path": "/food-therapy/menstrual-health-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "menstrual health",
+        "period",
+        "blood tonic",
+        "qi moving",
+        "TCM",
+        "cramps",
+        "women health"
+      ]
+    },
+    {
+      "title": "Ginger and Brown Sugar Tea \u2014 The Classic Warming Drink for Cramps",
+      "path": "/teas/ginger-brown-sugar-tea/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "ginger tea",
+        "brown sugar",
+        "warming",
+        "menstrual cramps",
+        "TCM",
+        "cold pattern",
+        "digestion"
+      ]
     }
   ],
-  "index": 217
+  "index": 219
 }
