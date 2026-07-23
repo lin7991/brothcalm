@@ -3404,7 +3404,431 @@
         "cold pattern",
         "digestion"
       ]
+    },
+    {
+      "title": "Cinnamon (Rou Gui) \u2014 Warming Qi, Boosting Circulation",
+      "path": "/ingredients/cinnamon/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "cinnamon",
+        "rou gui",
+        "warming",
+        "circulation",
+        "TCM spice"
+      ]
+    },
+    {
+      "title": "Rehmannia (Shu Di Huang) \u2014 The Blood Tonic Root",
+      "path": "/ingredients/rehmannia/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "rehmannia",
+        "shu di huang",
+        "blood tonic",
+        "yin nourishing",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Licorice (Gan Cao) \u2014 The Harmonizer in TCM Formulas",
+      "path": "/ingredients/licorice/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "licorice",
+        "gan cao",
+        "TCM harmonizer",
+        "spleen qi",
+        "herbal"
+      ]
+    },
+    {
+      "title": "Schisandra (Wu Wei Zi) \u2014 Five-Flavor Berry for Lung and Kidney",
+      "path": "/ingredients/schisandra/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "schisandra",
+        "wu wei zi",
+        "five flavors",
+        "adaptogen",
+        "TCM berry"
+      ]
+    },
+    {
+      "title": "Peppermint Tea (Bo He) \u2014 Cooling, Digestive Aid, and Stress Relief",
+      "path": "/teas/peppermint-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "peppermint tea",
+        "bo he",
+        "cooling tea",
+        "digestion",
+        "stress relief"
+      ]
+    },
+    {
+      "title": "Jasmine Tea (Mo Li Hua Cha) \u2014 Aromatic Calm for Mind and Spirit",
+      "path": "/teas/jasmine-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "jasmine tea",
+        "mo li hua",
+        "calming tea",
+        "aromatherapy",
+        "TCM tea"
+      ]
+    },
+    {
+      "title": "Pu-erh Tea \u2014 Aged Fermented Tea for Digestion and Weight",
+      "path": "/teas/puerh-tea/",
+      "type": "tea",
+      "read_time": 7,
+      "keywords": [
+        "pu-erh",
+        "fermented tea",
+        "digestion",
+        "weight management",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Lemon Honey Tea \u2014 Simple Immune-Supporting Winter Tonic",
+      "path": "/teas/lemon-honey-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "lemon honey tea",
+        "immune support",
+        "winter tonic",
+        "cough",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Turmeric Latte (Huang Jiang Nai) \u2014 Golden Milk for Inflammation",
+      "path": "/teas/turmeric-latte/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "turmeric latte",
+        "golden milk",
+        "anti-inflammatory",
+        "huang jiang",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Burdock Root Tea (Niu Bang Cha) \u2014 Blood Cleansing and Skin Health",
+      "path": "/teas/burdock-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "burdock root",
+        "niu bang",
+        "blood cleansing",
+        "skin health",
+        "detox tea"
+      ]
+    },
+    {
+      "title": "Bone Broth \u2014 TCM Guide to Nourishing Jing and Collagen",
+      "path": "/recipes/bone-broth/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "bone broth",
+        "jing",
+        "collagen",
+        "nourishing",
+        "TCM soup"
+      ]
+    },
+    {
+      "title": "Pork Trotter Soup (Zhu Ti Tang) \u2014 Collagen-Rich Beauty Broth",
+      "path": "/recipes/pork-trotter-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "pork trotter",
+        "zhu ti",
+        "collagen",
+        "beauty broth",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Warming Foods for Winter \u2014 TCM Nourishing Diet Guide",
+      "path": "/food-therapy/warming-foods-winter/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "warming foods",
+        "winter diet",
+        "yang nourishing",
+        "seasonal eating",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Foods for Kidney Health \u2014 TCM Kidney Tonic Diet",
+      "path": "/food-therapy/kidney-tonic-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "kidney tonic",
+        "kidney health",
+        "jing",
+        "TCM diet",
+        "nourishing"
+      ]
+    },
+    {
+      "title": "Spring Detox \u2014 TCM Complete 3-Day Seasonal Cleanse Plan",
+      "path": "/food-therapy/spring-detox/",
+      "type": "food-therapy",
+      "read_time": 9,
+      "keywords": [
+        "spring detox",
+        "seasonal cleanse",
+        "liver",
+        "wood element",
+        "TCM diet"
+      ]
+    },
+    {
+      "title": "Wood Ear (Mu Er) \u2014 The Blood-Cooling Detox Mushroom in TCM",
+      "path": "/ingredients/wood-ear/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "wood ear",
+        "mu er",
+        "blood cooling",
+        "detox",
+        "TCM",
+        "iron",
+        "skin health"
+      ]
+    },
+    {
+      "title": "Longan (Long Yan Rou) \u2014 The Sweet Heart-Calming Fruit",
+      "path": "/ingredients/longan/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "longan",
+        "long yan rou",
+        "heart tonic",
+        "calming",
+        "sleep",
+        "TCM",
+        "blood nourishing"
+      ]
+    },
+    {
+      "title": "Chen Pi (Tangerine Peel) \u2014 The Qi-Moving Digestive Aid",
+      "path": "/ingredients/chen-pi/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "chen pi",
+        "tangerine peel",
+        "qi stagnation",
+        "digestion",
+        "TCM",
+        "dampness",
+        "spleen"
+      ]
+    },
+    {
+      "title": "Turmeric (Jiang Huang) \u2014 The Warming Blood Activator in TCM",
+      "path": "/ingredients/turmeric/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "turmeric",
+        "jiang huang",
+        "blood circulation",
+        "warming",
+        "TCM",
+        "anti-inflammatory",
+        "pain relief"
+      ]
+    },
+    {
+      "title": "Gingko (Bai Guo) \u2014 Brain and Lung Tonic in Chinese Medicine",
+      "path": "/ingredients/gingko/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "gingko",
+        "bai guo",
+        "brain health",
+        "lung tonic",
+        "TCM",
+        "memory",
+        "cognition"
+      ]
+    },
+    {
+      "title": "Job's Tears (Yi Yi Ren) \u2014 The Dampness-Draining Super Grain",
+      "path": "/ingredients/yiyiren/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "job's tears",
+        "yi yi ren",
+        "coix seed",
+        "dampness",
+        "TCM",
+        "spleen",
+        "digestion",
+        "skin"
+      ]
+    },
+    {
+      "title": "Peppermint (Bo He) \u2014 Cooling and Dispersing in TCM",
+      "path": "/ingredients/peppermint/",
+      "type": "ingredient",
+      "read_time": 5,
+      "keywords": [
+        "peppermint",
+        "bo he",
+        "cooling",
+        "dispersing",
+        "TCM",
+        "headache",
+        "digestion",
+        "liver qi"
+      ]
+    },
+    {
+      "title": "Longan and Red Date Tea \u2014 Sweet Heart-Nourishing Tonic Brew",
+      "path": "/teas/longan-red-date-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "longan tea",
+        "red date tea",
+        "heart tonic",
+        "calming",
+        "sleep",
+        "TCM",
+        "blood nourishing"
+      ]
+    },
+    {
+      "title": "Honey and Ginger Drink \u2014 Simple Winter Warmth the TCM Way",
+      "path": "/teas/honey-ginger-drink/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "honey ginger",
+        "warming drink",
+        "winter",
+        "cold pattern",
+        "TCM",
+        "immune support",
+        "sore throat"
+      ]
+    },
+    {
+      "title": "Chicken and Chinese Yam Soup \u2014 Spleen and Lung Nourishing Bowl",
+      "path": "/recipes/chicken-yam-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "chicken soup",
+        "chinese yam",
+        "shan yao",
+        "spleen tonic",
+        "lung tonic",
+        "TCM",
+        "nourishing soup"
+      ]
+    },
+    {
+      "title": "Three Treasures Breakfast Congee \u2014 Goji, Jujube and Longan",
+      "path": "/recipes/three-treasures-congee/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "congee",
+        "jook",
+        "breakfast",
+        "goji",
+        "jujube",
+        "longan",
+        "TCM",
+        "nourishing"
+      ]
+    },
+    {
+      "title": "Foods for Healthy Sleep \u2014 TCM Guide to Peaceful Rest",
+      "path": "/food-therapy/sleep-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "sleep",
+        "insomnia",
+        "calming foods",
+        "shen",
+        "TCM",
+        "heart",
+        "bedtime routine"
+      ]
+    },
+    {
+      "title": "Summer Cooling Foods \u2014 TCM Diet Guide for Hot Weather",
+      "path": "/food-therapy/summer-cooling-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "summer diet",
+        "cooling foods",
+        "heat",
+        "TCM",
+        "seasonal eating",
+        "hydration",
+        "damp heat"
+      ]
+    },
+    {
+      "title": "The Spleen in Chinese Medicine \u2014 Why Digestion Matters Most",
+      "path": "/theory/spleen-tcm/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "spleen",
+        "pi",
+        "digestion",
+        "TCM theory",
+        "qi",
+        "dampness",
+        "fatigue",
+        "food therapy"
+      ]
+    },
+    {
+      "title": "The Six Tastes \u2014 Beyond the Five Flavors in TCM Food Therapy",
+      "path": "/theory/six-tastes/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "six tastes",
+        "five flavors",
+        "wu wei",
+        "food therapy",
+        "TCM",
+        "herbal tastes",
+        "energetics"
+      ]
     }
   ],
-  "index": 225
+  "index": 251
 }
