@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFBEB"/>
+      <stop offset="100%" style="stop-color:#FDE68A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="200" cy="120" r="80" fill="#D97706" opacity="0.08"/>
+  <circle cx="1000" cy="500" r="120" fill="#D97706" opacity="0.08"/>
+  <text x="600" y="330" text-anchor="middle" font-size="200">🌱</text>
+  <text x="600" y="520" text-anchor="middle" font-family="'Noto Serif SC', 'Georgia', serif" font-size="48" font-weight="bold" fill="#1C1917">薄荷茶（Bo He）</text>
+  <text x="600" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#57534E">BrothCalm · 古法食养</text>
+</svg>
