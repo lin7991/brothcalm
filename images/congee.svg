@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF3C7"/>
+      <stop offset="100%" style="stop-color:#FBBF24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Congee bowl -->
+  <ellipse cx="600" cy="440" rx="300" ry="60" fill="#78350F" opacity="0.15"/>
+  <path d="M300,330 Q300,280 340,280 L860,280 Q900,280 900,330 L900,410 Q900,450 860,450 L340,450 Q300,450 300,410 Z" fill="#FFF8F0" stroke="#B45309" stroke-width="6"/>
+  <ellipse cx="600" cy="280" rx="300" ry="55" fill="#FEF3C7" stroke="#B45309" stroke-width="5"/>
+  <!-- Rice porridge texture -->
+  <ellipse cx="600" cy="280" rx="240" ry="42" fill="#FFF7ED"/>
+  <ellipse cx="520" cy="270" rx="20" ry="10" fill="#FFE4C4" opacity="0.6"/>
+  <ellipse cx="650" cy="285" rx="18" ry="9" fill="#FFE4C4" opacity="0.6"/>
+  <!-- Steam -->
+  <path d="M480,230 Q470,190 480,150" stroke="#B45309" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M600,225 Q610,185 600,145" stroke="#B45309" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M720,230 Q710,190 720,150" stroke="#B45309" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <!-- Chopsticks -->
+  <line x1="830" y1="180" x2="920" y2="320" stroke="#92400E" stroke-width="8" stroke-linecap="round"/>
+  <line x1="880" y1="170" x2="970" y2="310" stroke="#92400E" stroke-width="8" stroke-linecap="round"/>
+  <!-- Text -->
+  <text x="600" y="545" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#78350F">Congee (粥)</text>
+  <text x="600" y="590" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#92400E">The Ultimate Healing Porridge · 养胃健脾</text>
+</svg>

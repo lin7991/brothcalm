@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFBEB"/>
+      <stop offset="100%" style="stop-color:#FDE68A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Tea cup -->
+  <ellipse cx="600" cy="460" rx="220" ry="50" fill="#7C2D12" opacity="0.12"/>
+  <path d="M380,320 L820,320 Q840,320 840,340 L840,420 Q840,460 800,460 L400,460 Q360,460 360,420 L360,340 Q360,320 380,320 Z" fill="#FFF8F0" stroke="#B45309" stroke-width="6"/>
+  <ellipse cx="600" cy="320" rx="230" ry="40" fill="#FEF3C7" stroke="#B45309" stroke-width="5"/>
+  <ellipse cx="600" cy="320" rx="180" ry="28" fill="#F59E0B"/>
+  <!-- Handle -->
+  <path d="M840,350 Q920,350 920,390 Q920,440 840,440" fill="none" stroke="#B45309" stroke-width="6"/>
+  <!-- Ginger slices -->
+  <ellipse cx="520" cy="350" rx="30" ry="14" fill="#FBBF24" stroke="#B45309" stroke-width="3"/>
+  <ellipse cx="570" cy="345" rx="28" ry="12" fill="#F59E0B" stroke="#B45309" stroke-width="3"/>
+  <ellipse cx="620" cy="352" rx="30" ry="13" fill="#FBBF24" stroke="#B45309" stroke-width="3"/>
+  <ellipse cx="670" cy="346" rx="26" ry="11" fill="#F59E0B" stroke="#B45309" stroke-width="3"/>
+  <!-- Steam -->
+  <path d="M520,270 Q510,230 520,190" stroke="#D97706" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M600,265 Q610,225 600,185" stroke="#D97706" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M680,270 Q670,230 680,190" stroke="#D97706" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <!-- Text -->
+  <text x="600" y="545" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#7C2D12">Ginger Tea (姜茶)</text>
+  <text x="600" y="590" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#92400E">Warmth in a Cup · 驱寒暖身</text>
+</svg>
