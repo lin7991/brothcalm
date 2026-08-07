@@ -9,11 +9,11 @@ cd "$HOME/.hermes/profiles/brothcalm/workspace" || exit 1
 LOG="$HOME/.hermes/profiles/brothcalm/workspace/.cron/newsletter.log"
 echo "$(date): Newsletter tick started" >> "$LOG"
 
-# 1. Get subscribers from Cloudflare KV
+# 1. Get subscribers from Cloudflare KV (token from local file, not in git)
 echo "$(date): Fetching subscribers..." >> "$LOG"
+CF_TOKEN=$(cat "$HOME/.hermes/profiles/brothcalm/workspace/.cron/.cf_token" 2>/dev/null)
 SUBSCRIBERS=$(curl -s "https://api.cloudflare.com/client/v4/accounts/1ab16cdc3d0d43621d7a6b5307b9c94b/storage/kv/namespaces/c660adf76b5e4f7fa080d6a42b97cb8f/keys" \
-  -H "X-Auth-Email: 5004378@qq.com" \
-  -H "X-Auth-Key: ${CF_API_KEY:?Missing CF_API_KEY in env}" \
+  -H "Authorization: Bearer $CF_TOKEN" \
   | python3 -c "import json,sys; d=json.load(sys.stdin); [print(k['name']) for k in d.get('result',[])]" 2>/dev/null)
 
 SUB_COUNT=$(echo "$SUBSCRIBERS" | grep -c '@' || echo 0)
