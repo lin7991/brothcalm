@@ -47,6 +47,15 @@ if [ "$HOUR" -ge 2 ] && [ "$HOUR" -lt 7 ]; then
   fi
 
   while [ "$TARGET" -gt 0 ] && [ "$REMAINING" -gt 0 ]; do
+    # Compute SLUG BEFORE hermes chat — the agent runs `stage` (index+1),
+    # so reading q['articles'][q['index']] afterwards returns the NEXT
+    # article and mislabels the file (bug: pending files shifted by one).
+    SLUG=$(python3 -c "
+import json
+q = json.load(open('.content-queue.json'))
+a = q['articles'][q['index']]
+print(a['path'].strip('/').replace('/', '-'))
+" 2>/dev/null)
     # Generate article — save to pending, no deploy yet
     hermes chat --profile brothcalm -Q -q "
 You are in ~/.hermes/profiles/brothcalm/workspace.
@@ -72,12 +81,6 @@ Then print FILE_READY.
 " --skills brothcalm-content-production 2>&1 >> "$LOG"
 
     if [ -f /tmp/brothcalm-article.html ]; then
-      SLUG=$(python3 -c "
-import json
-q = json.load(open('.content-queue.json'))
-a = q['articles'][q['index']]
-print(a['path'].strip('/').replace('/', '-'))
-" 2>/dev/null)
       cp /tmp/brothcalm-article.html "$PENDING/${SLUG}.html"
       rm -f /tmp/brothcalm-article.html
       log "Staged EN: $SLUG (will publish on next available tick)"
