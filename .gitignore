@@ -14,3 +14,4 @@ __pycache__/
 .cron/publish.log
 .cron/launchd.*.log
 .cron/reports/
+.cron/newsletter.*.log
