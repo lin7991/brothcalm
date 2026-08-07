@@ -96,3 +96,48 @@
   .newsletter-form { flex-direction: column; }
   .newsletter-form button { width: 100%; }
 }
+
+/* ═══ Social Share Buttons ═══ */
+.share-section {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: var(--brown-50);
+  border: 1px solid var(--brown-100);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.share-section h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--brown-700);
+  margin-bottom: 1rem;
+}
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.share-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.share-btn.facebook { background: #1877F2; }
+.share-btn.twitter { background: #000000; }
+.share-btn.linkedin { background: #0A66C2; }
+.share-btn.whatsapp { background: #25D366; }
+.share-btn.pinterest { background: #E60023; }
+.share-btn.email { background: #6B7280; }
+@media (max-width: 500px) {
+  .share-buttons { gap: 0.4rem; }
+  .share-btn { padding: 0.4rem 0.8rem; font-size: 0.75rem; }
+}
