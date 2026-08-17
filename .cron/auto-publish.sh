@@ -29,6 +29,23 @@ log() { echo "$(TZ=Asia/Shanghai date '+%H:%M'): $*" >> "$LOG"; }
 
 log "Tick started (hour=$HOUR)"
 
+# ─── Catch-up push: try to push any backlogged commits at start of every tick ───
+if git log --oneline origin/main..HEAD 2>/dev/null | grep -q .; then
+  log "Backlogged commits detected, attempting catch-up push..."
+  PUSH_OK=0
+  for attempt in 1 2 3; do
+    if git -c credential.helper=osxkeychain push 2>&1 >> "$LOG"; then
+      PUSH_OK=1
+      break
+    fi
+    log "Catch-up push attempt $attempt/3 failed"
+    sleep 20
+  done
+  if [ "$PUSH_OK" = "1" ]; then
+    log "Catch-up push successful"
+  fi
+fi
+
 # ─── Content creation: only 02:00-07:00 ───
 IN_WINDOW=false
 if [ "$HOUR" -ge 2 ] && [ "$HOUR" -lt 7 ]; then
@@ -105,8 +122,21 @@ if [ -n "$FIRST" ] && [ "$IN_WINDOW" = false ]; then
   log "Publishing: $(basename "$FIRST")"
   BROTHCALM_STAGE_ONLY=1 python3 .cron/publish-article.py publish "$FIRST" 2>&1 >> "$LOG"
   rm -f "$FIRST"
-  git push 2>&1 >> "$LOG"
-  log "Published + pushed"
+  # Push with retry (up to 5 attempts)
+  PUSH_OK=0
+  for attempt in 1 2 3 4 5; do
+    if git -c credential.helper=osxkeychain push 2>&1 >> "$LOG"; then
+      PUSH_OK=1
+      break
+    fi
+    log "Push attempt $attempt/5 failed, retrying in 30s..."
+    sleep 30
+  done
+  if [ "$PUSH_OK" = "1" ]; then
+    log "Published + pushed"
+  else
+    log "⚠️ Push failed after 5 attempts — commit saved locally, will push next tick"
+  fi
 else
   if [ -z "$FIRST" ]; then
     log "No pending articles to deploy"

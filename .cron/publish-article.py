@@ -17,9 +17,83 @@ SITE_ROOT = Path(__file__).parent.parent
 TEMPLATE = SITE_ROOT / "article-template.html"
 
 def load_queue():
-    if QUEUE_FILE.exists():
+    """Load queue with self-healing: if JSON is corrupted, backup and rebuild."""
+    if not QUEUE_FILE.exists():
+        return {"articles": [], "index": 0}
+    
+    try:
         return json.loads(QUEUE_FILE.read_text())
-    return {"articles": [], "index": 0}
+    except (json.JSONDecodeError, ValueError):
+        # Corrupted queue — backup and rebuild
+        import time
+        backup = QUEUE_FILE.with_suffix(f".corrupt-{int(time.time())}.json")
+        try:
+            shutil.copy(QUEUE_FILE, backup)
+            print(f"⚠️  Queue corrupted, backed up to {backup.name}")
+        except Exception:
+            pass
+        
+        # Rebuild from published pages
+        rebuilt = rebuild_queue_from_site()
+        save_queue(rebuilt)
+        print(f"✅ Queue rebuilt: {len(rebuilt['articles'])} pending")
+        return rebuilt
+
+
+def rebuild_queue_from_site():
+    """Rebuild queue keeping only articles not yet published on disk."""
+    import os
+    published = set()
+    for r, d, f in os.walk(SITE_ROOT):
+        if ".git" in r or ".cron" in r:
+            continue
+        for fn in f:
+            if fn == "index.html":
+                rel = "/" + os.path.relpath(os.path.join(r, fn), SITE_ROOT).replace("/index.html", "")
+                if rel == "/index.html":
+                    rel = "/"
+                published.add(rel)
+
+    # Try to load old articles list — from current file first, then from backups
+    old_articles = []
+    sources = [QUEUE_FILE]
+    # Add all backup files (newest first)
+    sources += sorted(Path(SITE_ROOT).glob(".content-queue.corrupt-*.json"), reverse=True)
+
+    for src in sources:
+        try:
+            old = json.loads(src.read_text())
+            if old.get("articles"):
+                old_articles = old["articles"]
+                break
+        except Exception:
+            continue
+
+    # If no backup had articles, try recovering from git history
+    if not old_articles:
+        try:
+            import subprocess
+            r = subprocess.run(
+                ["git", "-C", str(SITE_ROOT), "show", "HEAD:.content-queue.json"],
+                capture_output=True, text=True, timeout=10
+            )
+            if r.returncode == 0 and r.stdout.strip():
+                old = json.loads(r.stdout)
+                if old.get("articles"):
+                    old_articles = old["articles"]
+        except Exception:
+            pass
+
+    kept = []
+    seen = set()
+    for a in old_articles:
+        path = a.get("path", "").rstrip("/")
+        if path in published or path in seen:
+            continue
+        seen.add(path)
+        kept.append(a)
+
+    return {"articles": kept, "index": 0}
 
 def save_queue(q):
     QUEUE_FILE.write_text(json.dumps(q, indent=2))
