@@ -29,20 +29,30 @@ log() { echo "$(TZ=Asia/Shanghai date '+%H:%M'): $*" >> "$LOG"; }
 
 log "Tick started (hour=$HOUR)"
 
+# ─── Push helper: use token URL (more reliable than keychain) ───
+push_with_retry() {
+  local max=$1
+  local gh_token
+  gh_token=$(cat "$HOME/.hermes/profiles/brothcalm/workspace/.cron/.gh_token" 2>/dev/null)
+  local push_url="https://github.com/lin7991/brothcalm.git"
+  [ -n "$gh_token" ] && push_url="https://${gh_token}@github.com/lin7991/brothcalm.git"
+  for attempt in $(seq 1 "$max"); do
+    if git push "$push_url" main 2>&1 >> "$LOG"; then
+      return 0
+    fi
+    log "Push attempt $attempt/$max failed, retrying in 20s..."
+    sleep 20
+  done
+  return 1
+}
+
 # ─── Catch-up push: try to push any backlogged commits at start of every tick ───
 if git log --oneline origin/main..HEAD 2>/dev/null | grep -q .; then
   log "Backlogged commits detected, attempting catch-up push..."
-  PUSH_OK=0
-  for attempt in 1 2 3; do
-    if git -c credential.helper=osxkeychain push 2>&1 >> "$LOG"; then
-      PUSH_OK=1
-      break
-    fi
-    log "Catch-up push attempt $attempt/3 failed"
-    sleep 20
-  done
-  if [ "$PUSH_OK" = "1" ]; then
+  if push_with_retry 3; then
     log "Catch-up push successful"
+  else
+    log "Catch-up push failed, will retry next tick"
   fi
 fi
 
@@ -123,16 +133,7 @@ if [ -n "$FIRST" ] && [ "$IN_WINDOW" = false ]; then
   BROTHCALM_STAGE_ONLY=1 python3 .cron/publish-article.py publish "$FIRST" 2>&1 >> "$LOG"
   rm -f "$FIRST"
   # Push with retry (up to 5 attempts)
-  PUSH_OK=0
-  for attempt in 1 2 3 4 5; do
-    if git -c credential.helper=osxkeychain push 2>&1 >> "$LOG"; then
-      PUSH_OK=1
-      break
-    fi
-    log "Push attempt $attempt/5 failed, retrying in 30s..."
-    sleep 30
-  done
-  if [ "$PUSH_OK" = "1" ]; then
+  if push_with_retry 5; then
     log "Published + pushed"
   else
     log "⚠️ Push failed after 5 attempts — commit saved locally, will push next tick"
