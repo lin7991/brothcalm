@@ -117,6 +117,8 @@ Then print FILE_READY.
         cp /tmp/brothcalm-zh.html "$PENDING/zh-${SLUG}.html"
         rm -f /tmp/brothcalm-zh.html
         log "Staged ZH: zh-$SLUG"
+      else
+        log "⚠️ ZH NOT generated for $SLUG — will need manual backfill"
       fi
       REMAINING=$((REMAINING - 1))
       TARGET=$((TARGET - 1))
