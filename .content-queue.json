@@ -1401,7 +1401,202 @@
         "hydration",
         "damp heat"
       ]
+    },
+    {
+      "title": "Adzuki Beans (Hong Dou) \u2014 The Dampness-Draining Red Bean",
+      "path": "/ingredients/red-bean/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "adzuki beans",
+        "hong dou",
+        "TCM",
+        "dampness",
+        "spleen"
+      ]
+    },
+    {
+      "title": "Black Sesame (Hei Zhi Ma) \u2014 The Kidney-Nourishing Seed",
+      "path": "/ingredients/black-sesame/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "black sesame",
+        "hei zhi ma",
+        "TCM",
+        "kidney",
+        "hair health"
+      ]
+    },
+    {
+      "title": "Chestnut (Li Zi) \u2014 The Warming Kidney Tonic Nut",
+      "path": "/ingredients/chestnut/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "chestnut",
+        "li zi",
+        "TCM",
+        "kidney",
+        "warming food"
+      ]
+    },
+    {
+      "title": "Figs (Wu Hua Guo) \u2014 Sweet Moisture for Lungs and Digestion",
+      "path": "/ingredients/figs/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "figs",
+        "wu hua guo",
+        "TCM",
+        "lung",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Cassia Seed (Jue Ming Zi) \u2014 The Liver-Clearing Eye Herb",
+      "path": "/ingredients/cassia-seed/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "cassia seed",
+        "jue ming zi",
+        "TCM",
+        "liver",
+        "eye health"
+      ]
+    },
+    {
+      "title": "Saffron (Xi Hong Hua) \u2014 The Precious Blood-Moving Spice",
+      "path": "/ingredients/saffron/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "saffron",
+        "xi hong hua",
+        "TCM",
+        "blood",
+        "mood"
+      ]
+    },
+    {
+      "title": "Hawthorn Tea (Shan Zha Cha) \u2014 Digestive Aid for Heavy Meals",
+      "path": "/teas/hawthorn-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "hawthorn tea",
+        "shan zha",
+        "TCM",
+        "digestion",
+        "fatty food"
+      ]
+    },
+    {
+      "title": "Schisandra Tea (Wu Wei Zi Cha) \u2014 The Five-Flavor Calming Brew",
+      "path": "/teas/schisandra-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "schisandra",
+        "wu wei zi",
+        "TCM",
+        "calming",
+        "five flavors"
+      ]
+    },
+    {
+      "title": "Reishi Tea (Ling Zhi Cha) \u2014 Calming Shen with the Mushroom of Immortality",
+      "path": "/teas/reishi-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "reishi",
+        "ling zhi",
+        "TCM",
+        "calm",
+        "immune"
+      ]
+    },
+    {
+      "title": "White Peony Tea (Bai Shao Cha) \u2014 Soothing the Liver and Easing Tension",
+      "path": "/teas/peony-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "white peony",
+        "bai shao",
+        "TCM",
+        "liver",
+        "relaxation"
+      ]
+    },
+    {
+      "title": "Red Bean Soup (Hong Dou Tang) \u2014 The Classic Dampness-Clearing Dessert",
+      "path": "/recipes/red-bean-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "red bean soup",
+        "hong dou tang",
+        "TCM",
+        "dampness",
+        "dessert"
+      ]
+    },
+    {
+      "title": "Lotus Seed Porridge (Lian Zi Zhou) \u2014 Calming the Heart and Settling the Spleen",
+      "path": "/recipes/lotus-seed-porridge/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "lotus seed porridge",
+        "lian zi zhou",
+        "TCM",
+        "spleen",
+        "calm"
+      ]
+    },
+    {
+      "title": "Foods for Edema \u2014 TCM Diet Guide for Water Retention",
+      "path": "/food-therapy/edema/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "edema foods",
+        "water retention",
+        "TCM",
+        "dampness",
+        "kidney"
+      ]
+    },
+    {
+      "title": "Foods for Eye Health \u2014 TCM Diet Guide for Bright Eyes",
+      "path": "/food-therapy/eye-health/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "eye health foods",
+        "vision",
+        "TCM",
+        "liver",
+        "goji"
+      ]
+    },
+    {
+      "title": "Yin and Yang Foods \u2014 Understanding Food Energetics in TCM",
+      "path": "/theory/yin-yang-foods/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "yin yang foods",
+        "food energetics",
+        "TCM theory",
+        "cooling foods",
+        "warming foods"
+      ]
     }
   ],
-  "index": 92
+  "index": 95
 }
