@@ -1596,7 +1596,1178 @@
         "cooling foods",
         "warming foods"
       ]
+    },
+    {
+      "title": "Kudzu Root (Ge Gen) \u2014 The Traditional Cooling Root for Headaches & Thirst",
+      "path": "/ingredients/kudzu/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "kudzu root",
+        "ge gen",
+        "TCM herbs",
+        "cooling root"
+      ]
+    },
+    {
+      "title": "Perilla Leaf (Zi Su) \u2014 TCM's Warming Herb for Cold Relief & Digestion",
+      "path": "/ingredients/perilla/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "perilla leaf",
+        "zi su",
+        "TCM herb",
+        "warming herb"
+      ]
+    },
+    {
+      "title": "Persimmon \u2014 A Sweet Fall Fruit for Lung & Stomach Moisture",
+      "path": "/ingredients/persimmon/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "persimmon",
+        "TCM fruit",
+        "lung nourishment",
+        "autumn food"
+      ]
+    },
+    {
+      "title": "Star Anise \u2014 The Warming Spice of TCM Soups & Stews",
+      "path": "/ingredients/star-anise/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "star anise",
+        "TCM spice",
+        "warming spice",
+        "digestive spice"
+      ]
+    },
+    {
+      "title": "Chinese Olive (Gan Lan) \u2014 Sour-Sweet Relief for Throat Discomfort",
+      "path": "/ingredients/chinese-olive/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "chinese olive",
+        "gan lan",
+        "throat relief",
+        "TCM fruit"
+      ]
+    },
+    {
+      "title": "Cinnamon Tea \u2014 A Warming Brew for Cold Hands & Digestion",
+      "path": "/teas/cinnamon-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "cinnamon tea",
+        "warming tea",
+        "TCM tea",
+        "cold hands"
+      ]
+    },
+    {
+      "title": "Corn Silk Tea \u2014 A Gentle Herbal Tea Traditionally Used for Water Balance",
+      "path": "/teas/corn-silk-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "corn silk tea",
+        "herbal tea",
+        "TCM tea",
+        "water balance"
+      ]
+    },
+    {
+      "title": "Lily Tea \u2014 A Calming Floral Brew for Dry Coughs & Restless Sleep",
+      "path": "/teas/lily-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "lily tea",
+        "calming tea",
+        "TCM tea",
+        "sleep tea"
+      ]
+    },
+    {
+      "title": "Millet Congee \u2014 The Classic Spleen-Friendly Breakfast Porridge",
+      "path": "/recipes/millet-congee/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "millet congee",
+        "TCM porridge",
+        "spleen food",
+        "breakfast recipe"
+      ]
+    },
+    {
+      "title": "White Radish Soup \u2014 A Light Winter Comfort Soup for Digestion",
+      "path": "/recipes/radish-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "radish soup",
+        "TCM soup",
+        "winter soup",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Mushroom Congee \u2014 A Savory Umami Porridge for Qi Support",
+      "path": "/recipes/mushroom-congee/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "mushroom congee",
+        "TCM porridge",
+        "qi tonic",
+        "umami recipe"
+      ]
+    },
+    {
+      "title": "Foods for Canker Sores \u2014 Cooling Choices in TCM",
+      "path": "/food-therapy/canker-sores/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "canker sores diet",
+        "mouth ulcers food",
+        "TCM cooling foods",
+        "heat clearing"
+      ]
+    },
+    {
+      "title": "Foods for Fatigue \u2014 TCM Meals to Rebuild Qi & Daily Energy",
+      "path": "/food-therapy/fatigue/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "fatigue diet",
+        "TCM qi tonic foods",
+        "low energy food",
+        "spleen qi"
+      ]
+    },
+    {
+      "title": "Five Elements in Food \u2014 Wood, Fire, Earth, Metal, Water at the Table",
+      "path": "/theory/five-elements/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "five elements",
+        "wu xing",
+        "TCM theory",
+        "food energetics"
+      ]
+    },
+    {
+      "title": "Body Constitution & Food \u2014 Eating for Your TCM Type",
+      "path": "/theory/body-constitution/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "body constitution",
+        "TCM types",
+        "constitutional eating",
+        "personalized diet"
+      ]
+    },
+    {
+      "title": "Ejiao (Donkey-Hide Gelatin) \u2014 TCM's Blood-Building Essence",
+      "path": "/ingredients/ejiao/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "ejiao",
+        "donkey-hide gelatin",
+        "blood tonic",
+        "anemia",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Sea Cucumber (Hai Shen) \u2014 Warming Kidney Support from the Sea",
+      "path": "/ingredients/sea-cucumber/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "sea cucumber",
+        "hai shen",
+        "kidney tonic",
+        "yin nourishing",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Dried Ginger (Gan Jiang) \u2014 The Warming, Dampness-Drying Spice",
+      "path": "/ingredients/dried-ginger/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "dried ginger",
+        "gan jiang",
+        "warming",
+        "dampness",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Ku Ding Tea \u2014 The Bitter, Cooling Brew for Internal Heat",
+      "path": "/teas/ku-ding-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "ku ding tea",
+        "bitter tea",
+        "clearing heat",
+        "cooling",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Black Sesame Paste (Hu Ma Hu) \u2014 Sweet Kidney-Building Breakfast",
+      "path": "/recipes/black-sesame-paste/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "black sesame paste",
+        "hu ma hu",
+        "kidney tonic",
+        "breakfast",
+        "TCM recipe"
+      ]
+    },
+    {
+      "title": "Longan and Egg Sweet Soup \u2014 A Warming Blood-Building Bowl",
+      "path": "/recipes/longan-egg-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "longan egg soup",
+        "blood tonic",
+        "sweet soup",
+        "warming dessert",
+        "TCM recipe"
+      ]
+    },
+    {
+      "title": "Duck and Ginger Soup \u2014 Yin-Nourishing Comfort for Dry Seasons",
+      "path": "/recipes/duck-ginger-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "duck soup",
+        "ginger soup",
+        "yin nourishing",
+        "autumn soup",
+        "TCM recipe"
+      ]
+    },
+    {
+      "title": "Foods for Hair Health \u2014 Nourishing Blood, Kidney and Scalp",
+      "path": "/food-therapy/hair-health/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "hair health foods",
+        "hair loss diet",
+        "blood nourishing",
+        "kidney",
+        "TCM diet"
+      ]
+    },
+    {
+      "title": "Qi and Blood in Food \u2014 Understanding TCM's Two Essential Energies",
+      "path": "/theory/qi-blood-foods/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "qi and blood",
+        "food therapy theory",
+        "yin and yang",
+        "TCM diet",
+        "nourishing foods"
+      ]
+    },
+    {
+      "title": "Garlic (Da Suan) \u2014 The Warming Pungent Protector in TCM",
+      "path": "/ingredients/garlic/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "garlic",
+        "da suan",
+        "warming food",
+        "immune support",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Lotus Root (Ou) \u2014 The Cooling Crunch for Heat and Digestion",
+      "path": "/ingredients/lotus-root/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "lotus root",
+        "ou",
+        "cooling food",
+        "digestion",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Tangerine Peel Tea (Chen Pi Cha) \u2014 A Digestive Qi-Regulating Brew",
+      "path": "/teas/chen-pi-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "chen pi tea",
+        "tangerine peel tea",
+        "digestion",
+        "qi regulating",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Cassia Seed Tea (Jue Ming Zi Cha) \u2014 The Eye-Clearing Nightcap",
+      "path": "/teas/cassia-seed-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "cassia seed tea",
+        "jue ming zi",
+        "eye health",
+        "liver",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Wood Ear Mushroom Salad \u2014 A Cooling Vessel-Nourishing Side Dish",
+      "path": "/recipes/wood-ear-salad/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "wood ear salad",
+        "black fungus recipe",
+        "cooling dish",
+        "blood nourishing",
+        "TCM recipe"
+      ]
+    },
+    {
+      "title": "Foods for Brain Health \u2014 Nourishing Memory and Focus in TCM",
+      "path": "/food-therapy/brain-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "brain health foods",
+        "memory diet",
+        "kidney essence",
+        "focus",
+        "TCM diet"
+      ]
+    },
+    {
+      "title": "Fox Nuts (Qian Shi) \u2014 The Spleen-Strengthening Superfood of TCM",
+      "path": "/ingredients/euryale-seed/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "fox nuts",
+        "qian shi",
+        "spleen tonic",
+        "TCM",
+        "diarrhea",
+        "kidney essence"
+      ]
+    },
+    {
+      "title": "Ophiopogon (Mai Men Dong) \u2014 Nourishing Lung Yin for Dry Coughs",
+      "path": "/ingredients/ophiopogon/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "ophiopogon",
+        "mai men dong",
+        "lung yin",
+        "dry cough",
+        "TCM",
+        "thirst"
+      ]
+    },
+    {
+      "title": "Amomum (Sha Ren) \u2014 The Aromatic Stomach-Soothing Spice",
+      "path": "/ingredients/amomum/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "amomum",
+        "sha ren",
+        "stomach qi",
+        "morning sickness",
+        "TCM",
+        "digestion"
+      ]
+    },
+    {
+      "title": "Luffa (Si Gua) \u2014 The Cooling Summer Gourd",
+      "path": "/ingredients/loofah/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "luffa",
+        "si gua",
+        "loofah gourd",
+        "summer heat",
+        "TCM",
+        "cooling food"
+      ]
+    },
+    {
+      "title": "Purslane (Ma Chi Xian) \u2014 Nature's Cooling Green for Heat and Inflammation",
+      "path": "/ingredients/purslane/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "purslane",
+        "ma chi xian",
+        "heat clearing",
+        "TCM",
+        "leafy green",
+        "summer"
+      ]
+    },
+    {
+      "title": "Dendrobium Tea (Shi Hu) \u2014 The Orchid Tonic for Dry Eyes and Throat",
+      "path": "/teas/dendrobium-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "dendrobium tea",
+        "shi hu tea",
+        "yin tonic",
+        "dry eyes",
+        "TCM",
+        "sore throat"
+      ]
+    },
+    {
+      "title": "Five-Flower Tea (Wu Hua Cha) \u2014 The Cantonese Summer Cooler",
+      "path": "/teas/five-flower-tea/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "five flower tea",
+        "wu hua cha",
+        "cooling tea",
+        "summer",
+        "Cantonese",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Luo Han Guo Tea (Monk Fruit) \u2014 Sweet Lung Relief Without Sugar",
+      "path": "/teas/luohanguo-tea/",
+      "type": "tea",
+      "read_time": 4,
+      "keywords": [
+        "monk fruit tea",
+        "luo han guo",
+        "lung heat",
+        "sore throat",
+        "TCM",
+        "natural sweetener"
+      ]
+    },
+    {
+      "title": "Five-Red Soup (Wu Hong Tang) \u2014 The Classic Blood-Building Dessert Soup",
+      "path": "/recipes/five-red-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "five red soup",
+        "wu hong tang",
+        "blood tonic",
+        "red dates",
+        "TCM recipe",
+        "anemia"
+      ]
+    },
+    {
+      "title": "Lamb and Ginger Stew (Dang Gui Sheng Jiang Yang Rou Tang) \u2014 Zhang Zhongjing's Warming Classic",
+      "path": "/recipes/lamb-ginger-stew/",
+      "type": "recipe",
+      "read_time": 9,
+      "keywords": [
+        "lamb stew",
+        "dang gui",
+        "warming soup",
+        "zhang zhongjing",
+        "TCM recipe",
+        "blood deficiency"
+      ]
+    },
+    {
+      "title": "Crucian Carp Soup \u2014 The Traditional Lactation-Supporting Broth",
+      "path": "/recipes/crucian-carp-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "crucian carp soup",
+        "fish soup",
+        "lactation",
+        "breastfeeding",
+        "TCM recipe",
+        "spleen"
+      ]
+    },
+    {
+      "title": "Winter Melon and Pork Rib Soup \u2014 The Summer Heat-Clearing Classic",
+      "path": "/recipes/winter-melon-rib-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "winter melon soup",
+        "pork rib soup",
+        "heat clearing",
+        "summer soup",
+        "TCM recipe",
+        "edema"
+      ]
+    },
+    {
+      "title": "Foods for Coughs \u2014 A TCM Guide by Cough Type",
+      "path": "/food-therapy/cough-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "cough foods",
+        "dry cough",
+        "phlegm",
+        "lung health",
+        "TCM diet",
+        "pear"
+      ]
+    },
+    {
+      "title": "Lactation Foods \u2014 TCM Foods to Support Breast Milk Supply",
+      "path": "/food-therapy/lactation-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "lactation foods",
+        "breast milk",
+        "galactagogue",
+        "postpartum diet",
+        "TCM",
+        "nursing mothers"
+      ]
+    },
+    {
+      "title": "Medicine and Food Are One (Yao Shi Tong Yuan) \u2014 The Philosophy Behind TCM Eating",
+      "path": "/theory/medicine-food-homology/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "medicine food homology",
+        "yao shi tong yuan",
+        "food as medicine",
+        "TCM philosophy",
+        "diet therapy"
+      ]
+    },
+    {
+      "title": "Pine Nuts (Song Zi Ren) \u2014 The Moistening Seed for Dryness",
+      "path": "/ingredients/pine-nuts/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "pine nuts",
+        "song zi ren",
+        "moistening",
+        "dryness",
+        "TCM seeds",
+        "constipation"
+      ]
+    },
+    {
+      "title": "Black Beans \u2014 The Kidney-Nourishing Everyday Legume",
+      "path": "/ingredients/black-bean/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "black beans",
+        "kidney tonic",
+        "black food",
+        "TCM legume",
+        "hair health",
+        "longevity"
+      ]
+    },
+    {
+      "title": "Glutinous Rice (Nuo Mi) \u2014 The Warming Spleen Staple",
+      "path": "/ingredients/glutinous-rice/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "glutinous rice",
+        "sticky rice",
+        "nuo mi",
+        "spleen qi",
+        "warming food",
+        "TCM grain"
+      ]
+    },
+    {
+      "title": "Sweet Potato \u2014 The Spleen-Friendly Warming Root",
+      "path": "/ingredients/sweet-potato/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "sweet potato",
+        "spleen stomach",
+        "warming root vegetable",
+        "digestion",
+        "TCM food",
+        "fiber"
+      ]
+    },
+    {
+      "title": "Suan Zao Ren Tea \u2014 The Classic TCM Sleep-Calming Brew",
+      "path": "/teas/suan-zao-ren-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "suan zao ren tea",
+        "sleep tea",
+        "calming tea",
+        "insomnia",
+        "anxiety relief",
+        "TCM herbal tea"
+      ]
+    },
+    {
+      "title": "Mulberry Tea \u2014 A Sweet-Sour Brew for Yin and Blood",
+      "path": "/teas/mulberry-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "mulberry tea",
+        "sang shen",
+        "yin nourishing",
+        "blood tonic",
+        "dark berries",
+        "TCM tea"
+      ]
+    },
+    {
+      "title": "Hawthorn and Rose Tea \u2014 Digestion and Mood-Lift Brew",
+      "path": "/teas/hawthorn-rose-tea/",
+      "type": "tea",
+      "read_time": 5,
+      "keywords": [
+        "hawthorn rose tea",
+        "digestion tea",
+        "mood tea",
+        "shan zha mei gui",
+        "after meals",
+        "TCM tea"
+      ]
+    },
+    {
+      "title": "Lotus Root and Pork Rib Soup \u2014 Autumn Comfort Broth",
+      "path": "/recipes/lotus-root-pork-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "lotus root soup",
+        "pork rib soup",
+        "autumn recipe",
+        "lung nourishing",
+        "TCM soup",
+        "home cooking"
+      ]
+    },
+    {
+      "title": "Rock Sugar Stewed Pear \u2014 The Classic Throat-Soothing Dessert",
+      "path": "/recipes/rock-sugar-pear/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "rock sugar pear",
+        "stewed pear",
+        "dry cough",
+        "throat soothing",
+        "lung dessert",
+        "TCM recipe"
+      ]
+    },
+    {
+      "title": "Chestnut Chicken Soup \u2014 Warming Spleen and Kidney Bowl",
+      "path": "/recipes/chestnut-chicken-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "chestnut chicken soup",
+        "warming soup",
+        "kidney tonic",
+        "spleen qi",
+        "winter recipe",
+        "TCM soup"
+      ]
+    },
+    {
+      "title": "Black Sesame Soup (Hu Ma Hu) \u2014 Hair and Jing Dessert",
+      "path": "/recipes/black-sesame-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "black sesame soup",
+        "hu ma hu",
+        "hair health",
+        "jing nourishing",
+        "dessert",
+        "TCM recipe"
+      ]
+    },
+    {
+      "title": "Menopause Foods \u2014 A TCM Nourishing Guide",
+      "path": "/food-therapy/menopause-foods/",
+      "type": "food-therapy",
+      "read_time": 9,
+      "keywords": [
+        "menopause diet",
+        "hot flashes food",
+        "yin deficiency",
+        "TCM women health",
+        "midlife",
+        "cooling foods"
+      ]
+    },
+    {
+      "title": "Foods for Eye Health \u2014 Nourishing Liver and Vision",
+      "path": "/food-therapy/eye-health-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "eye health foods",
+        "liver blood",
+        "vision",
+        "goji berries",
+        "screen fatigue",
+        "TCM eyes"
+      ]
+    },
+    {
+      "title": "Qi and Blood Diet \u2014 Eating to Nourish Vital Substances",
+      "path": "/theory/qi-blood-diet/",
+      "type": "theory",
+      "read_time": 8,
+      "keywords": [
+        "qi blood diet",
+        "qi tonic foods",
+        "blood tonic foods",
+        "TCM nutrition",
+        "vitality",
+        "food therapy theory"
+      ]
+    },
+    {
+      "title": "Eating by Constitution \u2014 The TCM Body-Type Diet Guide",
+      "path": "/theory/eating-by-constitution/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "body constitution",
+        "nine constitutions",
+        "TCM body type",
+        "eating by constitution",
+        "personalized diet",
+        "food therapy"
+      ]
+    },
+    {
+      "title": "Reishi Mushroom \u2014 The Calming Adaptogen of TCM",
+      "path": "/ingredients/reishi/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "reishi",
+        "lingzhi mushroom",
+        "TCM adaptogen",
+        "sleep"
+      ]
+    },
+    {
+      "title": "Raspberry (Fu Pen Zi) \u2014 TCM's Kidney-Nourishing Berry",
+      "path": "/ingredients/raspberry/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "raspberry",
+        "fu pen zi",
+        "kidney tonic",
+        "TCM fruit"
+      ]
+    },
+    {
+      "title": "Fingered Citron (Fo Shou) \u2014 The Qi-Soothing Citrus",
+      "path": "/ingredients/fingered-citron/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "fingered citron",
+        "fo shou",
+        "qi stagnation",
+        "digestion"
+      ]
+    },
+    {
+      "title": "American Ginseng (Xi Yang Shen) \u2014 Cooling Energy for Calm Focus",
+      "path": "/ingredients/american-ginseng/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "american ginseng",
+        "xi yang shen",
+        "adaptogen",
+        "calm energy"
+      ]
+    },
+    {
+      "title": "Polygonatum (Huang Jing) \u2014 TCM's Longevity Root",
+      "path": "/ingredients/polygonatum/",
+      "type": "ingredient",
+      "read_time": 8,
+      "keywords": [
+        "polygonatum",
+        "huang jing",
+        "kidney yin",
+        "longevity"
+      ]
+    },
+    {
+      "title": "Wu Mei (Smoked Plum) \u2014 The Sour Superfood of TCM",
+      "path": "/ingredients/dark-plum/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "wu mei",
+        "smoked plum",
+        "sour food",
+        "digestion",
+        "cough"
+      ]
+    },
+    {
+      "title": "Pang Da Hai Tea \u2014 TCM's Throat-Soothing Brew",
+      "path": "/teas/pang-da-hai-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "pang da hai tea",
+        "sore throat tea",
+        "sterculia",
+        "TCM tea"
+      ]
+    },
+    {
+      "title": "Chrysanthemum & Cassia Seed Tea \u2014 Bright Eyes, Clear Vision",
+      "path": "/teas/chrysanthemum-cassia-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "chrysanthemum tea",
+        "cassia seed tea",
+        "eye health",
+        "liver"
+      ]
+    },
+    {
+      "title": "Si Shen Soup (Four-Spirit Soup) \u2014 TCM's Digestive Tonic",
+      "path": "/recipes/si-shen-soup/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "si shen soup",
+        "four spirit soup",
+        "digestive tonic",
+        "spleen"
+      ]
+    },
+    {
+      "title": "Eight Treasure Congee \u2014 A Warming Bowl of TCM Tradition",
+      "path": "/recipes/eight-treasure-congee/",
+      "type": "recipe",
+      "read_time": 8,
+      "keywords": [
+        "eight treasure congee",
+        "ba bao zhou",
+        "warming breakfast",
+        "TCM porridge"
+      ]
+    },
+    {
+      "title": "Foods for Sore Throat \u2014 Soothing TCM Remedies",
+      "path": "/food-therapy/sore-throat-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "sore throat foods",
+        "throat soothing",
+        "clear heat",
+        "TCM"
+      ]
+    },
+    {
+      "title": "What to Eat When You Have Diarrhea \u2014 A TCM Guide",
+      "path": "/food-therapy/diarrhea-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "diarrhea foods",
+        "spleen yang",
+        "digestive distress",
+        "TCM diet"
+      ]
+    },
+    {
+      "title": "Foods for Acne \u2014 Clearing Heat and Dampness From Within",
+      "path": "/food-therapy/acne-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "acne foods",
+        "clear heat",
+        "dampness",
+        "skin health",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Foods for Night Sweats \u2014 Nourishing Yin in TCM",
+      "path": "/food-therapy/night-sweats-foods/",
+      "type": "food-therapy",
+      "read_time": 7,
+      "keywords": [
+        "night sweats foods",
+        "yin deficiency",
+        "cooling foods",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Tea as Medicine \u2014 The TCM Roots of Your Daily Brew",
+      "path": "/theory/tea-as-medicine/",
+      "type": "theory",
+      "read_time": 9,
+      "keywords": [
+        "chinese tea medicine",
+        "tea therapy",
+        "TCM tea culture",
+        "herbal tea"
+      ]
+    },
+    {
+      "title": "Winter Melon Tea \u2014 A Cooling Cantonese Classic for Heaty Days",
+      "path": "/teas/winter-melon-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "winter melon tea",
+        "cooling drink",
+        "summer tea",
+        "clear heat",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Oolong Tea \u2014 The Partially Fermented Brew for Digestion and Balance",
+      "path": "/teas/oolong-tea/",
+      "type": "tea",
+      "read_time": 7,
+      "keywords": [
+        "oolong tea",
+        "partially fermented",
+        "digestion",
+        "weight management",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Kumquat Tea \u2014 Sweet-Sour Citrus for Sore Throats and Digestion",
+      "path": "/teas/kumquat-tea/",
+      "type": "tea",
+      "read_time": 6,
+      "keywords": [
+        "kumquat tea",
+        "citrus tea",
+        "sore throat",
+        "vitamin c",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Monk Fruit (Luo Han Guo) \u2014 The Sweet Lung-Nourishing Superfruit",
+      "path": "/ingredients/monk-fruit/",
+      "type": "ingredient",
+      "read_time": 7,
+      "keywords": [
+        "monk fruit",
+        "luo han guo",
+        "natural sweetener",
+        "sore throat",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Pear \u2014 The Cooling Fruit That Moistens the Lungs and Throat",
+      "path": "/ingredients/pear/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "pear",
+        "moisten lungs",
+        "dry cough",
+        "autumn fruit",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Loquat \u2014 Golden Fruit and Leaves for Coughs and Throat Comfort",
+      "path": "/ingredients/loquat/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "loquat",
+        "loquat leaf",
+        "cough",
+        "throat",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Nutmeg \u2014 The Warming Spice That Settles the Stomach and Calms the Mind",
+      "path": "/ingredients/nutmeg/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "nutmeg",
+        "warming spice",
+        "digestion",
+        "sleep",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Cloves \u2014 The Aromatic Bud That Warms the Stomach and Relieves Nausea",
+      "path": "/ingredients/clove/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "cloves",
+        "warming spice",
+        "nausea",
+        "stomach",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Sugarcane \u2014 Nature's Sweet Juice for Heat and Thirst",
+      "path": "/ingredients/sugarcane/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "sugarcane",
+        "clear heat",
+        "quench thirst",
+        "juice",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Spinach \u2014 The Iron-Rich Green That Nourishes Blood and Yin",
+      "path": "/ingredients/spinach/",
+      "type": "ingredient",
+      "read_time": 6,
+      "keywords": [
+        "spinach",
+        "blood deficiency",
+        "iron",
+        "leafy greens",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Spinach and Pork Liver Soup \u2014 A Classic Blood-Building Bowl",
+      "path": "/recipes/spinach-liver-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "spinach liver soup",
+        "blood tonic",
+        "iron rich soup",
+        "liver recipe",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Sweet Corn and Pork Rib Soup \u2014 A Gentle Spleen-Strengthening Broth",
+      "path": "/recipes/corn-rib-soup/",
+      "type": "recipe",
+      "read_time": 6,
+      "keywords": [
+        "corn rib soup",
+        "spleen qi",
+        "comfort soup",
+        "rib recipe",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Lamb and Daikon Soup \u2014 Warming Winter Broth for Qi and Blood",
+      "path": "/recipes/lamb-daikon-soup/",
+      "type": "recipe",
+      "read_time": 7,
+      "keywords": [
+        "lamb daikon soup",
+        "warming soup",
+        "winter tonic",
+        "qi blood",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Foods for Acid Reflux \u2014 Soothing the Stomach the TCM Way",
+      "path": "/food-therapy/acid-reflux-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "acid reflux diet",
+        "GERD foods",
+        "stomach heat",
+        "heartburn relief",
+        "TCM"
+      ]
+    },
+    {
+      "title": "Foods for Eczema \u2014 Cooling the Blood and Clearing Damp-Heat From Skin",
+      "path": "/food-therapy/eczema-foods/",
+      "type": "food-therapy",
+      "read_time": 8,
+      "keywords": [
+        "eczema diet",
+        "damp heat",
+        "skin health",
+        "anti-inflammatory foods",
+        "TCM"
+      ]
     }
   ],
-  "index": 103
+  "index": 188
 }
