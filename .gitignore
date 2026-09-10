@@ -16,3 +16,11 @@ __pycache__/
 .cron/reports/
 .cron/newsletter.*.log
 .cron/.gh_token
+
+# All cron logs and runtime artifacts (never commit logs — they can contain tokens from git error output)
+.cron/*.log
+.cron/*.stdout.log
+.cron/*.stderr.log
+.cron/.cf_token
+.cron/.gh_token
+.cron/pending/*.tmp
