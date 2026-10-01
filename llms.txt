@@ -1,0 +1,28 @@
+# BrothCalm
+
+> Ancient food wisdom for modern wellness.
+
+BrothCalm is an educational resource about Chinese food therapy (食疗), traditional food energetics, herbal teas, medicinal soups, and practical recipes. Content describes TCM traditions and is not medical advice.
+
+## Primary sections
+
+- [Ingredients](https://brothcalm.com/ingredients/): traditional uses, food energetics, preparation, and safety notes.
+- [Teas & Tonics](https://brothcalm.com/teas/): brewing methods and traditional context.
+- [Recipes](https://brothcalm.com/recipes/): congee, soups, broths, and everyday dishes.
+- [Food Therapy Guides](https://brothcalm.com/food-therapy/): food-based guides organized by common wellness goals.
+- [TCM Theory](https://brothcalm.com/theory/): five flavors, seasonal eating, and food energetics.
+- [About](https://brothcalm.com/about/): editorial scope and contact information.
+- [Medical Disclaimer](https://brothcalm.com/about/medical-disclaimer/): safety and scope of the content.
+
+## Editorial principles
+
+BrothCalm distinguishes traditional TCM belief from modern clinical evidence, uses cautious language such as “traditionally used,” “may support,” and “is believed to,” and includes preparation guidance and safety notes where relevant.
+
+## Languages
+
+English is the primary edition. Chinese translations are available under `/zh/` and are connected with reciprocal hreflang annotations.
+
+## Machine-readable indexes
+
+- [Sitemap](https://brothcalm.com/sitemap.xml)
+- [Robots](https://brothcalm.com/robots.txt)
