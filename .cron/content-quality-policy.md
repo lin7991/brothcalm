@@ -1,0 +1,39 @@
+# BrothCalm 内容生产与质量政策
+
+## 适用范围
+BrothCalm 面向英语国家普通读者。英文页面为独立原创主页面，中文页面是自然编辑改写；不得中英混写。品牌名统一为 BrothCalm，不使用 SymptomCalm 后缀。
+
+## 文章类型与长度
+| 类型 | 推荐英文词数 | 硬性英文范围 | 推荐中文字符 | 硬性中文范围 |
+|---|---:|---:|---:|---:|
+| ingredient | 900–1,600 | 700–2,000 | 1,200–2,200 | 900–2,800 |
+| tea | 1,000–1,800 | 800–2,200 | 1,300–2,400 | 1,000–3,000 |
+| recipe | 700–1,400 | 600–1,800 | 1,000–2,000 | 800–2,500 |
+| food-therapy / symptom | 1,400–2,500 | 1,000–3,000 | 1,800–3,200 | 1,400–4,000 |
+| theory / other | 1,200–2,200 | 900–2,600 | 1,500–2,800 | 1,100–3,400 |
+
+超出推荐范围不自动判错，但超过硬性范围不得进入普通 pending。
+
+## 固定质量模块与自由主体
+所有页面必须有 Quick answer、传统 TCM 背景及边界、现代营养/证据说明、实际用法、安全边界、来源和教育免责声明。主体 H2 可按文章意图自由设计。症状类必须有证据局限、Practical Takeaways（或 How to Try It）和 When to Seek Professional Care（或 When to See a Doctor）。食谱不强制 Research 标题，改用 Nutrition note 即可。
+
+## 类比
+推荐一个贯穿全文的主类比，可有 0–2 个辅助类比；每个类比说明“这只是解释工具，不等同于现代解剖/生理事实”。
+
+## 来源
+ingredient/recipe 至少 2 个可靠且相关来源；tea 至少 2 个；food-therapy/symptom 至少 3 个，其中至少一个政府、医院、大学、WHO、NIH、NHS、CDC、PubMed 或系统综述来源。来源必须位于 Sources/参考资料段落，不能把 canonical、导航或社交链接当来源。URL 必须可访问，生成器不得凭空编造。
+
+## 合规
+禁止未经证实的 cure/treat/heal/prevent/detox/guaranteed 等疗效承诺、替代医疗、停药、改变药物剂量、虚假 testimonials 和贬低西医。免责声明、研究原文标题、疗法名称或否定式安全说明可保留这些词；验证器按语境判断，不做全文关键词误杀。
+
+## 高风险
+孕期/哺乳、儿童、慢性病、肝肾病、糖尿病、高血压、抗凝药/药物相互作用、手术、癫痫、浓缩草药/补充剂进入 pending-review，不进入普通自动发布队列。页面必须给出具体 professional-care boundary。
+
+## 差异化
+队列项目可携带 primary_intent、audience、angle、related_cluster、avoid_overlap_with。生成前读取同集群页面标题和 H2；普通文章主体 H2 重叠率目标 <30%，专题文章 <20%，共享 Safety/Sources/FAQ 等通用模块不计入。相似度或 H2 重叠过高时改写角度或进入 review。
+
+## SEO/HTML
+`<title>` 与 `og:title` 由同一标题逐字生成，统一包含 `| BrothCalm`；description 包含主题关键词且不超过 155 字符；保留 FAQ 占位符交给后处理；canonical、hreflang、sitemap、内链和 Schema 必须通过审计。OG 使用真实 JPG，缺图使用 `/images/default-og.jpg`，禁止伪造文章图 URL。
+
+## 发布门禁
+生成 → 语境合规/长度/结构/来源/Schema/URL/重复检查 → 普通 pending 或 pending-review → 每小时只发布完整 EN/ZH pair → 发布后 FAQ Schema、父级 pillar 内链、全站审计。所有规则必须是幂等脚本，不能只修改一次 HTML。

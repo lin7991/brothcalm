@@ -1,6 +1,6 @@
 #!/bin/bash
-# BrothCalm auto-publisher — fired by launchd every 6 hours
-# Publishes 1 article from .cron/pending/ buffer + catches up on push backlog
+# BrothCalm auto-publisher — fired by launchd every hour
+# Publishes 1 bilingual article pair (EN + ZH) from .cron/pending/ every hour
 # Content generation is handled separately by content-create.sh (02:00 & 05:00)
 
 export HERMES_HOME="$HOME/.hermes"
@@ -16,18 +16,19 @@ log() { echo "$(TZ=Asia/Shanghai date '+%H:%M'): $*" >> "$LOG"; }
 
 log "Tick started"
 
-# ─── Push helper: use token URL (more reliable than keychain) ───
+# Generate FAQ only from real question H2s and following answers.
+python3 .cron/generate-faq-schema.py >> "$LOG" 2>&1 || log "⚠️ FAQ schema pass failed; continuing safely"
+# Keep staged pages GEO/SEO-ready before they enter the published tree.
+python3 .cron/seo-geo-optimize.py >> "$LOG" 2>&1 || log "⚠️ SEO/GEO pass failed; continuing safely"
+
+# ─── Push helper: use GitHub REST API (github.com is blocked by GFW; api.github.com works) ───
 push_with_retry() {
   local max=$1
-  local gh_token
-  gh_token=$(cat "$HOME/.hermes/profiles/brothcalm/workspace/.cron/.gh_token" 2>/dev/null)
-  local push_url="https://github.com/lin7991/brothcalm.git"
-  [ -n "$gh_token" ] && push_url="https://${gh_token}@github.com/lin7991/brothcalm.git"
   for attempt in $(seq 1 "$max"); do
-    if git push "$push_url" main 2>&1 >> "$LOG"; then
+    if python3 .cron/api_push.py >> "$LOG" 2>&1; then
       return 0
     fi
-    log "Push attempt $attempt/$max failed, retrying in 20s..."
+    log "API push attempt $attempt/$max failed, retrying in 20s..."
     sleep 20
   done
   return 1
@@ -43,20 +44,42 @@ if git log --oneline origin/main..HEAD 2>/dev/null | grep -q .; then
   fi
 fi
 
-# ─── Publish 1 from pending (every 6-hour tick) ───
-FIRST=$(ls -t "$PENDING"/*.html 2>/dev/null | head -1)
-if [ -n "$FIRST" ]; then
-  log "Publishing: $(basename "$FIRST")"
-  BROTHCALM_STAGE_ONLY=1 python3 .cron/publish-article.py publish "$FIRST" 2>&1 >> "$LOG"
-  rm -f "$FIRST"
-  # Push with retry (up to 5 attempts)
-  if push_with_retry 5; then
-    log "Published + pushed"
+# ─── Hourly bilingual publishing cadence ───
+PAIR=$(python3 - "$PENDING" <<'PY'
+from pathlib import Path
+import sys
+pending = Path(sys.argv[1])
+english = sorted((p for p in pending.glob('*.html') if not p.name.startswith('zh-')), key=lambda p: p.stat().st_mtime)
+for en in english:
+    zh = pending / f'zh-{en.name}'
+    if zh.is_file():
+        print(en)
+        print(zh)
+        break
+PY
+)
+if [ -n "$PAIR" ]; then
+  EN_FILE=$(printf '%s\n' "$PAIR" | sed -n '1p')
+  ZH_FILE=$(printf '%s\n' "$PAIR" | sed -n '2p')
+  log "Publishing EN+ZH pair: $(basename "$EN_FILE") + $(basename "$ZH_FILE")"
+  if BROTHCALM_STAGE_ONLY=1 python3 .cron/publish-article.py publish "$EN_FILE" >> "$LOG" 2>&1; then
+    if BROTHCALM_STAGE_ONLY=1 python3 .cron/publish-article.py publish "$ZH_FILE" >> "$LOG" 2>&1; then
+      rm -f "$EN_FILE"
+      rm -f "$ZH_FILE"
+      if push_with_retry 5; then
+        log "Published + pushed bilingual pair"
+      else
+        log "⚠️ Pair committed locally; push failed after 5 attempts — will retry next tick"
+      fi
+    else
+      log "❌ ZH publish failed; keeping ZH pending file for retry"
+      if push_with_retry 5; then log "EN published + pushed; ZH retained for retry"; fi
+    fi
   else
-    log "⚠️ Push failed after 5 attempts — commit saved locally, will push next tick"
+    log "❌ EN publish failed; keeping both pending files for retry"
   fi
 else
-  log "No pending articles to deploy"
+  log "No complete EN+ZH pair to deploy"
 fi
 
 log "Tick finished"

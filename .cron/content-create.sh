@@ -11,8 +11,9 @@ cd "$HOME/.hermes/profiles/brothcalm/workspace" || exit 1
 
 LOG="$HOME/.hermes/profiles/brothcalm/workspace/.cron/publish.log"
 PENDING="$HOME/.hermes/profiles/brothcalm/workspace/.cron/pending"
+REVIEW="$HOME/.hermes/profiles/brothcalm/workspace/.cron/pending-review"
 BATCH_STATE="$HOME/.hermes/profiles/brothcalm/workspace/.cron/.generation-batch.json"
-mkdir -p "$PENDING"
+mkdir -p "$PENDING" "$REVIEW"
 LOCK="$HOME/.hermes/profiles/brothcalm/workspace/.cron/.content-create.lock"
 if ! mkdir "$LOCK" 2>/dev/null; then
   log() { echo "$(TZ=Asia/Shanghai date '+%H:%M'): $*" >> "$LOG"; }
@@ -100,7 +101,7 @@ print(a['path'].strip('/').replace('/', '-'))
   log "[CREATE] Generating article $i: $SLUG"
 
   hermes chat --profile brothcalm -Q -q "
-You are in ~/.hermes/profiles/brothcalm/workspace.
+You are in ~/.hermes/profiles/brothcalm/workspace. Read .cron/content-quality-policy.md before writing.
 
 STEP 1: Read next item with 'python3 .cron/publish-article.py next'.
 Generate the ENGLISH article HTML using article-template.html as template.
@@ -108,10 +109,11 @@ Replace ALL placeholders (especially <!--TITLE-->, <!--CONTENT-->, etc.).
 Write to /tmp/brothcalm-article.html.
 
 CONTENT QUALITY CONTRACT — write for a curious reader making a real food
-decision, not for a glossary. The English article must contain 900–2,200
-words; the Chinese adaptation must contain 1,200–2,600 Chinese characters.
-Every article must answer the likely question in the first 120 words and then
-help the reader compare options and try one safe, practical step.
+ decision, not for a glossary. Select the length range for the queue item's
+ type from .cron/content-quality-policy.md; do not pad an article to a generic
+ length. Every article must answer the likely question in the first 120 words,
+help the reader compare options and try one safe, practical step, and include
+an HTML comment like `<!--CONTENT_META: intent=...; audience=...; angle=...; cluster=... -->` (no medical claims in metadata).
 Use this structure inside <!--CONTENT--> (adapt headings naturally):
 1. Quick answer: 2-4 direct sentences.
 2. Is this guide for you? Give realistic situations and when another guide is better.
@@ -127,13 +129,23 @@ Use this structure inside <!--CONTENT--> (adapt headings naturally):
     primary or authoritative sources where possible. Never invent a citation or
     URL; label unsourced claims as traditional context or unknowns.
 12. If a relevant local JPG/PNG exists, use it for og:image with useful alt
-    text. Never point to a nonexistent image; otherwise keep the safe fallback.
+    text; otherwise use https://brothcalm.com/images/default-og.jpg. Never
+    point to a guessed article image.
 
 VOICE: warm, specific, sensory, and honest. Aim for useful sections rather than
-padding. Do not use hype such as ultimate,
-miracle, healing, detox, cure, treat, immune boost, or proven remedy. Prefer
+padding. Do not make medical promises or medication instructions. Words such as
+“treatment” may appear in a disclaimer or accurately framed research context,
+but never claim that food cures, treats, heals, or prevents disease. Prefer
 traditionally used, may support, gentle option, and comforting recipe. Avoid
 filler history and repeated generic wellness claims.
+
+ANALOGY: use one main explanatory analogy and at most two supporting analogies;
+state that an analogy is not a literal anatomical or physiological equivalence.
+
+DIFFERENTIATION: inspect related pages, parent pillar, and sibling H2 headings
+before writing. Do not retitle and reproduce an existing article. Choose a
+distinct search intent, audience, time window, ingredient combination, or use
+case. Keep ordinary body-H2 overlap below 30% and focused pages below 20%.
 
 Then generate the CHINESE version of the same article:
 - Path: /zh + the same path (e.g. /zh/ingredients/goji-berries/)
@@ -167,8 +179,13 @@ safety disclaimer, placeholders, internal links, and schema.
 Do NOT run the stage command. Print FILE_READY only after both HTML files have been written.
 " --skills brothcalm-content-production 2>&1 >> "$LOG"
 
-  if [ -s /tmp/brothcalm-article.html ] && [ -s /tmp/brothcalm-zh.html ] && \
-     python3 .cron/validate-generated-article.py /tmp/brothcalm-article.html /tmp/brothcalm-zh.html >> "$LOG" 2>&1; then
+  VALIDATE_STATUS=0
+  if [ -s /tmp/brothcalm-article.html ] && [ -s /tmp/brothcalm-zh.html ]; then
+    python3 .cron/validate-generated-article.py /tmp/brothcalm-article.html /tmp/brothcalm-zh.html >> "$LOG" 2>&1 || VALIDATE_STATUS=$?
+  else
+    VALIDATE_STATUS=1
+  fi
+  if [ "$VALIDATE_STATUS" -eq 0 ] && python3 .cron/check-content-overlap.py /tmp/brothcalm-article.html 0.30 >> "$LOG" 2>&1; then
     cp /tmp/brothcalm-article.html "$PENDING/${SLUG}.html"
     rm -f /tmp/brothcalm-article.html
     log "[CREATE] Staged EN: $SLUG"
@@ -182,9 +199,15 @@ Do NOT run the stage command. Print FILE_READY only after both HTML files have b
       log "[CREATE] ERROR: queue stage failed for $SLUG"
       exit 1
     fi
+  elif [ "$VALIDATE_STATUS" -eq 2 ]; then
+    cp /tmp/brothcalm-article.html "$REVIEW/${SLUG}.html"
+    cp /tmp/brothcalm-zh.html "$REVIEW/zh-${SLUG}.html"
+    rm -f /tmp/brothcalm-article.html /tmp/brothcalm-zh.html
+    log "[CREATE] High-risk pair moved to pending-review: $SLUG"
+    python3 .cron/publish-article.py stage >> "$LOG" 2>&1 || exit 1
   else
     rm -f /tmp/brothcalm-article.html /tmp/brothcalm-zh.html
-    log "[CREATE] ERROR: EN or ZH article missing/empty for $SLUG; queue not advanced"
+    log "[CREATE] ERROR: validation failed or article missing for $SLUG; queue not advanced"
     exit 1
   fi
 done
