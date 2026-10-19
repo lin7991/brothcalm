@@ -113,7 +113,7 @@ CONTENT QUALITY CONTRACT — write for a curious reader making a real food
  type from .cron/content-quality-policy.md; do not pad an article to a generic
  length. Every article must answer the likely question in the first 120 words,
 help the reader compare options and try one safe, practical step, and include
-an HTML comment like `<!--CONTENT_META: intent=...; audience=...; angle=...; cluster=... -->` (no medical claims in metadata).
+an HTML comment like `CONTENT_META: intent=...; audience=...; angle=...; cluster=...` (no medical claims in metadata).
 Use this structure inside <!--CONTENT--> (adapt headings naturally):
 1. Quick answer: 2-4 direct sentences.
 2. Is this guide for you? Give realistic situations and when another guide is better.
