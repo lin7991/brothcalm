@@ -24,3 +24,4 @@ __pycache__/
 .cron/.cf_token
 .cron/.gh_token
 .cron/pending/*.tmp
+.cron/.seo-keyword-research.json

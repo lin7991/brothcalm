@@ -32,8 +32,17 @@ ingredient/recipe 至少 2 个可靠且相关来源；tea 至少 2 个；food-th
 ## 差异化
 队列项目可携带 primary_intent、audience、angle、related_cluster、avoid_overlap_with。生成前读取同集群页面标题和 H2；普通文章主体 H2 重叠率目标 <30%，专题文章 <20%，共享 Safety/Sources/FAQ 等通用模块不计入。相似度或 H2 重叠过高时改写角度或进入 review。
 
+## SEO/GEO 内容策略
+每次内容生产前先刷新 `.cron/.seo-keyword-research.json`。研究美国、英国、加拿大、澳大利亚的英文搜索问题、季节需求、比较词和近期趋势；趋势必须有日期和真实来源 URL，不得编造搜索量。关键词分为 evergreen、seasonal、trend signals，优先长尾问题和可服务的搜索意图，不追逐与食疗无关或高风险的流量。
+
+每篇新文使用 1 个 primary keyword、3–6 个 secondary keywords、2–4 个真实 question variants 和 1 个明确 angle。Primary keyword 在标题、前 120 词、一个自然 H2 和 meta description 中出现（语法自然时），禁止堆砌同义词。趋势词只能转化为低风险的食材比较、做法、文化解释或营养边界文章，不能为了热度制造疾病、减重、补充剂或药物承诺。
+
+GEO 友好内容应在开头直接回答问题，解释 TCM 术语，使用清晰 H2、列表、表格、定义、条件式答案和可独立引用的短段落；同时给出来源、证据局限和安全边界。关键词研究报告本身是运行时文件，不发布到网站。
+
 ## SEO/HTML
 `<title>` 与 `og:title` 由同一标题逐字生成，统一包含 `| BrothCalm`；description 包含主题关键词且不超过 155 字符；保留 FAQ 占位符交给后处理；canonical、hreflang、sitemap、内链和 Schema 必须通过审计。OG 使用真实 JPG，缺图使用 `/images/default-og.jpg`，禁止伪造文章图 URL。
+
+
 
 ## 发布门禁
 生成 → 语境合规/长度/结构/来源/Schema/URL/重复检查 → 普通 pending 或 pending-review → 每小时只发布完整 EN/ZH pair → 发布后 FAQ Schema、父级 pillar 内链、全站审计。所有规则必须是幂等脚本，不能只修改一次 HTML。

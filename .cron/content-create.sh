@@ -12,6 +12,7 @@ cd "$HOME/.hermes/profiles/brothcalm/workspace" || exit 1
 LOG="$HOME/.hermes/profiles/brothcalm/workspace/.cron/publish.log"
 PENDING="$HOME/.hermes/profiles/brothcalm/workspace/.cron/pending"
 REVIEW="$HOME/.hermes/profiles/brothcalm/workspace/.cron/pending-review"
+SEO_BRIEF="$HOME/.hermes/profiles/brothcalm/workspace/.cron/.seo-keyword-research.json"
 BATCH_STATE="$HOME/.hermes/profiles/brothcalm/workspace/.cron/.generation-batch.json"
 mkdir -p "$PENDING" "$REVIEW"
 LOCK="$HOME/.hermes/profiles/brothcalm/workspace/.cron/.content-create.lock"
@@ -25,6 +26,28 @@ trap 'rmdir "$LOCK" 2>/dev/null || true' EXIT
 log() { echo "$(TZ=Asia/Shanghai date '+%H:%M'): $*" >> "$LOG"; }
 
 log "[CREATE] Content creation tick started"
+
+# Refresh the SEO/GEO brief before every new-content run. Trend terms are
+# evidence-led opportunities, not instructions to make unsupported claims.
+log "[CREATE] Refreshing SEO/GEO keyword brief before content generation"
+hermes chat --profile brothcalm -Q -q "
+You are in ~/.hermes/profiles/brothcalm/workspace. Before any new article is generated, research current English-language search demand and query language for the US, UK, Canada, and Australia. Use web search and Google Trends where available; do not invent volumes or trends. Read .content-queue.json and inspect existing published titles and H2s so you propose gaps rather than duplicates.
+
+Write ONLY valid JSON to .cron/.seo-keyword-research.json with this schema:
+{
+  \"updated_at\": \"YYYY-MM-DD\", \"market\": [\"US\",\"UK\",\"CA\",\"AU\"],
+  \"evergreen_clusters\": [{\"primary_keyword\":\"...\",\"secondary_keywords\":[\"...\"],\"question_queries\":[\"...\"],\"search_intent\":\"...\",\"angle\":\"...\",\"source_urls\":[\"https://...\"]}],
+  \"seasonal_clusters\": [{\"primary_keyword\":\"...\",\"secondary_keywords\":[\"...\"],\"question_queries\":[\"...\"],\"search_intent\":\"...\",\"angle\":\"...\",\"best_window\":\"...\",\"source_urls\":[\"https://...\"]}],
+  \"trend_signals\": [{\"primary_keyword\":\"...\",\"related_queries\":[\"...\"],\"why_now\":\"...\",\"fit_for_brothcalm\":\"high|medium|low\",\"risk_note\":\"...\",\"source_urls\":[\"https://...\"]}]
+}
+
+Return 8–12 evergreen clusters, 4–8 seasonal clusters, and 3–6 trend signals. Favor specific long-tail questions and comparison queries over broad hype terms. Trend signals must have a dated, real source URL and a confidence explanation. Exclude trend terms that would require medical claims, supplement promotion, diagnosis, or medication advice. Do not add or modify queue items in this step.
+" --skills brothcalm-content-production 2>&1 >> "$LOG"
+if ! python3 .cron/validate-seo-brief.py "$SEO_BRIEF" >> "$LOG" 2>&1; then
+  log "[CREATE] ERROR: SEO/GEO brief missing or invalid; refusing to generate new content"
+  exit 1
+fi
+log "[CREATE] SEO/GEO keyword brief validated"
 
 # ─── Catch-up push (if backlogged from previous failures) ───
 if git log --oneline origin/main..HEAD 2>/dev/null | grep -q .; then
@@ -51,8 +74,7 @@ if [ "$REMAINING" -lt 10 ] && [ ! -f "$BATCH_STATE" ]; then
   log "[CREATE] Queue below 10; asking Hermes to append exactly 100 fresh ideas"
   hermes chat --profile brothcalm -Q -q "
 You are in ~/.hermes/profiles/brothcalm/workspace.
-Read .content-queue.json and check remaining with python3 .cron/publish-article.py remaining.
-If fewer than 10 remain, create exactly 100 new, non-duplicate BrothCalm article ideas across ingredients, teas, recipes, food-therapy guides, and theory. Each item must include title, unique path, type, read_time, and keywords. Add them using JSON piped to python3 .cron/publish-article.py add. Do not generate article HTML in this step. Print the final remaining count.
+Read .cron/.seo-keyword-research.json, .content-queue.json, and check remaining with python3 .cron/publish-article.py remaining. Use the brief's evergreen, seasonal, and evidence-backed trend clusters to identify genuine search gaps. If fewer than 10 remain, create exactly 100 new, non-duplicate BrothCalm article ideas across ingredients, teas, recipes, food-therapy guides, and theory. Each item must include title, unique path, type, read_time, keywords, primary_intent, audience, angle, related_cluster, and seasonal_or_trend_signal. Add them using JSON piped to python3 .cron/publish-article.py add. Do not generate article HTML in this step. Print the final remaining count.
 " --skills brothcalm-content-production 2>&1 >> "$LOG"
   REMAINING=$(python3 .cron/publish-article.py remaining 2>/dev/null)
   log "[CREATE] Queue after refill: $REMAINING remaining"
@@ -101,7 +123,7 @@ print(a['path'].strip('/').replace('/', '-'))
   log "[CREATE] Generating article $i: $SLUG"
 
   hermes chat --profile brothcalm -Q -q "
-You are in ~/.hermes/profiles/brothcalm/workspace. Read .cron/content-quality-policy.md before writing.
+You are in ~/.hermes/profiles/brothcalm/workspace. Read .cron/content-quality-policy.md and .cron/.seo-keyword-research.json before writing.
 
 STEP 1: Read next item with 'python3 .cron/publish-article.py next'.
 Generate the ENGLISH article HTML using article-template.html as template.
@@ -114,6 +136,14 @@ CONTENT QUALITY CONTRACT — write for a curious reader making a real food
  length. Every article must answer the likely question in the first 120 words,
 help the reader compare options and try one safe, practical step, and include
 an HTML comment like `CONTENT_META: intent=...; audience=...; angle=...; cluster=...` (no medical claims in metadata).
+SEO/GEO CONTRACT — use the queue item's primary keyword naturally in the title,
+first 120 words, one useful H2, and meta description when grammatically natural.
+Use 3–6 secondary terms and 2–4 real question variants from the SEO brief,
+without keyword stuffing or repeating synonyms. Answer the likely question
+directly, define TCM terms, use scannable lists/tables, and include concise
+extractable answers that can stand alone in search or AI summaries. Do not turn
+a trend signal into a medical claim; if a trend is low-fit or high-risk, choose
+an adjacent food-preparation or comparison angle instead.
 Use this structure inside <!--CONTENT--> (adapt headings naturally):
 1. Quick answer: 2-4 direct sentences.
 2. Is this guide for you? Give realistic situations and when another guide is better.
