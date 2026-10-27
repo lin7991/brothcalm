@@ -41,7 +41,7 @@ Write ONLY valid JSON to .cron/.seo-keyword-research.json with this schema:
   \"trend_signals\": [{\"primary_keyword\":\"...\",\"related_queries\":[\"...\"],\"why_now\":\"...\",\"fit_for_brothcalm\":\"high|medium|low\",\"risk_note\":\"...\",\"source_urls\":[\"https://...\"]}]
 }
 
-Return 8–12 evergreen clusters, 4–8 seasonal clusters, and 3–6 trend signals. Favor specific long-tail questions and comparison queries over broad hype terms. Trend signals must have a dated, real source URL and a confidence explanation. Exclude trend terms that would require medical claims, supplement promotion, diagnosis, or medication advice. Do not add or modify queue items in this step.
+Return 8–12 evergreen clusters, 4–8 seasonal clusters, and 3–6 trend signals. Favor specific long-tail questions and comparison queries over broad hype terms. Every cluster must have a direct BrothCalm fit: an ingredient, tea, tonic, recipe, meal, food-preparation decision, or TCM food-therapy explanation. Reject a trend if the only connection is a broad wellness word, a disease, a drug, a supplement stack, weight loss, skincare, fitness, or a generic lifestyle trend. Trend signals must have a dated, real source URL and a confidence explanation. Exclude trend terms that would require medical claims, supplement promotion, diagnosis, or medication advice. Do not add or modify queue items in this step.
 " --skills brothcalm-content-production 2>&1 >> "$LOG"
 if ! python3 .cron/validate-seo-brief.py "$SEO_BRIEF" >> "$LOG" 2>&1; then
   log "[CREATE] ERROR: SEO/GEO brief missing or invalid; refusing to generate new content"
@@ -74,7 +74,7 @@ if [ "$REMAINING" -lt 10 ] && [ ! -f "$BATCH_STATE" ]; then
   log "[CREATE] Queue below 10; asking Hermes to append exactly 100 fresh ideas"
   hermes chat --profile brothcalm -Q -q "
 You are in ~/.hermes/profiles/brothcalm/workspace.
-Read .cron/.seo-keyword-research.json, .content-queue.json, and check remaining with python3 .cron/publish-article.py remaining. Use the brief's evergreen, seasonal, and evidence-backed trend clusters to identify genuine search gaps. If fewer than 10 remain, create exactly 100 new, non-duplicate BrothCalm article ideas across ingredients, teas, recipes, food-therapy guides, and theory. Each item must include title, unique path, type, read_time, keywords, primary_intent, audience, angle, related_cluster, and seasonal_or_trend_signal. Add them using JSON piped to python3 .cron/publish-article.py add. Do not generate article HTML in this step. Print the final remaining count.
+Read .cron/.seo-keyword-research.json, .content-queue.json, and check remaining with python3 .cron/publish-article.py remaining. Use the brief's evergreen, seasonal, and evidence-backed trend clusters to identify genuine search gaps. Reject any idea whose core value is not an ingredient, tea, tonic, recipe, meal, food-preparation decision, or TCM food-therapy explanation. A trend keyword may only be used when the article remains useful after removing the trend wording. If fewer than 10 remain, create exactly 100 new, non-duplicate BrothCalm article ideas across ingredients, teas, recipes, food-therapy guides, and theory. Each item must include title, unique path, type, read_time, keywords, primary_intent, audience, angle, related_cluster, and seasonal_or_trend_signal. Add them using JSON piped to python3 .cron/publish-article.py add. Do not generate article HTML in this step. Print the final remaining count.
 " --skills brothcalm-content-production 2>&1 >> "$LOG"
   REMAINING=$(python3 .cron/publish-article.py remaining 2>/dev/null)
   log "[CREATE] Queue after refill: $REMAINING remaining"
@@ -142,8 +142,10 @@ Use 3–6 secondary terms and 2–4 real question variants from the SEO brief,
 without keyword stuffing or repeating synonyms. Answer the likely question
 directly, define TCM terms, use scannable lists/tables, and include concise
 extractable answers that can stand alone in search or AI summaries. Do not turn
-a trend signal into a medical claim; if a trend is low-fit or high-risk, choose
-an adjacent food-preparation or comparison angle instead.
+a trend signal into a medical claim. Before drafting, confirm the topic is
+still primarily about food, drink, ingredients, recipes, preparation, or TCM
+food-therapy theory; if the trend is low-fit, high-risk, or only loosely
+related, reject it and choose a closer evergreen or seasonal food angle.
 Use this structure inside <!--CONTENT--> (adapt headings naturally):
 1. Quick answer: 2-4 direct sentences.
 2. Is this guide for you? Give realistic situations and when another guide is better.

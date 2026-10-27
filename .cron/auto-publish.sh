@@ -1,6 +1,6 @@
 #!/bin/bash
-# BrothCalm auto-publisher — fired by launchd every hour
-# Publishes 1 bilingual article pair (EN + ZH) from .cron/pending/ every hour
+# BrothCalm auto-publisher — fired by launchd once per day
+# Publishes 1 bilingual article pair (EN + ZH) from .cron/pending/ per day
 # Content generation is handled separately by content-create.sh (02:00 & 05:00)
 
 export HERMES_HOME="$HOME/.hermes"

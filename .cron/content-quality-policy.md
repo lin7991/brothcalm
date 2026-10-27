@@ -33,9 +33,9 @@ ingredient/recipe 至少 2 个可靠且相关来源；tea 至少 2 个；food-th
 队列项目可携带 primary_intent、audience、angle、related_cluster、avoid_overlap_with。生成前读取同集群页面标题和 H2；普通文章主体 H2 重叠率目标 <30%，专题文章 <20%，共享 Safety/Sources/FAQ 等通用模块不计入。相似度或 H2 重叠过高时改写角度或进入 review。
 
 ## SEO/GEO 内容策略
-每次内容生产前先刷新 `.cron/.seo-keyword-research.json`。研究美国、英国、加拿大、澳大利亚的英文搜索问题、季节需求、比较词和近期趋势；趋势必须有日期和真实来源 URL，不得编造搜索量。关键词分为 evergreen、seasonal、trend signals，优先长尾问题和可服务的搜索意图，不追逐与食疗无关或高风险的流量。
+每次内容生产前先刷新 `.cron/.seo-keyword-research.json`。研究美国、英国、加拿大、澳大利亚的英文搜索问题、季节需求、比较词和近期趋势；趋势必须有日期和真实来源 URL，不得编造搜索量。关键词分为 evergreen、seasonal、trend signals，优先长尾问题和可服务的搜索意图。每个集群必须直接服务 BrothCalm 的主题：食材、茶饮、汤方、食谱、饮食选择、烹饪准备或中医食疗理论。若热点只有宽泛 wellness、疾病、药物、补充剂、减重、美容、健身或生活方式关联，则拒绝，不为流量偏离站点主题。
 
-每篇新文使用 1 个 primary keyword、3–6 个 secondary keywords、2–4 个真实 question variants 和 1 个明确 angle。Primary keyword 在标题、前 120 词、一个自然 H2 和 meta description 中出现（语法自然时），禁止堆砌同义词。趋势词只能转化为低风险的食材比较、做法、文化解释或营养边界文章，不能为了热度制造疾病、减重、补充剂或药物承诺。
+每篇新文使用 1 个 primary keyword、3–6 个 secondary keywords、2–4 个真实 question variants 和 1 个明确 angle。Primary keyword 在标题、前 120 词、一个自然 H2 和 meta description 中出现（语法自然时），禁止堆砌同义词。热点词必须通过“去掉热点词后仍然是有用的 BrothCalm 食物内容”测试；只能转化为低风险的食材比较、做法、文化解释或营养边界文章，不能为了热度制造疾病、减重、补充剂或药物承诺。
 
 GEO 友好内容应在开头直接回答问题，解释 TCM 术语，使用清晰 H2、列表、表格、定义、条件式答案和可独立引用的短段落；同时给出来源、证据局限和安全边界。关键词研究报告本身是运行时文件，不发布到网站。
 
