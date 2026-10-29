@@ -48,6 +48,10 @@ if ! python3 .cron/validate-seo-brief.py "$SEO_BRIEF" >> "$LOG" 2>&1; then
   exit 1
 fi
 log "[CREATE] SEO/GEO keyword brief validated"
+if ! python3 .cron/check-topic-cadence.py >> "$LOG" 2>&1; then
+  log "[CREATE] ERROR: topic-cluster cadence limit reached; refusing new generation"
+  exit 1
+fi
 
 # ─── Catch-up push (if backlogged from previous failures) ───
 if git log --oneline origin/main..HEAD 2>/dev/null | grep -q .; then
@@ -123,7 +127,7 @@ print(a['path'].strip('/').replace('/', '-'))
   log "[CREATE] Generating article $i: $SLUG"
 
   hermes chat --profile brothcalm -Q -q "
-You are in ~/.hermes/profiles/brothcalm/workspace. Read .cron/content-quality-policy.md and .cron/.seo-keyword-research.json before writing.
+You are in ~/.hermes/profiles/brothcalm/workspace. Read .cron/content-quality-policy.md and .cron/.seo-keyword-research.json before writing. The queue item's related_cluster is a hard publishing constraint: do not generate a new article for a cluster that would exceed 3 published articles in the last 30 days.
 
 STEP 1: Read next item with 'python3 .cron/publish-article.py next'.
 Generate the ENGLISH article HTML using article-template.html as template.

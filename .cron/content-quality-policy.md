@@ -30,7 +30,7 @@ ingredient/recipe 至少 2 个可靠且相关来源；tea 至少 2 个；food-th
 孕期/哺乳、儿童、慢性病、肝肾病、糖尿病、高血压、抗凝药/药物相互作用、手术、癫痫、浓缩草药/补充剂进入 pending-review，不进入普通自动发布队列。页面必须给出具体 professional-care boundary。
 
 ## 差异化
-队列项目可携带 primary_intent、audience、angle、related_cluster、avoid_overlap_with。生成前读取同集群页面标题和 H2；普通文章主体 H2 重叠率目标 <30%，专题文章 <20%，共享 Safety/Sources/FAQ 等通用模块不计入。相似度或 H2 重叠过高时改写角度或进入 review。
+队列项目必须携带 primary_intent、audience、angle、related_cluster、avoid_overlap_with。每个主题簇 30 天内最多发布 2–3 篇；达到 3 篇后暂停该簇，改选其他真实搜索需求。生成前读取同集群页面标题和 H2；普通文章主体 H2 重叠率目标 <30%，专题文章 <20%，共享 Safety/Sources/FAQ 等通用模块不计入。相似度或 H2 重叠过高时改写角度或进入 review。
 
 ## SEO/GEO 内容策略
 每次内容生产前先刷新 `.cron/.seo-keyword-research.json`。研究美国、英国、加拿大、澳大利亚的英文搜索问题、季节需求、比较词和近期趋势；趋势必须有日期和真实来源 URL，不得编造搜索量。关键词分为 evergreen、seasonal、trend signals，优先长尾问题和可服务的搜索意图。每个集群必须直接服务 BrothCalm 的主题：食材、茶饮、汤方、食谱、饮食选择、烹饪准备或中医食疗理论。若热点只有宽泛 wellness、疾病、药物、补充剂、减重、美容、健身或生活方式关联，则拒绝，不为流量偏离站点主题。
@@ -45,4 +45,4 @@ GEO 友好内容应在开头直接回答问题，解释 TCM 术语，使用清�
 
 
 ## 发布门禁
-生成 → 语境合规/长度/结构/来源/Schema/URL/重复检查 → 普通 pending 或 pending-review → 每小时只发布完整 EN/ZH pair → 发布后 FAQ Schema、父级 pillar 内链、全站审计。所有规则必须是幂等脚本，不能只修改一次 HTML。
+生成 → 语境合规/长度/结构/来源/Schema/URL/重复检查 → 普通 pending 或 pending-review → 每天只发布 1 个完整 EN/ZH pair → 每周一次只读集中审计。只有发现真实问题才修改页面；不重复刷新全部页面，不批量更新无变化页面的 lastmod。所有规则必须是幂等脚本，不能只修改一次 HTML。

@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Build conservative FAQPage JSON-LD from real H2 + following paragraph text."""
 from __future__ import annotations
-import json,re,html
+import json,re,html,sys
 from pathlib import Path
 WS=Path(__file__).resolve().parent.parent
 SKIP={'.git','.cron','node_modules'}
-def pages():
+def pages(pending_only=False):
+ if pending_only:
+  yield from (WS/'.cron/pending').glob('*.html')
+  return
  for p in WS.rglob('index.html'):
   if not any(x in SKIP for x in p.parts): yield p
  for p in (WS/'.cron/pending').glob('*.html'): yield p
@@ -24,7 +27,7 @@ def build(s,zh=False):
  return s.replace('<!--FAQ_SCHEMA-->','<script type="application/ld+json">\n'+json.dumps(data,ensure_ascii=False,indent=2)+'\n</script>',1)
 def main():
  n=0
- for p in pages():
+ for p in pages('--pending-only' in sys.argv[1:]):
   s=p.read_text(errors='ignore'); x=build(s,p.name.startswith('zh-'))
   if x!=s:p.write_text(x);n+=1
  print(f'FAQ schema generated for {n} pages')

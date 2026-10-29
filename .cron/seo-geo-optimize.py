@@ -12,7 +12,10 @@ WS = Path(__file__).resolve().parent.parent
 SITE = "https://brothcalm.com"
 SKIP = {".git", ".cron", "node_modules"}
 
-def pages():
+def pages(pending_only=False):
+    if pending_only:
+        yield from (WS / ".cron" / "pending").glob("*.html")
+        return
     for p in WS.rglob("index.html"):
         if any(part in SKIP for part in p.parts):
             continue
@@ -138,7 +141,8 @@ def quick_answer(s: str, path: str) -> str:
 
 def main():
     count = 0
-    for p in pages():
+    pending_only = "--pending-only" in __import__("sys").argv[1:]
+    for p in pages(pending_only):
         s = p.read_text(errors="ignore")
         path = canonical_path(s)
         if path is None: continue

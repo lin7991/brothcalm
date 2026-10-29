@@ -17,9 +17,10 @@ log() { echo "$(TZ=Asia/Shanghai date '+%H:%M'): $*" >> "$LOG"; }
 log "Tick started"
 
 # Generate FAQ only from real question H2s and following answers.
-python3 .cron/generate-faq-schema.py >> "$LOG" 2>&1 || log "⚠️ FAQ schema pass failed; continuing safely"
+python3 .cron/generate-faq-schema.py --pending-only >> "$LOG" 2>&1 || log "⚠️ FAQ schema pass failed; continuing safely"
 # Keep staged pages GEO/SEO-ready before they enter the published tree.
-python3 .cron/seo-geo-optimize.py >> "$LOG" 2>&1 || log "⚠️ SEO/GEO pass failed; continuing safely"
+# Only normalize staged pages here. Full-site checks run weekly and are read-only.
+python3 .cron/seo-geo-optimize.py --pending-only >> "$LOG" 2>&1 || log "⚠️ SEO/GEO pass failed; continuing safely"
 
 # ─── Push helper: use GitHub REST API (github.com is blocked by GFW; api.github.com works) ───
 push_with_retry() {
