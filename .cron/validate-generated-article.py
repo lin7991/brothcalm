@@ -56,7 +56,9 @@ def check(path, lang, recipe, review):
     sb=source_block(h); links=re.findall(r'https?://[^"\'<>\s]+',sb)
     hosts={urlparse(u).netloc.lower().split(':')[0].removeprefix('www.') for u in links}
     trusted=any(h.endswith(('.gov','.edu')) or any(x in h for x in ('who.int','nih.gov','pubmed.ncbi.nlm.nih.gov','nhs.uk','mayoclinic.org','cdc.gov','cochranelibrary.com')) for h in hosts)
-    is_symptom='/food-therapy/' in h or '/food-therapy-' in h
+    # Inspect the target path, not the whole HTML: navigation links to /food-therapy/
+    # appear on every page and must not turn ingredient/tea/recipe pages into symptom guides.
+    is_symptom='/food-therapy/' in str(path) or '/food-therapy-' in str(path)
     min_sources=3 if is_symptom else 2
     if not sb or len(set(links))<min_sources: e.append(f'sources section has fewer than {min_sources} links')
     if is_symptom and not trusted: e.append('symptom guide lacks a government, medical, university, or systematic-review source')
@@ -71,7 +73,7 @@ def check(path, lang, recipe, review):
     if QUALITY_CLAIM.search(t): e.append('unsupported hype claim')
     if k=='symptom':
         if not re.search(r'practical takeaways|how to try|when to see|when to seek|专业照护|就医|何时',h,re.I): e.append('symptom guide lacks takeaways or care boundary')
-    if review and not re.search(r'consult|professional|qualified|医生|医师|专业人员',t,re.I): e.append('high-risk topic lacks professional-care boundary')
+    if review and not re.search(r'consult|professional|qualified|医生|医师|专业人员|专业照护|合格的?健康',t,re.I): e.append('high-risk topic lacks professional-care boundary')
     if recipe:
         found=[]
         for d in schemas(h):
