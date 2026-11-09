@@ -35,6 +35,7 @@ fi
 
 # Refresh the SEO/GEO brief before every new-content run. Trend terms are
 # evidence-led opportunities, not instructions to make unsupported claims.
+if [ "${SKIP_SEO_REFRESH:-0}" != "1" ]; then
 log "[CREATE] Refreshing SEO/GEO keyword brief before content generation"
 hermes chat --profile brothcalm -Q -q "
 You are in ~/.hermes/profiles/brothcalm/workspace. Before any new article is generated, research current English-language search demand and query language for the US, UK, Canada, and Australia. Use web search and Google Trends where available; do not invent volumes or trends. Read .content-queue.json and inspect existing published titles and H2s so you propose gaps rather than duplicates.
@@ -49,6 +50,9 @@ Write ONLY valid JSON to .cron/.seo-keyword-research.json with this schema:
 
 Return 8–12 evergreen clusters, 4–8 seasonal clusters, and 3–6 trend signals. Favor specific long-tail questions and comparison queries over broad hype terms. Every cluster must have a direct BrothCalm fit: an ingredient, tea, tonic, recipe, meal, food-preparation decision, or TCM food-therapy explanation. Reject a trend if the only connection is a broad wellness word, a disease, a drug, a supplement stack, weight loss, skincare, fitness, or a generic lifestyle trend. Trend signals must have a dated, real source URL and a confidence explanation. Exclude trend terms that would require medical claims, supplement promotion, diagnosis, or medication advice. Do not add or modify queue items in this step.
 " --skills brothcalm-content-production 2>&1 >> "$LOG"
+else
+log "[CREATE] Using existing validated SEO/GEO brief (SKIP_SEO_REFRESH=1)"
+fi
 if ! python3 .cron/validate-seo-brief.py "$SEO_BRIEF" >> "$LOG" 2>&1; then
   log "[CREATE] ERROR: SEO/GEO brief missing or invalid; refusing to generate new content"
   exit 1
@@ -62,11 +66,8 @@ fi
 # ─── Catch-up push (if backlogged from previous failures) ───
 if git log --oneline origin/main..HEAD 2>/dev/null | grep -q .; then
   log "[CREATE] Backlogged commits, catch-up push..."
-  gh_token=$(cat "$HOME/.hermes/profiles/brothcalm/workspace/.cron/.gh_token" 2>/dev/null)
-  push_url="https://github.com/lin7991/brothcalm.git"
-  [ -n "$gh_token" ] && push_url="https://${gh_token}@github.com/lin7991/brothcalm.git"
   for attempt in 1 2 3; do
-    if git push "$push_url" main 2>&1 >> "$LOG"; then
+    if python3 .cron/api_push.py >> "$LOG" 2>&1; then
       log "[CREATE] Catch-up push successful"
       break
     fi
@@ -122,6 +123,11 @@ MAX_NEW=$((100 - INVENTORY_PAIRS))
 if [ "$TARGET" -gt "$MAX_NEW" ]; then
   TARGET=$MAX_NEW
 fi
+# Keep each creation tick bounded; the inventory gate controls whether we may
+# produce, while this cap prevents one tick from creating a large backlog.
+if [ "$TARGET" -gt 4 ]; then
+  TARGET=4
+fi
 if [ "$TARGET" -le 0 ]; then
   log "[CREATE] Hard inventory cap reached; stopping safely"
   exit 0
@@ -164,7 +170,7 @@ CONTENT QUALITY CONTRACT — write for a curious reader making a real food
  type from .cron/content-quality-policy.md; do not pad an article to a generic
  length. Every article must answer the likely question in the first 120 words,
 help the reader compare options and try one safe, practical step, and include
-an HTML comment like `CONTENT_META: intent=...; audience=...; angle=...; cluster=...` (no medical claims in metadata).
+an HTML comment like CONTENT_META: intent=...; audience=...; angle=...; cluster=... (no medical claims in metadata).
 SEO/GEO CONTRACT — use the queue item's primary keyword naturally in the title,
 first 120 words, one useful H2, and meta description when grammatically natural.
 Use 3–6 secondary terms and 2–4 real question variants from the SEO brief,
