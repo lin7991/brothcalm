@@ -14,6 +14,7 @@ PENDING = WS / ".cron" / "pending"
 REVIEW = WS / ".cron" / "pending-review"
 SOFT_START = 10
 HARD_CAP = 100
+PAUSE_FILE = WS / ".cron" / ".production-paused"
 
 def pair_count(directory: Path) -> int:
     if not directory.exists():
@@ -38,6 +39,13 @@ def main() -> int:
     pending = pair_count(PENDING)
     review = pair_count(REVIEW)
     total = pending + review
+    if "--sync" in sys.argv[1:]:
+        if total >= HARD_CAP:
+            PAUSE_FILE.touch()
+        elif PAUSE_FILE.exists() and total < SOFT_START:
+            PAUSE_FILE.unlink()
+        print(f"inventory_pairs={total} paused={PAUSE_FILE.exists()}")
+        return 0
     if "--count" in sys.argv[1:]:
         print(total)
         return 0
@@ -45,12 +53,13 @@ def main() -> int:
           f"pending_orphans={orphan_count(PENDING)} review_orphans={orphan_count(REVIEW)}")
     if "--can-produce" in sys.argv[1:]:
         if total >= HARD_CAP:
+            PAUSE_FILE.touch()
             print(f"production=paused reason=hard_cap_{HARD_CAP}")
             return 1
-        if total >= SOFT_START:
-            print(f"production=paused reason=inventory_at_least_{SOFT_START}")
+        if PAUSE_FILE.exists() and total >= SOFT_START:
+            print(f"production=paused reason=drain_to_below_{SOFT_START}")
             return 1
-        print(f"production=allowed reason=inventory_below_{SOFT_START}")
+        print(f"production=allowed reason=below_hard_cap_{HARD_CAP}")
     return 0
 
 if __name__ == "__main__":

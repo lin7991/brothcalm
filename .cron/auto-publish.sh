@@ -72,7 +72,9 @@ if [ -n "$PAIR" ]; then
       else
         log "⚠️ Pair committed locally; push failed after 5 attempts — will retry next tick"
       fi
-      python3 .cron/check-content-inventory.py >> "$LOG" 2>&1 || true
+      # Record inventory after every publish. If the 100-pair high-water mark
+      # was reached, production remains paused until inventory drains below 10.
+      python3 .cron/check-content-inventory.py --sync >> "$LOG" 2>&1 || true
     else
       log "❌ ZH publish failed; keeping ZH pending file for retry"
       if push_with_retry 5; then log "EN published + pushed; ZH retained for retry"; fi

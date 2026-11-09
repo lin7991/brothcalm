@@ -273,6 +273,8 @@ Do NOT run the stage command. Print FILE_READY only after both HTML files have b
   fi
 done
 
+python3 .cron/check-content-inventory.py --sync >> "$LOG" 2>&1 || true
+
 if [ -f "$BATCH_STATE" ]; then
   TARGET_REMAINING=$(python3 - "$BATCH_STATE" <<'PY'
 import json, sys
