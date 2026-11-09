@@ -1,8 +1,7 @@
 #!/bin/bash
 # BrothCalm content creator — fired at 02:00 & 05:00 Beijing time
-# When the queue falls below 10, refills 100 ideas and generates 100 bilingual
-# article pairs into .cron/pending/; partial batches resume on the next tick.
-# Publishing is handled separately by auto-publish.sh (every hour)
+# Production is inventory-gated: only start when complete generated inventory
+# is below 10 bilingual pairs; hard-stop at 100. Publishing is separate.
 
 export HERMES_HOME="$HOME/.hermes"
 export PATH="/usr/local/bin:/opt/homebrew/bin:$HOME/.local/bin:$PATH"
@@ -26,6 +25,13 @@ trap 'rmdir "$LOCK" 2>/dev/null || true' EXIT
 log() { echo "$(TZ=Asia/Shanghai date '+%H:%M'): $*" >> "$LOG"; }
 
 log "[CREATE] Content creation tick started"
+
+# Do not create faster than the daily publisher can consume. Inventory counts
+# both publishable pending pairs and review pairs; orphan files never qualify.
+if ! python3 .cron/check-content-inventory.py --can-produce >> "$LOG" 2>&1; then
+  log "[CREATE] Inventory gate closed; no new content generated"
+  exit 0
+fi
 
 # Refresh the SEO/GEO brief before every new-content run. Trend terms are
 # evidence-led opportunities, not instructions to make unsupported claims.
@@ -110,7 +116,17 @@ if [ "$REMAINING" -lt "$TARGET" ]; then
   TARGET=$REMAINING
 fi
 
-log "[CREATE] Generating $TARGET article(s)"
+log "[CREATE] Generating up to $TARGET article(s) after inventory gate"
+INVENTORY_PAIRS=$(python3 .cron/check-content-inventory.py --count)
+MAX_NEW=$((100 - INVENTORY_PAIRS))
+if [ "$TARGET" -gt "$MAX_NEW" ]; then
+  TARGET=$MAX_NEW
+fi
+if [ "$TARGET" -le 0 ]; then
+  log "[CREATE] Hard inventory cap reached; stopping safely"
+  exit 0
+fi
+log "[CREATE] Inventory pairs=$INVENTORY_PAIRS; generation cap for this tick=$TARGET"
 
 for i in $(seq 1 "$TARGET"); do
   REMAINING=$(python3 .cron/publish-article.py remaining 2>/dev/null)
@@ -128,6 +144,15 @@ print(a['path'].strip('/').replace('/', '-'))
 
   hermes chat --profile brothcalm -Q -q "
 You are in ~/.hermes/profiles/brothcalm/workspace. Read .cron/content-quality-policy.md and .cron/.seo-keyword-research.json before writing. The queue item's related_cluster is a hard publishing constraint: do not generate a new article for a cluster that would exceed 3 published articles in the last 30 days.
+
+CONTENT PIPELINE — follow this order and do not skip a gate:
+1. Search-demand brief selects a real question and distinct angle.
+2. TCM differentiation explains the traditional food-therapy lens without medical claims.
+3. Deduplicate against the cluster's titles, H2s, and internal links.
+4. Compliance review checks safety boundaries, sources, and risk routing.
+5. SEO/GEO review checks intent, keywords, direct answer, and extractable structure.
+6. Generate and validate the English primary page.
+7. Generate and validate the Chinese editorial mirror from the accepted English facts.
 
 STEP 1: Read next item with 'python3 .cron/publish-article.py next'.
 Generate the ENGLISH article HTML using article-template.html as template.

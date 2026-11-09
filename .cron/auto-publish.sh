@@ -45,7 +45,7 @@ if git log --oneline origin/main..HEAD 2>/dev/null | grep -q .; then
   fi
 fi
 
-# ─── Hourly bilingual publishing cadence ───
+# ─── Daily bilingual publishing cadence ───
 PAIR=$(python3 - "$PENDING" <<'PY'
 from pathlib import Path
 import sys
@@ -72,6 +72,7 @@ if [ -n "$PAIR" ]; then
       else
         log "⚠️ Pair committed locally; push failed after 5 attempts — will retry next tick"
       fi
+      python3 .cron/check-content-inventory.py >> "$LOG" 2>&1 || true
     else
       log "❌ ZH publish failed; keeping ZH pending file for retry"
       if push_with_retry 5; then log "EN published + pushed; ZH retained for retry"; fi

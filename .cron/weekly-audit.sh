@@ -10,6 +10,8 @@ audit_status=0
 } >> "$LOG" 2>&1 || audit_status=$?
 cadence_status=0
 python3 .cron/check-topic-cadence.py >> "$LOG" 2>&1 || cadence_status=$?
-status=$((audit_status || cadence_status))
+inventory_status=0
+python3 .cron/check-content-inventory.py >> "$LOG" 2>&1 || inventory_status=$?
+status=$((audit_status || cadence_status || inventory_status))
 echo "weekly audit exit=$status" >> "$LOG"
 exit "$status"
