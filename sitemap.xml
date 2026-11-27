@@ -115,7 +115,6 @@
   <url><loc>https://brothcalm.com/ingredients/eucommia/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/euryale-seed/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/fennel-seed/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://brothcalm.com/ingredients/fennel-seeds/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/fermented-soybean/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/figs/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/fingered-citron/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
@@ -125,7 +124,6 @@
   <url><loc>https://brothcalm.com/ingredients/ginger/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/gingko/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/ginkgo-nut/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://brothcalm.com/ingredients/ginkgo/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/ginseng/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/glutinous-rice/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/goji-berries/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
@@ -134,6 +132,7 @@
   <url><loc>https://brothcalm.com/ingredients/honeysuckle/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/job-tears/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/jujube-dates/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://brothcalm.com/ingredients/kelp/</loc><lastmod>2026-11-27</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/kudzu/</loc><lastmod>2026-11-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/licorice/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/lily-bulb/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
@@ -170,12 +169,15 @@
   <url><loc>https://brothcalm.com/ingredients/red-dates-vs-goji/</loc><lastmod>2026-10-19</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/rehmannia/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/reishi/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
+  <url><loc>https://brothcalm.com/ingredients/rice-vinegar/</loc><lastmod>2026-11-27</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/royal-jelly/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/saffron/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/scallion/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/schisandra/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/sea-cucumber/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/seaweed/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://brothcalm.com/ingredients/sesame-oil/</loc><lastmod>2026-11-27</lastmod><priority>0.6</priority></url>
+  <url><loc>https://brothcalm.com/ingredients/shiitake-mushrooms/</loc><lastmod>2026-11-27</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/shiitake/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/sichuan-peppercorn/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/ingredients/snow-fungus/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
@@ -310,12 +312,10 @@
   <url><loc>https://brothcalm.com/teas/honey-lemon-ginger-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/honeysuckle-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/jasmine-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
-  <url><loc>https://brothcalm.com/teas/jasmine-teas/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/ku-ding-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/kumquat-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/lavender-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/lemon-balm-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://brothcalm.com/teas/lemon-honey-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/lemon-honey/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/lemongrass-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/licorice-ginger-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
@@ -338,7 +338,6 @@
   <url><loc>https://brothcalm.com/teas/osmanthus-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/pang-da-hai-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/peony-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://brothcalm.com/teas/peppermint-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/peppermint/</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/perilla-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://brothcalm.com/teas/pu-erh/</loc><lastmod>2026-10-18</lastmod><priority>0.6</priority></url>
@@ -478,7 +477,6 @@
   <url><loc>https://brothcalm.com/zh/ingredients/eucommia/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/euryale-seed/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/fennel-seed/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
-  <url><loc>https://brothcalm.com/zh/ingredients/fennel-seeds/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/fermented-soybean/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/figs/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/fingered-citron/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
@@ -487,7 +485,6 @@
   <url><loc>https://brothcalm.com/zh/ingredients/garlic/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/gingko/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/ginkgo-nut/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
-  <url><loc>https://brothcalm.com/zh/ingredients/ginkgo/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/ginseng/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/glutinous-rice/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/goji-berries/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
@@ -496,6 +493,7 @@
   <url><loc>https://brothcalm.com/zh/ingredients/honeysuckle/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/job-tears/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/jujube-dates/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
+  <url><loc>https://brothcalm.com/zh/ingredients/kelp/</loc><lastmod>2026-11-27</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/kudzu/</loc><lastmod>2026-11-10</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/licorice/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/lily-bulb/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
@@ -530,12 +528,15 @@
   <url><loc>https://brothcalm.com/zh/ingredients/red-dates-vs-goji/</loc><lastmod>2026-10-19</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/rehmannia/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/reishi/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://brothcalm.com/zh/ingredients/rice-vinegar/</loc><lastmod>2026-11-27</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/royal-jelly/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/saffron/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/scallion/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/schisandra/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/sea-cucumber/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/seaweed/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
+  <url><loc>https://brothcalm.com/zh/ingredients/sesame-oil/</loc><lastmod>2026-11-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://brothcalm.com/zh/ingredients/shiitake-mushrooms/</loc><lastmod>2026-11-27</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/shiitake/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/sichuan-peppercorn/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/ingredients/snow-fungus/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
@@ -664,12 +665,10 @@
   <url><loc>https://brothcalm.com/zh/teas/honey-lemon-ginger-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/honeysuckle-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/jasmine-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
-  <url><loc>https://brothcalm.com/zh/teas/jasmine-teas/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/ku-ding-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/kumquat-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/lavender-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/lemon-balm-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
-  <url><loc>https://brothcalm.com/zh/teas/lemon-honey-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/lemon-honey/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/lemongrass-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/licorice-ginger-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
@@ -692,7 +691,6 @@
   <url><loc>https://brothcalm.com/zh/teas/osmanthus-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/pang-da-hai-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/peony-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
-  <url><loc>https://brothcalm.com/zh/teas/peppermint-tea/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/peppermint/</loc><lastmod>2026-10-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/perilla-tea/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://brothcalm.com/zh/teas/pu-erh/</loc><lastmod>2026-10-18</lastmod><priority>0.8</priority></url>
